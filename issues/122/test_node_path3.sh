@@ -25,11 +25,11 @@ mv test.jx out/
 
 cd out
 
-echo "\n\n\n############################ 2. Test PACKAGED, with NODE_PATH poiting to existing FILE:"
+echo "\n\n\n############################ 2. Test PACKAGED, with NODE_PATH pointing to existing FILE:"
 export NODE_PATH=$DIR/codedir2/myutil/lib
 jx test.jx
 
-echo "\n\n\n############################ 3. Test PACKAGED, with NODE_PATH poiting to existing DIR:"
+echo "\n\n\n############################ 3. Test PACKAGED, with NODE_PATH pointing to existing DIR:"
 export NODE_PATH=$DIR/codedir2
 jx test.jx
 
@@ -37,7 +37,7 @@ echo "\n\n\n############################ 4. Test PACKAGED, without NODE_PATH:"
 export NODE_PATH=
 jx test.jx
 
-echo "\n\n\n############################ 5. Test PACKAGED, with NODE_PATH poiting to non-existing DIR (it exists only inside jx package):"
+echo "\n\n\n############################ 5. Test PACKAGED, with NODE_PATH pointing to non-existing DIR (it exists only inside jx package):"
 export NODE_PATH=$DIR/out/codedir2
 jx test.jx
 
