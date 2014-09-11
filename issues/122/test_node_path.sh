@@ -1,7 +1,7 @@
 #!/bin/sh
 
 PWD=`pwd`
-DIR=$PWD/node_path2
+DIR=$PWD/node_path
 
 rm -rf $DIR
 mkdir -p $DIR/lib
