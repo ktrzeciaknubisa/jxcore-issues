@@ -91,3 +91,20 @@ monitor:   % Total    % Received % Xferd  Average Speed   Time    Time     Time 
 Stopping JXcore monitoring service.
 Monitoring service is closed.
 ```
+
+
+# Conclusion
+
+
+2.1.5
+
+```bash
+    "path": "/Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/jxcore/issues/other/followMe/app/test215.jx",
+```
+
+
+2.3.3 and 2.3.5
+
+```bash
+    "path": "/Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/jxcore/issues/other/followMe/index.js.jx",
+```
