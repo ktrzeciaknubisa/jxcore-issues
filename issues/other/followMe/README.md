@@ -2,7 +2,7 @@
 
 # Info
 
-This test compares result of `jxcore.monitor.followMe()` between JXcore 2.1.5, 2.3.3 and 2.3.5 (the newest)
+This test compares result of `jxcore.monitor.followMe()` between JXcore 2.1.5, 2.3.3 and 2.3.5 (the newest) on MacOSX x64
 
 # Start
 
