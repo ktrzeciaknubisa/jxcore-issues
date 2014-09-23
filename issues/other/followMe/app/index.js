@@ -2,7 +2,7 @@ var http = require("http");
 
 console.log("__filename", __filename);
 console.log("__dirname", __dirname);
-console.log("__dirname", __dirname);
+console.log("process.mainModule.filename", process.mainModule.filename);
 
 var srv = http.createServer(function (req, res) {
     // sending back to client
