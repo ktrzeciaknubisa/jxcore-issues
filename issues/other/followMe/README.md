@@ -18,12 +18,14 @@ Starting JXcore monitoring service.
 JXcore monitoring is started.
 
 
+__filename ./index.js
+__dirname /Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/jxcore/issues/other/followMe/app
 monitor:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-100   495    0   495    0     0   145k      0 --:--:-- --:--:-- --:--:--  161k
+100   495    0   495    0     0   147k      0 --:--:-- --:--:-- --:--:--  161k
 [
     {
-        "pid": 2147,
+        "pid": 2447,
         "path": "/Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/jxcore/issues/other/followMe/app/test215.jx",
         "argv": [
             "/Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/jxcore/issues/other/followMe/jx215",
@@ -44,12 +46,14 @@ Starting JXcore monitoring service.
 JXcore monitoring is started.
 
 
+__filename /Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/jxcore/issues/other/followMe/app/index.js.jx
+__dirname /Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/jxcore/issues/other/followMe/app
 monitor:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-100   492    0   492    0     0   147k      0 --:--:-- --:--:-- --:--:--  160k
+100   492    0   492    0     0   143k      0 --:--:-- --:--:-- --:--:--  160k
 [
     {
-        "pid": 2155,
+        "pid": 2455,
         "path": "/Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/jxcore/issues/other/followMe/index.js.jx",
         "argv": [
             "/Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/jxcore/issues/other/followMe/jx233",
@@ -70,12 +74,14 @@ Starting JXcore monitoring service.
 JXcore monitoring is started.
 
 
+__filename /Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/jxcore/issues/other/followMe/app/index.js.jx
+__dirname /Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/jxcore/issues/other/followMe/app
 monitor:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-100   492    0   492    0     0   156k      0 --:--:-- --:--:-- --:--:--  240k
+100   492    0   492    0     0   145k      0 --:--:-- --:--:-- --:--:--  160k
 [
     {
-        "pid": 2164,
+        "pid": 2464,
         "path": "/Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/jxcore/issues/other/followMe/index.js.jx",
         "argv": [
             "/Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/jxcore/issues/other/followMe/jx235",
@@ -100,6 +106,8 @@ Monitoring service is closed.
 
 ```bash
     "path": "/Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/jxcore/issues/other/followMe/app/test215.jx",
+
+    __filename ./index.js
 ```
 
 
@@ -107,4 +115,5 @@ Monitoring service is closed.
 
 ```bash
     "path": "/Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/jxcore/issues/other/followMe/index.js.jx",
+     __filename /Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/jxcore/issues/other/followMe/app/index.js.jx
 ```

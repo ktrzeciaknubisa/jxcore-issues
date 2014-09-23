@@ -1,5 +1,8 @@
 var http = require("http");
 
+console.log("__filename", __filename);
+console.log("__dirname", __dirname);
+
 var srv = http.createServer(function (req, res) {
     // sending back to client
     res.writeHead(200, {'Content-Type': 'text/plain'});
