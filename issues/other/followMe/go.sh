@@ -1,18 +1,20 @@
 #!/bin/bash
 
-cd app
-../jx215 package index.js test215 > /dev/null
-cd ..
-./jx215 monitor start
-./jx215 app/test215.jx
-./jx215 monitor stop
 
+function run() {
 
-
+echo "############ text for jx $1"
 
 cd app
-../jx233 package index.js test233  > /dev/null
+rm *.jx *.jxp > /dev/null
+../jx$1 package index.js test$1 > /dev/null
 cd ..
-./jx233 monitor start
-./jx233 app/test233.jx
-./jx233 monitor stop
+./jx$1 monitor start
+./jx$1 app/test$1.jx
+./jx$1 monitor stop
+
+}
+
+run 215
+run 233
+run 235
