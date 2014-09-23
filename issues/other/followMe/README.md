@@ -7,7 +7,7 @@ This test compares result of `jxcore.monitor.followMe()` between JXcore 2.1.5, 2
 # Start
 
 ```bash
-& go.sh
+$ go.sh
 ```
 
 # Results
