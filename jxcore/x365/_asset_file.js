@@ -1,0 +1,1 @@
+console.log("from inside _asset_file.js");
