@@ -1,0 +1,1 @@
+for /L %%i IN (1,1,20) DO @( echo %%i &&  c:\jxcore\jxcore_32sm\Release\jx.exe setMaxHeaderLength.js 30000 )

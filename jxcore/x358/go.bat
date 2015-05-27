@@ -1,0 +1,1 @@
+for /L %%i IN (1,1,20) DO @( echo %%i &&  c:\jxcore\jxcore_64sm\Release\jx.exe -p process.jxversion )
