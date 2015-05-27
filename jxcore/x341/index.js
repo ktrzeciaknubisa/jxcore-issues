@@ -2,4 +2,4 @@
  * Created by nubisa_krzs on 5/12/2015.
  */
 
-var s = require("tar.gz");
+var gz =require("tar.gz");
