@@ -1,9 +1,8 @@
-#!/bin/sh
-jxv8 package test.js -add request -native
+c:\jxcore\jxcore_64v8\Release\jx.exe package test.js -add node_modules -native > nul
 rm -rf out
-mkdir -p out
-cp test out/
+mkdir out
+cp test.exe out/
 cd out
-./test
+test.exe
 ls -al
 cd ..
