@@ -13,7 +13,7 @@ task.define = function () {
     // this fails:
     var mod = require("./_asset_file.js");
     //console.log("process.cwd() 2",process.cwd());
-    var fs = require("fs");
+    //var fs = require("fs");
     //var fs = require(__dirname + "/fs1.js");
     //var stat = fs.statSync("./_asset_file.js");
     //var stat = fs.statSync(__dirname + "/_asset_file.js");
