@@ -1,0 +1,14 @@
+{
+  "monitor": {
+    "hostname" : "127.0.0.1",
+    "https" : {
+      "httpsKeyLocation" : "/Users/nubisa_krzs/Documents/temp/_jx_dev/_monitor/certs.txt",
+      "httpsCertLocation" : "/Users/nubisa_krzs/Documents/temp/_jx_dev/_monitor/certs.txt"
+    },
+    "heart_beat" : {
+      "enabled" : false,
+      "dedicated" : true,
+      "pass_phrase" : "mypwd"
+    }
+  }
+}

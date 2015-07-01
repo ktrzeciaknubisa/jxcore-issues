@@ -1,0 +1,22 @@
+{
+	"name": "index1",
+	"version": "1.0",
+	"author": "",
+	"description": "",
+	"company": "",
+	"copyright": "",
+	"website": "",
+	"package": null,
+	"startup": "index1.js",
+	"execute": null,
+	"extract": false,
+	"output": "index1.jx",
+	"files": [
+		"index1.js"
+	],
+	"assets": [],
+	"preInstall": null,
+	"library": true,
+	"fs_reach_sources": true,
+	"native": true
+}
