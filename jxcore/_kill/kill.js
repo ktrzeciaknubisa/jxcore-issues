@@ -23,7 +23,7 @@ var kill = function() {
 
 console.log("check alive before", pid, checkAlive());
 console.log("kill", pid, kill());
-
+console.log("check alive after 1", pid, checkAlive());
 var cnt = 0;
 setInterval(function() {
   cnt++;

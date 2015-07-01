@@ -6,3 +6,6 @@ jxv8 parent.js &
 
 sleep 1
 ps aux | grep jxapp
+
+sleep 3
+ps aux | grep jxapp

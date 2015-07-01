@@ -2,6 +2,11 @@
 
 var cp = require("child_process");
 
-var child = cp.spawn(process.execPath, [ "app.js" ], {});
+var child = cp.spawn(process.execPath, [ "child.js" ], {});
 child.unref();
-console.log("from parent, child pid:",child.pid);
+console.log("from parent, child pid:", child.pid);
+
+
+setTimeout(function() {
+  child.kill();
+}, 3000);
