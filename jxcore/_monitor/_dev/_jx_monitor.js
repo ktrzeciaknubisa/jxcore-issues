@@ -39,6 +39,7 @@ var argNames = {
   stop_monitor: "stop",
   restart_monitor: "restart",
   leave_me: "leave_me",
+  checkPath: "check",
   console: "console",
   monitor_old_pid: "$JX$MONITOR_OLD_PID"
 };
@@ -61,7 +62,9 @@ var parsedArgv = jxcore.utils.argv.parse(),
   // true, if current process is the monitor (it created http server):
   iAmTheMonitor = false,
   exitting = false,
-  monitorUrl = "";
+  monitorUrl = "",
+  childrenCheckInProgress = false,
+  childrenStopInProgress = false;
 
 
 /**
@@ -75,6 +78,12 @@ var parsedArgv = jxcore.utils.argv.parse(),
 var monCounter = 0;
 var writeToLog = function(txt, alsoToConsole) {
 
+  // argv[argNames.console] is just for development process
+  if (parsedArgv[argNames.console] || alsoToConsole)
+    console.log(txt);
+
+  txt = jxcore.utils.console.removeColors(txt);
+
   if (!monLogDisabled) {
     // some logging can occur before config file will be read
     // and log_path will be known so we cache some messages
@@ -86,10 +95,6 @@ var writeToLog = function(txt, alsoToConsole) {
     }
   } else {
     tmpLogCache = null;
-  }
-  // argv[argNames.console] is just for development process
-  if (parsedArgv[argNames.console] || alsoToConsole) {
-    console.log(txt);
   }
 
   if (monLogPath && !monLogDisabled) {
@@ -618,8 +623,14 @@ var checkProcess = function(json) {
 /**
  * Checks for every monitored process, if it still exists.
  */
-var checkProcesses = function(respawn) {
-  if (!monitoredProcesses || massiveKiller) { return; }
+var checkProcesses = function() {
+  if (!monitoredProcesses || massiveKiller || childrenCheckInProgress) return;
+  if (childrenStopInProgress) {
+    // try again in a moment
+    setTimeout(checkProcesses, 200);
+    return;
+  }
+  childrenCheckInProgress = true;
 
   var remove = [];
   for (var pid in monitoredProcesses) {
@@ -628,7 +639,7 @@ var checkProcesses = function(respawn) {
         remove.push(pid);
         continue;
       }
-      checkProcess(monitoredProcesses[pid], respawn);
+      checkProcess(monitoredProcesses[pid]);
     }
   }
 
@@ -645,6 +656,7 @@ var checkProcesses = function(respawn) {
     }
   }
 
+  childrenCheckInProgress = false;
   setTimeout(checkProcesses, monConfig.monitor.check_interval);
 };
 
@@ -653,74 +665,110 @@ var checkProcesses = function(respawn) {
  * 
  * @param cb
  */
-var stopChildren = function(cb, arr) {
-  if (!cb) { return; }
+var stopChildren = function(cb, arr, env) {
+  if (!cb) return;
 
   if (!arr) massiveKiller = true;
-
   var _arr = (!arr) ? monitoredProcesses : arr;
 
-  // debugger;
   if (!monitoredProcesses) {
-    cb(false, "There are no children currently monitored, so there is nothing to kill.");
+    env.msg = "There are no children currently monitored, so there is nothing to kill.";
+    cb(env);
     return;
   }
 
+
+  if (childrenCheckInProgress) {
+    // try again in a moment
+    log("try again in a moment");
+    setTimeout(function() {
+      stopChildren(cb, arr, env);
+    }, 200);
+    return;
+  }
+  childrenStopInProgress = true;
+
+  if (!env) {
+    env = {
+      killed : [],
+      killFailed : [],
+      report : []
+    };
+  }
+
   var cnt = 0;
-  var killedCnt = 0;
-  var killFailCnt = 0;
-  var report = [];
-  if (massiveKiller)
-    report.push(strings.monitor_shutdown);
+  if (massiveKiller) env.report.push(strings.monitor_shutdown);
 
   for (var pid in _arr) {
     if (!_arr.hasOwnProperty(pid))
       continue;
 
+    cnt++;
+
+    if (_arr[pid].remove)
+      continue;
+
     _arr[pid].killAttempt = _arr[pid].killAttempt || 0;
     if (_arr[pid].killAttempt < maxAttemptCount) {
 
+      var pid_to_kill = _arr[pid].respawning && _arr[pid].child ? _arr[pid].child.pid : pid;
       var isAlive = false;
       try {
-        isAlive = process.kill(pid, 0);
+        isAlive = process.kill(pid_to_kill, 0);
       } catch (ex) {
       }
       if (isAlive) {
         _arr[pid].killAttempt++;
-        process.kill(pid);
+        process.kill(pid_to_kill);
       } else {
         _arr[pid].killed = true;
-        report.push("CLOSED -> " + _arr[pid].path + " (" + pid + ")");
-        killedCnt++;
+        _arr[pid].remove = true;
+        env.report.push("CLOSED -> " + _arr[pid].path + " (" + pid + ")");
+        env.killed.push(pid);
 
-        if (arr) {
-          delete monitoredProcesses[pid];
-          killedProcesses[pid] = new Date();
-        }
+        delete monitoredProcesses[pid];
+        killedProcesses[pid] = new Date();
+        continue;
       }
     } else {
       _arr[pid].cannotKill = true;
-      report.push("NOT CLOSED (after " + _arr[pid].killAttempt
-              + " attempts) -> " + _arr[pid].path);
-      killFailCnt++;
+      env.report.push("NOT CLOSED (after " + _arr[pid].killAttempt + " attempts) -> " + _arr[pid].path);
+      env.killFailed.push(pid);
     }
-
-    cnt++;
   }
 
-  if (cnt != killedCnt + killFailCnt) {
+  if (typeof env.total === "undefined")
+    env.total = cnt;
+
+  if (env.total != env.killed.length + env.killFailed.length) {
+    //log("again, " + cnt + ", " + env.killed.length + ", " + env.killFailed.length);
     setTimeout(function() {
-      stopChildren(cb, _arr);
+      stopChildren(cb, arr, env);
     }, 200);
   } else {
-    if (cnt == 0) {
-      report.push("There are no children currently monitored, so there is nothing to kill.");
+    if (env.total == 0) {
+      env.report.push("There are no children currently monitored, so there is nothing to kill.");
     } else {
-      report.splice(1, 0, "Initiating " + cnt + " children kill:");
+      env.report = [ "Initiating " + env.total + " children kill:" ].concat(env.report);
     }
-    report = report.join("\n");
+    // preparing return message
+    var killed = env.killed.length;
+    var failed = env.killFailed.length;
+    if (!failed) {
+      env.msg = strings.get_dataOK;
+      if (massiveKiller)
+        env.msg += strings.monitor_shutdown;
+      else
+        env.msg += killed === 1 ? "The process with given path was killed"
+          : "All " + killed + " processes with given path were killed";
+    } else {
+      env.msg = strings.command_refuse + "\nSome of the processes could not be killed: " + env.killFailed.join(", ");
+    }
+
+    var report = env.report.join("\n");
     log(report);
-    cb(false, report);
+    cb(env);
+    childrenStopInProgress = false;
   }
 };
 
@@ -927,9 +975,7 @@ var startServer = function() {
       });
 
       req.on('end', function() {
-        if (!body) { return; }
-
-        res.writeHead(200, { 'Content-Type': 'text/html' });
+        if (!body) return;
 
         try {
           var json = JSON.parse(body.toString());
@@ -937,16 +983,16 @@ var startServer = function() {
           var cmd = json[strings.send_command_hash] || null;
 
           if (cmd == argNames.stop_monitor) {
-            if (!checkUID(cmd, json, res)) { return; }
+            if (!checkUID(cmd, json, res)) return;
 
-            stopChildren(function(err, txt) {
+            stopChildren(function(env) {
 
               res.on('finish', function() {
                 // give a little bit more time for client to receive the message
                 setTimeout(process.exit, 200);
               });
               res.writeHead(200, { 'Content-Type': 'text/html' });
-              res.end(txt);
+              res.end(env.msg);
               monitoredProcesses = null;
               log("Monitor received the stop request. Exiting.");
               exitting = true;
@@ -966,26 +1012,30 @@ var startServer = function() {
             log(s + ".");
             res.writeHead(200, { 'Content-Type': 'text/html' });
             res.end(strings.get_dataOK);
-          } else if (cmd == argNames.leave_me && json.path) {
+            return;
+          }
+
+          if (cmd == argNames.leave_me && json.path) {
             if (!checkUID(cmd, json, res)) { return; }
 
-            var s = "Monitor received request for " + json.path + " to get killed.";
+            var s = "Monitor received request for " + json.path + " to get killed";
             var arr = {};
             var ln = 0;
             for (var o in monitoredProcesses) {
-              if (monitoredProcesses.hasOwnProperty(o) && monitoredProcesses[o].path == json.path) {
+              var proc = monitoredProcesses[o];
+              if (monitoredProcesses.hasOwnProperty(o) && proc && proc.path == json.path && !proc.remove) {
 
                 // try to kill immediately
-                if (monitoredProcesses[o].child) {
+                if (proc.child) {
                   try {
-                    monitoredProcesses[o].child.kill();
+                    proc.child.kill();
                     // we don't care whether it succeeded or not
                     // stopChildren will check it out
                   } catch (ex) {}
                 }
 
-                monitoredProcesses[o].killAttempt = 0;
-                arr[o] = monitoredProcesses[o];
+                proc.killAttempt = 0;
+                arr[o] = proc;
                 ln++;
               }
             }
@@ -998,16 +1048,20 @@ var startServer = function() {
               res.end(strings.get_dataOK + "This path is not monitored. Request ignored");
             } else {
               log(s + ".");
-              stopChildren(function(err, txt) {
+              stopChildren(function(env) {
                 res.writeHead(200, { 'Content-Type': 'text/html' });
-                var extra = err ? ( txt || "Error occured." ) : "";
-                res.end(strings.get_dataOK + extra);
-                log(extra || "Monitor stopped the process with given path");
+                res.end(env.msg);
               }, arr);
             }
             return;
           }
+
+          // heartbeat by main monitor's server
+          if (cmd == argNames.checkPath && json.path)
+            return checkHeartbeat(res, json);
+
         } catch (ex) {
+          log("Error while processing the request: " + ex);
           res.end("That's not it.");
         }
       });
@@ -1032,6 +1086,7 @@ var startServer = function() {
 
   process.on("uncaughtException", function(ex) {
     log("Monitor process received uncaughtException: " + ex + ".", true);
+    log(ex.stack.toString(), true);
   });
 
   process.on("exit", function(code) {
@@ -1041,6 +1096,7 @@ var startServer = function() {
   log("JXcore monitoring is started.", true);
   log("Monitor started on " + monitorUrl);
   iAmTheMonitor = true;
+  initRemoteAccess(monConfig);
 };
 
 // ************************ monitor called from command line with: stop or
@@ -1299,3 +1355,179 @@ exports.releasePath = function(path, cb) {
     }
   });
 };
+
+
+exports.checkPath = function(appPath, options, cb) {
+
+  if (typeof options === "function") {
+    cb = options;
+    options = {};
+  }
+
+  if (!cb || typeof cb !== "function")
+    throw new Error("Callback required for jxcore.monitor.check().");
+
+  if (!options)
+    options = {};
+
+  var cfg = monConfig.monitor;
+  //jxcore.utils.console.info(cfg);
+
+  var options = {
+    host: options.host || cfg.host,
+    port: options.port || cfg.port,
+    path: "/" + strings.send_command,
+    method: 'POST',
+    rejectUnauthorized: false
+  };
+
+  var json = {
+    path: appPath,
+    pass_phrase : options.pass_phrase
+  };
+  json[strings.send_command_hash] = argNames.checkPath;
+
+  var req = _https.request(options, function(res) {
+
+    var response = "";
+    res.on('data', function(d) {
+      response += d;
+    });
+
+    res.on('end', function() {
+      req.connection.destroy();
+      cb(false, response);
+    });
+  });
+  req.end(JSON.stringify(json));
+
+  req.on('error', function(e) {
+    req.connection.destroy();
+    cb(true, e);
+  });
+
+};
+
+
+/**
+ * Check validity of remote access configuration and creates a dedicated https server for that
+ * @param monConfig
+ * @return {*}
+ */
+var initRemoteAccess = function(monConfig) {
+  var cfg = monConfig.monitor;
+  var ra = monConfig.monitor.remote;
+
+  // remote access config is not obligatory
+  if (!ra) return;
+
+  var _logError = function(txt) {
+    var cl = jxcore.utils.console.setColor;
+    log(cl("The remote access cannot be activated:\n", "red") + cl(txt, "magenta"));
+  };
+
+  if (!ra.https)
+    return _logError("This feature can work only through HTTPS, " +
+      "but the certificates paths are not provided in jx.config.\n");
+
+  var options = checkCertFiles(ra.https);
+  if (typeof options === "string")
+    return _logError(options);
+
+  if (ra.port === cfg.port)
+    return _logError("This feature needs to use separate port than the monitor.");
+
+  if (!ra.port)
+    ra.port = cfg.port + 1;
+
+  ra.urlString = ra.host ? "https://" + ra.host + ":" + ra.port : "on HTTPS, on all IP addresses and port " + ra.port;
+
+  var srv = _https.createServer(options, function (req, res) {
+
+    if (exitting)
+      return;
+
+    var req_command = req.method == 'POST' && req.url == "/" + strings.send_command;
+    if (req_command) {
+      var body = '';
+
+      req.on('data', function(data) {
+        body += data;
+      });
+
+      req.on('end', function() {
+        if (!body) return;
+
+        try {
+          var json = JSON.parse(body.toString());
+          var cmd = json[strings.send_command_hash] || null;
+
+          // heartbeat by dedicated monitor's server
+          if (cmd == argNames.checkPath && json.path)
+            return checkHeartbeat(res, json);
+
+        } catch (ex) {
+          log("Error for remote access call:" + ex);
+        }
+      });
+      return;
+    }
+
+    log("Remote access invalid call: " + req.url);
+  });
+
+  if (ra.host)
+    srv.listen(ra.port, ra.host);
+  else
+    srv.listen(ra.port);
+
+  log(jxcore.utils.console.setColor("Remote access enabled", ra.urlString, "green"), true);
+  return ra;
+};
+
+/**
+ * Check validity of https certificate files from config file
+ * @param obj
+ * @return {object} Returns error string or loaded certificate files (if everything is ok)
+ */
+var checkCertFiles = function(obj) {
+
+  // od param names support
+  if (!obj.key && obj.httpsKeyLocation)
+    obj.key = obj.httpsKeyLocation;
+
+  if (!obj.cert && obj.httpsCertLocation)
+    obj.cert = obj.httpsCertLocation;
+
+  var options = {};
+  var arr = [ "key", "cert"];
+  for(var o = 0, len = arr.length; o < len; o++) {
+    var _name = arr[o];
+    if (!obj[_name]) return "The `" + _name + "` definition not found.";
+
+    if (!fs.existsSync(obj[_name]))
+      return "The `" + _name + "` (" + obj[_name] + ") file not found.";
+
+    try {
+      options[_name] = fs.readFileSync(obj[_name]);
+    } catch (ex) {
+      return "Cannot read the `" + _name + "` (" + obj[_name] + ") file.";
+    }
+  }
+
+  return options;
+};
+
+
+var checkHeartbeat = function(res, json) {
+
+  var cnt = 0;
+  for (var o in monitoredProcesses) {
+    if (monitoredProcesses.hasOwnProperty(o) && monitoredProcesses[o].path == json.path) {
+      cnt++;
+    }
+  }
+  res.writeHead(200, { 'Content-Type': 'text/html' });
+  res.end(cnt + "");
+};
+

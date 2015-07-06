@@ -41,7 +41,8 @@ var argNames = {
   leave_me: "leave_me",
   checkPath: "check",
   console: "console",
-  monitor_old_pid: "$JX$MONITOR_OLD_PID"
+  monitor_old_pid: "JX_MONITOR_RESPAWN_OLD_PID",
+  monitor_respawn_id: "JX_MONITOR_RESPAWN_ID"
 };
 
 var parsedArgv = jxcore.utils.argv.parse(),
@@ -55,19 +56,21 @@ var parsedArgv = jxcore.utils.argv.parse(),
   attemptInterval = 1000,
   monitoredProcesses = {},
   killedProcesses = {},
-// true if monitor shuts down and kills the children:
+  // true if monitor shuts down and kills the children:
   massiveKiller = false,
   tmpLogCache = [],
   tmpLogCacheFlushed = false,
-// true, if current process is the monitor (it created http server):
+  // true, if current process is the monitor (it created http server):
   iAmTheMonitor = false,
   exitting = false,
-  monitorUrl = "";
+  monitorUrl = "",
+  childrenCheckInProgress = false,
+  childrenStopInProgress = false;
 
 
 /**
  * Writes log to the file (if can)
- *
+ * 
  * @param txt
  * @param alsoToConsole
  *          {boolean} - is used in some critical point to write msg not only to
@@ -131,7 +134,7 @@ var throwError = function(txt) {
 
 /**
  * Sends request to the monitor with url = http://host:port/path
- *
+ * 
  * @param path
  *          {string} - this is the last part of the url
  *          (http://host:port/path)
@@ -212,7 +215,7 @@ var sendRequest = function(path, jsonData, expectedAnswer, cb) {
 
 /**
  * Tries to connect to monitor.
- *
+ * 
  * @param cb
  *          {function} - this callback will receive 3 params (online true/false,
  *          err, txt)
@@ -228,7 +231,7 @@ var isMonitorOnline = function(cb) {
     } else {
       if (txt.trim().indexOf(strings.get_answer.trim()) === -1) {
         cb(true, "There is another application listening on port "
-        + monConfig.monitor.port);
+                + monConfig.monitor.port);
       } else {
         // jx monitor is online
         cb(false, null);
@@ -239,7 +242,7 @@ var isMonitorOnline = function(cb) {
 
 /**
  * Reads config from given file
- *
+ * 
  * @param configFile
  *          {string} - full path
  * @return {object} - Returns config parsed as json object or nothing.
@@ -296,7 +299,7 @@ monConfig = readConfig(path.dirname(jxPath) + path.sep + "jx.config") || {};
  * Recursively copies fields from json_from into json_to, if they are not
  * present in json_to. This is to apply default parameters if they are not
  * present in config file.
- *
+ * 
  * @param json_from
  * @param json_to
  * @param prefix
@@ -323,8 +326,8 @@ var copyConfigParams = function(json_from, json_to, prefix) {
     } else {
       json_to[a] = json_from[a];
       log("Parameter '" + pref
-      + "' is not present in jx.config. Using default value: '"
-      + json_from[a] + "'.");
+              + "' is not present in jx.config. Using default value: '"
+              + json_from[a] + "'.");
     }
   }
 
@@ -338,7 +341,7 @@ copyConfigParams(defaultMonConfig, monConfig);
  * Searches for final log_path. If it's defined in jx.config, that uses this
  * value, but it may not have permissions for writing. In that case tries to
  * write the log in apps folder.
- *
+ * 
  * @return {*}
  */
 var findLogPath = function() {
@@ -371,10 +374,10 @@ var findLogPath = function() {
     try {
       var fname = paths[a];
       fname = fname.replace(/\[WEEKOFYEAR\]/g, weekOfTheYear).replace(
-        /\[YEAR\]/g, now.getFullYear()).replace(/\[DAYOFMONTH\]/g,
-        now.getDate() + 1).replace(/\[DAYOFYEAR\]/g, dayOfTheYear)
-        .replace(/\[MONTH\]/g, now.getMonth() + 1).replace(/\[MINUTE\]/g,
-        now.getMinutes()).replace(/\[HOUR\]/g, now.getHours());
+              /\[YEAR\]/g, now.getFullYear()).replace(/\[DAYOFMONTH\]/g,
+              now.getDate() + 1).replace(/\[DAYOFYEAR\]/g, dayOfTheYear)
+              .replace(/\[MONTH\]/g, now.getMonth() + 1).replace(/\[MINUTE\]/g,
+                      now.getMinutes()).replace(/\[HOUR\]/g, now.getHours());
 
       var ext = path.extname(fname);
       if (ext.length) fname = fname.substr(0, fname.length - (ext.length + 1));
@@ -412,7 +415,7 @@ var findLogPath = function() {
 /**
  * Makes maxAttemptCount attempts for sending specific http request to the
  * monitor
- *
+ * 
  * @param urlPath
  *          {string} - this is the last part of the url
  *          (http://host:port/path)
@@ -433,7 +436,7 @@ var sendDataInLoop = function(urlPath, json, expectedAnswer, func, env) {
 
   if (attemptID++ >= maxAttemptCount) {
     var s = "Cannot sent data to the monitor after " + attemptID
-      + " attempts. Giving up.";
+            + " attempts. Giving up.";
     if (env) {
       if (env.errMsg) {
         s = env.errMsg + " " + s;
@@ -501,7 +504,7 @@ var subscribe = function(cb) {
     if (fst == 'monitor' && scd == 'run' && len > 3) {
       _path = path.resolve(process.argv[3]);
     } else if (fst == 'mt' || fst == 'mt-keep' || fst.indexOf('mt-keep:') >= 0
-      || fst.indexOf('mt:') >= 0) {
+            || fst.indexOf('mt:') >= 0) {
       _path = path.resolve(process.argv[2]);
     } else
       _path = path.resolve(process.argv[1]);
@@ -513,7 +516,9 @@ var subscribe = function(cb) {
     argv: process.argv,
     config: appConfig,
     threadIDs: [process.threadId],
-    isPackaged: process.isPackaged
+    isPackaged: process.isPackaged,
+    old_pid : process.env[argNames.monitor_old_pid],
+    respawn_id : process.env[argNames.monitor_respawn_id]
   };
   var env = {
     cb: cb,
@@ -571,7 +576,7 @@ var stopServer = function(cb) {
 
 /**
  * Checks single monitored process. If does not exists - respawns it.
- *
+ * 
  * @param json
  *          {object} - This is an object sent from the client. It must have a
  *          json.pid field.
@@ -592,28 +597,21 @@ var checkProcess = function(json) {
   if (!isAlive) {
     if (json.respawnAttemptID++ > maxAttemptCount) {
       logError("Cannot spawn the process after " + json.respawnAttemptID
-      + " attempts. Giving up.");
+              + " attempts. Giving up.");
       delete monitoredProcesses[json.pid];
       return;
     }
 
-    var spawn = require("child_process").spawn;
-    // out = fs.openSync('./out2.log', 'a'),
-    // err = fs.openSync('./out2.log', 'a');
+    var _env = JSON.parse(JSON.stringify(process.env));
+    _env[argNames.monitor_old_pid] = json.pid;
+    _env[argNames.monitor_respawn_id] = (json.respawn_id || 0) + 1;
 
-    var args = json.argv.slice(1);
-    args.push("--" + argNames.monitor_old_pid);
-    args.push(json.pid);
-    // var options = { detached: true, stdio: [ 'ignore', out, err ] };
-    var options = {};
-    var child = spawn(json.argv[0], args, options);
+    var child = require("child_process").spawn(json.argv[0], json.argv.slice(1), { env : _env });
 
     if (child) {
-      child.unref();
       monitoredProcesses[json.pid].respawning = true;
       monitoredProcesses[json.pid].child = child;
-      log("Respawned process. Old pid : " + json.pid + " with args "
-      + JSON.stringify(json.argv));
+      log("Respawned process. Old pid : " + json.pid + " with args " + JSON.stringify(json.argv));
     }
   }
 };
@@ -621,8 +619,14 @@ var checkProcess = function(json) {
 /**
  * Checks for every monitored process, if it still exists.
  */
-var checkProcesses = function(respawn) {
-  if (!monitoredProcesses || massiveKiller) { return; }
+var checkProcesses = function() {
+  if (!monitoredProcesses || massiveKiller || childrenCheckInProgress) return;
+  if (childrenStopInProgress) {
+    // try again in a moment
+    setTimeout(checkProcesses, 200);
+    return;
+  }
+  childrenCheckInProgress = true;
 
   var remove = [];
   for (var pid in monitoredProcesses) {
@@ -631,7 +635,7 @@ var checkProcesses = function(respawn) {
         remove.push(pid);
         continue;
       }
-      checkProcess(monitoredProcesses[pid], respawn);
+      checkProcess(monitoredProcesses[pid]);
     }
   }
 
@@ -648,89 +652,126 @@ var checkProcesses = function(respawn) {
     }
   }
 
+  childrenCheckInProgress = false;
   setTimeout(checkProcesses, monConfig.monitor.check_interval);
 };
 
 /**
  * Makes few attempts to stop all monitored children
- *
+ * 
  * @param cb
  */
-var stopChildren = function(cb, arr) {
-  if (!cb) { return; }
+var stopChildren = function(cb, arr, env) {
+  if (!cb) return;
 
   if (!arr) massiveKiller = true;
-
   var _arr = (!arr) ? monitoredProcesses : arr;
 
-  // debugger;
   if (!monitoredProcesses) {
-    cb(false, "There are no children currently monitored, so there is nothing to kill.");
+    env.msg = "There are no children currently monitored, so there is nothing to kill.";
+    cb(env);
     return;
   }
 
+
+  if (childrenCheckInProgress) {
+    // try again in a moment
+    log("try again in a moment");
+    setTimeout(function() {
+      stopChildren(cb, arr, env);
+    }, 200);
+    return;
+  }
+  childrenStopInProgress = true;
+
+  if (!env) {
+    env = {
+      killed : [],
+      killFailed : [],
+      report : []
+    };
+  }
+
   var cnt = 0;
-  var killedCnt = 0;
-  var killFailCnt = 0;
-  var report = [];
-  if (massiveKiller)
-    report.push(strings.monitor_shutdown);
+  if (massiveKiller) env.report.push(strings.monitor_shutdown);
 
   for (var pid in _arr) {
     if (!_arr.hasOwnProperty(pid))
       continue;
 
+    cnt++;
+
+    if (_arr[pid].remove)
+      continue;
+
     _arr[pid].killAttempt = _arr[pid].killAttempt || 0;
     if (_arr[pid].killAttempt < maxAttemptCount) {
 
+      var pid_to_kill = _arr[pid].respawning && _arr[pid].child ? _arr[pid].child.pid : pid;
       var isAlive = false;
       try {
-        isAlive = process.kill(pid, 0);
+        isAlive = process.kill(pid_to_kill, 0);
       } catch (ex) {
       }
       if (isAlive) {
         _arr[pid].killAttempt++;
-        process.kill(pid);
+        process.kill(pid_to_kill);
       } else {
         _arr[pid].killed = true;
-        report.push("CLOSED -> " + _arr[pid].path + " (" + pid + ")");
-        killedCnt++;
+        _arr[pid].remove = true;
+        env.report.push("CLOSED -> " + _arr[pid].path + " (" + pid + ")");
+        env.killed.push(pid);
 
-        if (arr) {
-          delete monitoredProcesses[pid];
-          killedProcesses[pid] = new Date();
-        }
+        delete monitoredProcesses[pid];
+        killedProcesses[pid] = new Date();
+        continue;
       }
     } else {
       _arr[pid].cannotKill = true;
-      report.push("NOT CLOSED (after " + _arr[pid].killAttempt
-      + " attempts) -> " + _arr[pid].path);
-      killFailCnt++;
+      env.report.push("NOT CLOSED (after " + _arr[pid].killAttempt + " attempts) -> " + _arr[pid].path);
+      env.killFailed.push(pid);
     }
-
-    cnt++;
   }
 
-  if (cnt != killedCnt + killFailCnt) {
+  if (typeof env.total === "undefined")
+    env.total = cnt;
+
+  if (env.total != env.killed.length + env.killFailed.length) {
+    //log("again, " + cnt + ", " + env.killed.length + ", " + env.killFailed.length);
     setTimeout(function() {
-      stopChildren(cb, _arr);
+      stopChildren(cb, arr, env);
     }, 200);
   } else {
-    if (cnt == 0) {
-      report.push("There are no children currently monitored, so there is nothing to kill.");
+    if (env.total == 0) {
+      env.report.push("There are no children currently monitored, so there is nothing to kill.");
     } else {
-      report.splice(1, 0, "Initiating " + cnt + " children kill:");
+      env.report = [ "Initiating " + env.total + " children kill:" ].concat(env.report);
     }
-    report = report.join("\n");
+    // preparing return message
+    var killed = env.killed.length;
+    var failed = env.killFailed.length;
+    if (!failed) {
+      env.msg = strings.get_dataOK;
+      if (massiveKiller)
+        env.msg += strings.monitor_shutdown;
+      else
+        env.msg += killed === 1 ? "The process with given path was killed"
+          : "All " + killed + " processes with given path were killed";
+    } else {
+      env.msg = strings.command_refuse + "\nSome of the processes could not be killed: " + env.killFailed.join(", ");
+    }
+
+    var report = env.report.join("\n");
     log(report);
-    cb(false, report);
+    cb(env);
+    childrenStopInProgress = false;
   }
 };
 
 /**
  * Checks, whether the command was made by the same user, which started the
  * monitor.
- *
+ * 
  * @param cmd
  * @param json
  * @param res
@@ -848,29 +889,24 @@ var startServer = function() {
         try {
           var json = JSON.parse(body.toString());
           json.respawnAttemptID = 0;
-
-          var parsed = jxcore.utils.argv.parse(json.argv, { internals : [ argNames.monitor_old_pid ] });
-          var previousPid = parsed[argNames.monitor_old_pid];
-          if (previousPid) previousPid = previousPid.asInt;
-          json.argv = parsed["_"].withoutInternals;
+          json.old_pid = getInt(json.old_pid);
 
           if (!monitoredProcesses[json.pid]) {
-            if (previousPid && (killedProcesses[previousPid] || !monitoredProcesses[previousPid])) {
+            if (json.old_pid && (killedProcesses[json.old_pid] || !monitoredProcesses[json.old_pid])) {
               // this is the case, when app subscribes back with a new pid,
               // but the old pid is not monitored any more (or was already killed)
-              log("Could not find the app with the old PID: " + previousPid);
+              log("Could not find the app with the old PID: " + json.old_pid);
               res.end(strings.command_refuse + "|" + strings.command_kill);
               return;
             }
 
-            if (previousPid) {
+            if (json.old_pid) {
               // app comes back after being restarted
-              log("Found app with the old PID: " + previousPid);
-              json["respawn_id"] = monitoredProcesses[previousPid]["respawn_id"] + 1;
-              json.previousPID = previousPid;
+              log("Found app with the old PID: " + json.old_pid);
+              json["respawn_id"] =  getInt(json.respawn_id);
               monitoredProcesses[json.pid] = json;
               // mark old for removal
-              monitoredProcesses[previousPid].remove = true;
+              monitoredProcesses[json.old_pid].remove = true;
             } else {
               // app send data to monitor for the first time (subscription)
               json["respawn_id"] = 0;
@@ -930,9 +966,7 @@ var startServer = function() {
       });
 
       req.on('end', function() {
-        if (!body) { return; }
-
-        res.writeHead(200, { 'Content-Type': 'text/html' });
+        if (!body) return;
 
         try {
           var json = JSON.parse(body.toString());
@@ -940,16 +974,16 @@ var startServer = function() {
           var cmd = json[strings.send_command_hash] || null;
 
           if (cmd == argNames.stop_monitor) {
-            if (!checkUID(cmd, json, res)) { return; }
+            if (!checkUID(cmd, json, res)) return;
 
-            stopChildren(function(err, txt) {
+            stopChildren(function(env) {
 
               res.on('finish', function() {
                 // give a little bit more time for client to receive the message
                 setTimeout(process.exit, 200);
               });
               res.writeHead(200, { 'Content-Type': 'text/html' });
-              res.end(txt);
+              res.end(env.msg);
               monitoredProcesses = null;
               log("Monitor received the stop request. Exiting.");
               exitting = true;
@@ -975,23 +1009,24 @@ var startServer = function() {
           if (cmd == argNames.leave_me && json.path) {
             if (!checkUID(cmd, json, res)) { return; }
 
-            var s = "Monitor received request for " + json.path + " to get killed.";
+            var s = "Monitor received request for " + json.path + " to get killed";
             var arr = {};
             var ln = 0;
             for (var o in monitoredProcesses) {
-              if (monitoredProcesses.hasOwnProperty(o) && monitoredProcesses[o].path == json.path) {
+              var proc = monitoredProcesses[o];
+              if (monitoredProcesses.hasOwnProperty(o) && proc && proc.path == json.path && !proc.remove) {
 
                 // try to kill immediately
-                if (monitoredProcesses[o].child) {
+                if (proc.child) {
                   try {
-                    monitoredProcesses[o].child.kill();
+                    proc.child.kill();
                     // we don't care whether it succeeded or not
                     // stopChildren will check it out
                   } catch (ex) {}
                 }
 
-                monitoredProcesses[o].killAttempt = 0;
-                arr[o] = monitoredProcesses[o];
+                proc.killAttempt = 0;
+                arr[o] = proc;
                 ln++;
               }
             }
@@ -1004,11 +1039,9 @@ var startServer = function() {
               res.end(strings.get_dataOK + "This path is not monitored. Request ignored");
             } else {
               log(s + ".");
-              stopChildren(function(err, txt) {
+              stopChildren(function(env) {
                 res.writeHead(200, { 'Content-Type': 'text/html' });
-                var extra = err ? ( txt || "Error occured." ) : "";
-                res.end(strings.get_dataOK + extra);
-                log(extra || "Monitor stopped the process with given path");
+                res.end(env.msg);
               }, arr);
             }
             return;
@@ -1019,7 +1052,8 @@ var startServer = function() {
             return checkHeartbeat(res, json);
 
         } catch (ex) {
-          res.end("That's not it." + ex);
+          log("Error while processing the request: " + ex);
+          res.end("That's not it.");
         }
       });
       return;
@@ -1043,6 +1077,7 @@ var startServer = function() {
 
   process.on("uncaughtException", function(ex) {
     log("Monitor process received uncaughtException: " + ex + ".", true);
+    log(ex.stack.toString(), true);
   });
 
   process.on("exit", function(code) {
@@ -1061,7 +1096,7 @@ var startServer = function() {
 /**
  * Send to the monitor request to stop, and eventually starts it again
  * afterwards.
- *
+ * 
  * @param restart
  *          {boolean} - If true, the current process will create new http server
  *          to serve as a monitor.
@@ -1086,7 +1121,7 @@ var stopOrRestart = function(cb, restart) {
             // let's give time for previous monitor process to exit
             setTimeout(function() {
               if (cb) {
-                cb(false, txt);
+                 cb(false, txt);
               }
               startServer();
             }, 1000);
@@ -1112,7 +1147,7 @@ var stopOrRestart = function(cb, restart) {
 
 /**
  * Tries to connect to a monitor in order to check, if it's online.
- *
+ * 
  * @param cb
  *          {function} - Callback will receive 2 params (err true/false, txt).
  */
@@ -1123,7 +1158,7 @@ exports.checkMonitorExists = function(cb) {
 
 /**
  * Start the http server, which will serve as monitor,
- *
+ * 
  * @param cb
  *          {function} - Callback is optional. When provided will receive 2
  *          params (err true/false, txt).
@@ -1136,7 +1171,7 @@ exports.startMonitor = function(cb) {
 /**
  * Start the http server, which will serve as monitor, but only if no monitor is
  * already running.
- *
+ * 
  * @param cb
  *          {function} - Callback is optional. When provided will receive 2
  *          params (err true/false, txt).
@@ -1162,7 +1197,7 @@ exports.startIfNotExists = function(cb) {
 
 /**
  * Send to the monitor request to stop itself.
- *
+ * 
  * @param cb
  *          {function} - Callback is optional. When provided will receive 2
  *          params (err true/false, txt).
@@ -1175,7 +1210,7 @@ exports.stopMonitor = function(cb) {
 /**
  * Send to the monitor request to stop itself, and then this (current) process
  * will create new http server to serve as a monitor.
- *
+ * 
  * @param cb
  *          {function} - Callback is optional. When provided will receive 2
  *          params (err true/false, txt).
@@ -1217,7 +1252,7 @@ var unsubscribeSID = "_jx_monitor_UNsubscribe_by_thread";
  * Send to the monitor request to subscribe process.pid for monitoring. If
  * monitor is not online, throws an error. This method is intended to be called
  * from an app.
- *
+ * 
  * @param cb
  *          {function} - Callback is optional. When provided will receive 2
  *          params (err true/false, txt).
@@ -1265,7 +1300,7 @@ exports.followMe = function(cb, waitcb) {
  * Send to the monitor request to unsubscribe process.pid from monitoring. If
  * monitor is not online, throws an error. * This method is intended to be
  * called from an app.
- *
+ * 
  * @param cb
  *          {function} - Callback is optional. When provided will receive 2
  *          params (err true/false, txt).
@@ -1400,6 +1435,9 @@ var initRemoteAccess = function(monConfig) {
 
   var srv = _https.createServer(options, function (req, res) {
 
+    if (exitting)
+      return;
+
     var req_command = req.method == 'POST' && req.url == "/" + strings.send_command;
     if (req_command) {
       var body = '';
@@ -1441,7 +1479,7 @@ var initRemoteAccess = function(monConfig) {
 /**
  * Check validity of https certificate files from config file
  * @param obj
- * @return {string}  Returns error string or true, if everything is ok
+ * @return {object} Returns error string or loaded certificate files (if everything is ok)
  */
 var checkCertFiles = function(obj) {
 
@@ -1484,3 +1522,12 @@ var checkHeartbeat = function(res, json) {
   res.end(cnt + "");
 };
 
+
+var getInt = function(val, defaultVal) {
+  if (!defaultVal) defaultVal = 0;
+  val = parseInt(val);
+  return isNaN(val) ? defaultVal : val;
+};
+
+
+exports.respawned = getInt(process.env[argNames.monitor_respawn_id]);
