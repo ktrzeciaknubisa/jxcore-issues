@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#jxv8 package index.js -add -native
+jxv8 package index.js -add -native
 
 echo "SM"
 jxsm check.js

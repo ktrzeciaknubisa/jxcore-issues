@@ -150,26 +150,33 @@ var binaryFileIndexOf = function(file_name, testString, writeDotAt) {
 };
 
 
-var isNativePackage = function(fname) {
+//var isNativePackage = function(fname) {
+//
+//  var id = binaryFileIndexOf(fname, [ "jxcore.bin(?@" + "@!!$<$?!*)", "bin@ry.v@rsion"]);
+//  return id !== -1;
+//};
 
-  var id = binaryFileIndexOf(fname, [ "jxcore.bin(?@" + "@!!$<$?!*)", "bin@ry.v@rsion"]);
-  return id !== -1;
-};
+
+var pkg = require("_jx_package");
 
 var fname = __dirname + "/" + "index";
+fname = "/Users/nubisa_krzs/Documents/GitHub/jxcore/out_v8_64/Release/jx";
+fname = "/Users/nubisa_krzs/Downloads/Archive-2.zip";
 
-console.time("all");
+//console.time("all");
 
-//console.log("isNativePackage", fname, isNativePackage(fname));
+console.log("isNativePackage", fname, pkg.isNativePackage(fname));
 //console.log("isNativePackage", process.execPath, isNativePackage(process.execPath));
 //console.log("isNativePackage", "/usr/local/bin/jx", isNativePackage("/usr/local/bin/jx"));
 
-fname = "/Users/nubisa_krzs/Documents/GitHub/jxcore/out_v8_64/Release/jx";
-//fname = "/Users/nubisa_krzs/Downloads/Archive-2.zip";
+return;
+
+
+//
 //var indexes = binaryFileIndexOf(process.execPath, [ 'bin@ry.v@rsio' + 'n@', 'jxcore.bi' + 'n(?@@' ], 32768);
 console.log("opening", fname);
 var id = binaryFileIndexOf(fname, 'bin@ry.v@rsio' + 'n@');
 console.log("id", id);
 
 
-console.timeEnd("all");
+//console.timeEnd("all");

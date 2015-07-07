@@ -2,3 +2,9 @@
 
 
 console.log("ok");
+
+//sd f
+
+setInterval(function() {
+  console.log(new Date());
+}, 5000);
