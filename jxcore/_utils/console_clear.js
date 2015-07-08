@@ -11,5 +11,12 @@ jxcore.utils.console.write("a dlkjdkaskhakshkahkaska");
 //jxcore.utils.console.write('\33c');
 //jxcore.utils.console.write('\033[3J');
 //jxcore.utils.console.write('\033c');
-jxcore.utils.console.write('\033c\033[3J');
-jxcore.utils.console.log("cleared");
+//jxcore.utils.console.write('\033c\033[3J');
+
+setTimeout(function() {
+
+  jxcore.utils.console.clear("cleared");
+  jxcore.utils.console.clear();
+  //jxcore.utils.console.log("the screen has been just cleared", "clear+bold+red");
+
+}, 1000);
