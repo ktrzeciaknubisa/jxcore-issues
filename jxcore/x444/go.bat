@@ -1,19 +1,14 @@
-#!/bin/bash
+cls
 
-
-jxv8 package index.js -add package.json -native
+c:\jxcore\jxcore_64v8\Release\jx.exe package index.js -add
 
 rm -rf copy
 mkdir copy
-mv *.js *.json copy/
+mv *.js copy/
 
-#jxv8 index.jx
-./index
+c:\jxcore\jxcore_64v8\Release\jx.exe index.jx
+
+ls -al
 
 mv copy/* ./
 
-#mv index.js index.old
-#mv fff.js fff.old
-#jxv8 index.jx
-#mv index.old index.js
-#mv fff.old fff.js
