@@ -2,6 +2,7 @@
 
 var fs = require('fs');
 var path = require('path');
+var os = require("os");
 var jx = require('jxtools');
 var assert = jx.assert;
 
@@ -10,13 +11,15 @@ var assetDir = path.join(__dirname, "assets", "test-error-line-column");
 
 var checkFile = function(filePath, expectedStrings) {
 
+  filePath = path.normalize(filePath);
+
   // plain js
   var ret_plain = jxcore.utils.cmdSync(execPath + filePath);
 
   // jx package
   var script = [
     "cd " + assetDir,
-    execPath + "package '" + filePath + "' testFile -add",
+    execPath + "package " + path.basename(filePath) + " testFile -add",
     execPath + "testFile.jx"
   ];
   var batch = jx.saveBatchFile(script.join("\n"));
@@ -25,15 +28,18 @@ var checkFile = function(filePath, expectedStrings) {
   // native package
   var script = [
     "cd " + assetDir,
-    execPath + "package '" + filePath + "' testFile -add -native",
-    "./testFile"
+    execPath + "package " + path.basename(filePath) + " testFile -add -native",
+    process.platform === "win32" ? "testFile.exe" : "./testFile"
   ];
-  var batch = jx.saveBatchFile(script.join("\n"));
-  var ret_exe = jxcore.utils.cmdSync(batch)
 
-  //console.log("\nret plain\n", ret_plain.out);
-  //console.log("\nret jx\n", ret_jx.out);
-  //console.log("\nret exe\n", ret_exe.out);
+  var batch = jx.saveBatchFile(script.join("\n"));
+  var ret_exe = jxcore.utils.cmdSync(batch);
+
+  jx.rmfilesSync(path.join(assetDir, "testFile.*"));
+
+  //jxcore.utils.console.log("\nret plain\n", ret_plain.out, "green");
+  //jxcore.utils.console.log("\nret jx\n", ret_jx.out, "yellow");
+  //jxcore.utils.console.log("\nret exe\n", ret_exe.out, "cyan");
 
 
   for (var o = 0, len = expectedStrings.length; o < len; o++) {
@@ -60,5 +66,5 @@ if (process.versions.v8) {
    at Object.<anonymous> (/Users/nubisa_krzs/Documents/GitHub/jxcore/test/jxcore/assets/test-error-line-column/file1.js:5:9)
 
    */
-  checkFile(path.join(assetDir, "file1.js"), [ "file1.js:5\n", "file1.js:5:9)", "var s = a;  //line 5\n"]);
+  checkFile(path.join(assetDir, "file1.js"), [ "file1.js:5" + os.EOL  , "file1.js:5:9)", "var s = a;  //line 5" + os.EOL]);
 };
