@@ -3,4 +3,6 @@
  */
 
 
+var  s = require("limdu");
+
 console.log(process.threadId, process.argv);
