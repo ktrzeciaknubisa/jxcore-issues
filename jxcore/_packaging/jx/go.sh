@@ -1,14 +1,14 @@
 #!/bin/bash
 
 
-jxv8 package index.js -add package.json -native
+jxv8 package index.js -add "package.json,test,build"
 
 rm -rf copy
 mkdir copy
-mv *.js *.json copy/
+mv *.js *.json test build copy/
 
-#jxv8 index.jx
-./index
+jxv8 index.jx
+#./index
 
 mv copy/* ./
 
