@@ -17,7 +17,7 @@ cordova run (with phone plugged)
 
 > droid1/www/index.html
 
-Whe you do build, or run, it will be copied into:
+When you do build, or run, it will be copied into:
 > droid1/platforms/android/assets/www/index.html
 
 

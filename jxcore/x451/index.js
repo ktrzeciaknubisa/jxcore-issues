@@ -35,7 +35,7 @@ var checkFile = function(filePath, expectedStrings) {
   var batch = jx.saveBatchFile(script.join("\n"));
   var ret_exe = jxcore.utils.cmdSync(batch);
 
-  jx.rmfilesSync(path.join(assetDir, "testFile.*"));
+  jx.rmfilesSync(path.join(assetDir, "testFile*"));
 
   //jxcore.utils.console.log("\nret plain\n", ret_plain.out, "green");
   //jxcore.utils.console.log("\nret jx\n", ret_jx.out, "yellow");

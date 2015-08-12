@@ -1,9 +1,14 @@
 #!/bin/bash
 
-rm -rf hello1
+#rm -rf hello1
 
-cordova create hello1 com.example.hello HelloWorld
-cd hello1
+#cordova create hello1 com.example.hello HelloWorld
+#cd hello1
+
+cordova create shoppingList com.example.hello ShoppingList
+cd shoppingList
+
+
 #git clone https://github.com/obastemur/jxcore-cordova
 cp -rf ~/Documents/GitHub/jxcore-cordova ./
 
@@ -12,7 +17,8 @@ cp -rf ~/Documents/GitHub/jxcore-cordova ./
 #cp -rf ../apps/express_sendfile/www/* ./www/
 #cp -rf ../apps/isReady/www/* ./www/
 #cp -rf ../apps/www_dev/* ./www/
-cp -rf ../apps/www_411/* ./www/
+#cp -rf ../apps/www_411/* ./www/
+cp -rf ../apps/www_org/* ./www/
 
 
 #cordova plugin add https://github.com/jxcore/jxcore-cordova.git
@@ -29,6 +35,7 @@ cp -rf ../apps/www_411/* ./www/
 cordova plugin add jxcore-cordova
 rm -rf ./jxcore-cordova
 cordova platforms add android
+cordova platforms add ios
 
 #export ANDROID_HOME=~/android-sdks/
 #
@@ -37,4 +44,4 @@ cordova platforms add android
 #
 #
 #cordova build
-cordova run android
+#cordova prepare android

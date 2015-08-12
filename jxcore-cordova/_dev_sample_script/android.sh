@@ -37,4 +37,3 @@ cordova run android
 # or run on ios
 #cordova platforms add ios
 #cordova run ios
-

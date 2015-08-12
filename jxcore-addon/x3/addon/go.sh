@@ -9,7 +9,8 @@ if [[ ! -d jxcore-addon ]]; then
 fi
 
 cd ./jxcore-addon/
-rm -rf ~/.jx ~/.node-gyp build
+#rm -rf ~/.jx ~/.node-gyp build
+rm -rf build
 $BIN -e "jxcore.utils.console.info('installing: $BIN install')"
 $BIN install
 
