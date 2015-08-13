@@ -10,7 +10,7 @@ var d1 = "./test";
 var d2 = ".\\test";
 var d3 = path.join("build", "Release");
 var d4 = path.join(".", "build", "Release");
-var d5 = "./" + path.join("build", "Release");
+var d5 = ".\\" + path.join("build", "Release");
 
 console.log("dir exists?", d1, fs.existsSync(d1));
 console.log("dir exists?", d2, fs.existsSync(d2));

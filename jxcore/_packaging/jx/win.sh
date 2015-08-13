@@ -1,11 +1,11 @@
 #!/bin/bash
 
 
-c:/jxcore/jxcore_64v8/Release/jx.exe package index.js -add "package.json,test"
+c:/jxcore/jxcore_64v8/Release/jx.exe package index.js -add "package.json,test,build"
 
 rm -rf copy
 mkdir copy
-mv *.js *.json test copy/
+mv *.js *.json test build copy/
 
 c:/jxcore/jxcore_64v8/Release/jx.exe index.jx
 # ./index
