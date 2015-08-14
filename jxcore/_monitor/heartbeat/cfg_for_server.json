@@ -1,0 +1,18 @@
+{
+  "monitor": {
+    "port": 17779,
+    "log_path": "/root/mon_heartbeat_test/log.log",
+    "users": ["psaadm"],
+    "https1": {
+      "httpsKeyLocation": "/opt/psa/var/modules/jxcore-support/server.key",
+      "httpsCertLocation": "/opt/psa/var/modules/jxcore-support/server.crt"
+    },
+    "remote": {
+      "port": 17778,
+      "https": {
+        "key": "/opt/psa/var/modules/jxcore-support/server.key",
+        "cert": "/opt/psa/var/modules/jxcore-support/server.crt"
+      }
+    }
+  }
+}
