@@ -14,7 +14,7 @@ $BIN -e "jxcore.utils.console.info('Packing', 'clear')"
 #$BIN package test.js -extract true
 #$BIN package test.js -extract
 
-# extract disabled = error
+# extract disabled = error s
 #$BIN package test.js
 #$BIN package test.js -extract 0
 
