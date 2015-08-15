@@ -24,6 +24,7 @@ $BIN -e "jxcore.utils.console.info('Packing', 'clear')"
 # working
 #$BIN package test.js --extract-what "*.node,*.js,*.md" --extract-where "./"
 #$BIN package test.js --extract-what "*.node,*.js,*.md" --extract-app-root
+#$BIN package test.js --extract-what "*.js,*.md" --extract-app-root
 #$BIN package test.js -extract -extract-where "osiem"
 #$BIN package test.js -extract -extract-where "./"
 
@@ -49,8 +50,11 @@ $BIN -e "jxcore.utils.console.info('Packing', 'clear')"
 #$BIN package test.js --extract-what "*.node,*.js,*.md" --extract-where "./" -native
 #$BIN package test.js -extract -extract-where "./" -native
 
+#may fail the app
+#$BIN package test.js --extract-what "*.js,*.md" --extract-where "./" -native
+
 #err expected : Partial extract ...
-#$BIN package test.js -extract-what "*.node,*.json" --extract-where:cwd -native
+$BIN package test.js -extract-what "*.node,*.json" --extract-where:cwd -native
 #$BIN package test.js -extract-what "*.node" -native
 
 
@@ -72,5 +76,8 @@ fi
 if [[ -a ./test ]]; then
     ./test
 fi
+
+$BIN -e "jxcore.utils.console.warn('Dir contents')"
+ls -al ../out
 
 cd ..
