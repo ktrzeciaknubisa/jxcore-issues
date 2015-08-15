@@ -13,19 +13,22 @@ $BIN -e "jxcore.utils.console.info('Packing', 'clear')"
 # extract enabled
 #$BIN package test.js -extract true
 #$BIN package test.js -extract
+#$BIN package test.js -extract something
 
 # extract disabled = error s
 #$BIN package test.js
 #$BIN package test.js -extract 0
+#$BIN package test.js -extract 0 --extract-what "*.txt"
 
 
 # working
 #$BIN package test.js --extract-what "*.node,*.js,*.md" --extract-where "./"
+#$BIN package test.js --extract-what "*.node,*.js,*.md" --extract-app-root
 #$BIN package test.js -extract -extract-where "osiem"
 #$BIN package test.js -extract -extract-where "./"
 
 #err expected : Partial extract ...
-#$BIN package test.js -extract "{ \"what\" : \"*.node,*.json\" }" --extract-where:cwd
+#$BIN package test.js -extract-what "*.node,*.json" --extract-where:cwd
 #$BIN package test.js -extract-what "*.node"
 
 
@@ -47,7 +50,7 @@ $BIN -e "jxcore.utils.console.info('Packing', 'clear')"
 #$BIN package test.js -extract -extract-where "./" -native
 
 #err expected : Partial extract ...
-#$BIN package test.js -extract "{ \"what\" : \"*.node,*.json\" }" --extract-where:cwd -native
+#$BIN package test.js -extract-what "*.node,*.json" --extract-where:cwd -native
 #$BIN package test.js -extract-what "*.node" -native
 
 
