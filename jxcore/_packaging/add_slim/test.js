@@ -10,8 +10,9 @@ var s = path.normalize(s);
 
 var test = function(file, part) {
   //var r = new RegExp('^' + "[.*\\|.*/]" + part + "[\\.*|/.*]" + '$');
-  var r = new RegExp('^' + "(.*/)?" + part + "(/.*)?" + '$');
-  //var r = new RegExp('^' + "(.*\\\\)?" + part + "(\\\\.*)?" + '$');
+  //var r = new RegExp('^' + "(.*/)?" + part + "(/.*)?" + '$');
+  var r = new RegExp('^' + "(.*\\\\)?" + part + "(\\\\.*)?" + '$');
+  //var r = new RegExp('^' + "(.*\\)?" + part + "(\\.*)?" + '$');
   //var r = new RegExp('^' + "[(.*\\)|(.*/)]?" + part + "[(\\.*)|(/.*)]?" + '$');
   var ok = r.test(file);
   if (ok)

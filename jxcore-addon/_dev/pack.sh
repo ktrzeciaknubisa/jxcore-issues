@@ -24,9 +24,11 @@ $BIN -e "jxcore.utils.console.info('Packing', 'clear')"
 # working
 #$BIN package test.js --extract-what "*.node,*.js,*.md" --extract-where "./"
 #$BIN package test.js --extract-what "*.node,*.js,*.md" --extract-app-root
-#$BIN package test.js --extract-what "*.js,*.md" --extract-app-root
 #$BIN package test.js -extract -extract-where "osiem"
 #$BIN package test.js -extract -extract-where "./"
+
+# may fail the app
+#$BIN package test.js --extract-what "*.js,*.md" --extract-app-root
 
 #err expected : Partial extract ...
 #$BIN package test.js -extract-what "*.node,*.json" --extract-where:cwd
@@ -46,11 +48,11 @@ $BIN -e "jxcore.utils.console.info('Packing', 'clear')"
 #$BIN package test.js -extract 0 -native
 
 
-# working
+# working (unix)
 #$BIN package test.js --extract-what "*.node,*.js,*.md" --extract-where "./" -native
 #$BIN package test.js -extract -extract-where "./" -native
 
-#may fail the app
+# may fail the app
 #$BIN package test.js --extract-what "*.js,*.md" --extract-where "./" -native
 
 #err expected : Partial extract ...
