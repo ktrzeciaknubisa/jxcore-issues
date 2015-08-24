@@ -25,12 +25,11 @@ mv test.jx out/
 cd out
 
 echo "\n\n\n############################ without NODE_PATH:"
+export NODE_PATH=
 jx test.jx
 
 echo "\n\n\n############################ with NODE_PATH:"
 export NODE_PATH=lib/node_modules
 jx test.jx
-
-export NODE_PATH=
 
 cd ../
