@@ -2,7 +2,8 @@
 
 # pack
 START_TIME=$SECONDS
-jxv8 package test.js -add "node_modules" -native --show-progress percent -extract-what "*.node" --extract-app-root
+jxsm package test.js -add "node_modules" -native --show-progress percent
+#-extract-what "*.node" --extract-app-root --extract-verbose
 ELAPSED_TIME=$(($SECONDS - $START_TIME))
 
 echo "elapsed $ELAPSED_TIME seconds"
