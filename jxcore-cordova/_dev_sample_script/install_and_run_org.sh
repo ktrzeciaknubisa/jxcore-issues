@@ -9,32 +9,12 @@
 cordova create hello com.example.hello HelloWorld
 cd hello
 
-# get small downloader tool
-jx install git+https://github.com/ktrzeciaknubisa/get-file
-
 # get plugin
-#jx node_modules/get-file/cli.js jxcore/jxcore-cordova-release 0.0.4/io.jxcore.node.jx
-
-# downloader tool not needed any more
-rm -rf ./node_modules
-
-# tmp dev
-cp /Users/nubisa_krzs/Documents/GitHub/jxcore-cordova-release/tmp/io.jxcore.node.jx ./
-
-# unpack plugin
-jx io.jxcore.node.jx
+git clone https://github.com/jxcore/jxcore-cordova
 
 # replace original sample if given
 if [[ "$1" != "" ]]; then
-    DIR="./io.jxcore.node/sample/$1/www"
-
-    if [[ -e $DIR/jxcore/package.json ]]; then
-        # installing node modules if sample needs it
-        cd $DIR/jxcore/
-        jx install --autoremove ".*,*.md,*.MD"
-        cd ../../../../../
-    fi
-
+    DIR="./jxcore-cordova/sample/$1/www"
     if [[ -d $DIR ]]; then
         # escaping spaces in sample folder names
         DIR=$(printf %q "$DIR")
@@ -47,12 +27,12 @@ if [[ "$1" != "" ]]; then
 fi
 
 # add plugin to the project
-cordova plugins add io.jxcore.node
+cordova plugin add jxcore-cordova
 
 # run on android
-#cordova platforms add android
-#cordova run android
+cordova platforms add android
+cordova run android
 
 # or run on ios
-cordova platforms add ios
-cordova run ios
+#cordova platforms add ios
+#cordova run ios

@@ -11,12 +11,29 @@
 //});
 
 
+var cmd = 'package child.js --website "some website"';
+//var cmd = 'monitor stop';
+var cmd = 'child.jx readme';
+//var cmd = 'blank.js';
+//var cmd = 'stream.js';
 
-require('child_process').exec('"' + process.execPath + '" package child.js -add', function(err, stdout, stderr) {
-  console.log("closed");
+
+var cmd = '"' + process.execPath + '" ' + cmd;
+require('child_process').exec(cmd, function(err, stdout, stderr) {
+  console.log("exec");
   console.log(stdout);
-  process.exit();
 });
 
-//var ret = jxcore.utils.cmdSync('"' + process.execPath + '" ./child.jx');
-//console.log(ret.out);
+console.time("child");
+var ret = jxcore.utils.cmdSync(cmd);
+console.timeEnd("child");
+
+console.log("cmdSync");
+console.log(ret.out);
+
+
+
+//var cmd =  '"' + process.execPath + '" package child.js';
+//require('child_process').exec(cmd, function(err, stdout, stderr) {
+//  console.log(stdout);
+//});
