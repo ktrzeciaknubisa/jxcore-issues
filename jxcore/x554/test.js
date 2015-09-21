@@ -4,7 +4,8 @@ var cp = require("child_process");
 
 var spawn = function() {
   var child = cp.spawn(process.execPath, [ __dirname +  "/child.js"]);
-  child.on('close', function() {
+  child.on('close', function(code) {
+    console.log("child closed with code", code);
     jxcore.utils.continue();
   });
   jxcore.utils.jump();
@@ -13,9 +14,9 @@ var spawn = function() {
 var exec = function() {
   var child = cp.exec(process.execPath + " " + __dirname +  "/child.js", function(err, stdout, stderr) {
     console.log("exec finished");
-    //console.log("err", err);
-    //console.log("stdout", stdout);
-    //console.log("stderr", stderr);
+    console.log("err", err);
+    console.log("stdout", stdout);
+    console.log("stderr", stderr);
   });
   jxcore.utils.jump();
 };
