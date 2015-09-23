@@ -24,11 +24,11 @@ cp /Users/nubisa_krzs/Documents/GitHub/jxcore-cordova-release/0.0.5/io.jxcore.no
 # unpack plugin
 jx io.jxcore.node.jx
 
-# xxx
-cp -r ../scripts ./io.jxcore.node/
-cp ../plugin.xml ./io.jxcore.node/
-
+## xxx
+#cp -r ../scripts ./io.jxcore.node/
+#cp ../plugin.xml ./io.jxcore.node/
 #
+##
 
 
 # replace original sample if given
@@ -62,4 +62,4 @@ cordova plugins add io.jxcore.node
 
 # or run on ios
 cordova platforms add ios
-cordova run ios --device
+cordova run ios
