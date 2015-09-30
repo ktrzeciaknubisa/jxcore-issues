@@ -1,5 +1,8 @@
 // Copyright & License details are available under JXCORE_LICENSE file
 
+process.exit(2);
+return;
+
 var cp = require("child_process");
 
 var child = cp.spawn(process.execPath, [ __dirname +  "/child.js"]);

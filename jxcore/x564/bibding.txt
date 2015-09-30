@@ -1,0 +1,10 @@
+
+"C:/jxcore/jxcore_64v8/deps/v8/include",
+"C:/jxcore/jxcore_64v8/src/wrappers",
+"C:/jxcore/jxcore_64v8/deps/cares/include",
+"C:/jxcore/jxcore_64v8/deps/http_parser"
+
+
+    "defines": [
+      "JS_ENGINE_V8"
+    ],
