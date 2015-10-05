@@ -9,16 +9,19 @@ call cordova create hello com.example.hello HelloWorld
 cd hello
 
 @rem get small downloader tool
-jx install git+https://github.com/ktrzeciaknubisa/get-file
+@rem jx install git+https://github.com/ktrzeciaknubisa/get-file
 
 @rem get plugin
-jx node_modules/get-file/cli.js jxcore/jxcore-cordova-release 0.0.5/io.jxcore.node.jx
+@rem jx node_modules/get-file/cli.js jxcore/jxcore-cordova-release 0.0.5/io.jxcore.node.jx
+
+cp Z:/Shared_folder/io.jxcore.node.jx ./
 
 @rem downloader tool not needed any more
-rm -rf ./node_modules
+@rem rm -rf ./node_modules
 
 @rem unpack plugin
-@rem c:\jxcore\jxcore_64v8\Release\jx.exe io.jxcore.node.jx
+c:\jxcore\jxcore_64v8\Release\jx.exe io.jxcore.node.jx
+
 
 goto:eof
 
@@ -33,7 +36,7 @@ IF [%1] NEQ [] (
 goto:FINISH
 
 :SAMPLE_DOES_NOT_EXIST
-echo Incorrect sample folder 'jxcore-cordova\sample\%~1\www'.
+echo Incorrect sample folder 'io.jxcore.node\sample\%~1\www'.
 set /p answer= Continue with default sample? [y/n]
 IF /I %answer%== y (
 	goto:FINISH

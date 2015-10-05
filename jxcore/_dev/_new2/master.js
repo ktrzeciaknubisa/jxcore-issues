@@ -10,4 +10,4 @@ child.on('close', function(code) {
   process.exit(code);
 });
 
-jxcore.utils.jump();
+//jxcore.utils.jump();
