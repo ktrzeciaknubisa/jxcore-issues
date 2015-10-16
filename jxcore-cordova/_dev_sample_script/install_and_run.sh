@@ -10,16 +10,16 @@ cordova create hello com.example.hello HelloWorld
 cd hello
 
 # get small downloader tool
-#jx install git+https://github.com/ktrzeciaknubisa/get-file
+jx install git+https://github.com/ktrzeciaknubisa/get-file
 
 # get plugin
-#jx node_modules/get-file/cli.js jxcore/jxcore-cordova-release 0.0.5/io.jxcore.node.jx
+jx node_modules/get-file/cli.js jxcore/jxcore-cordova-release 0.0.5/io.jxcore.node.jx
 
 # downloader tool not needed any more
 rm -rf ./node_modules
 
 # tmp dev
-cp /Users/nubisa_krzs/Documents/GitHub/jxcore-cordova-release/0.0.5/io.jxcore.node.jx ./
+#cp /Users/nubisa_krzs/Documents/GitHub/jxcore-cordova-release/0.0.5/io.jxcore.node.jx ./
 
 # unpack plugin
 jx io.jxcore.node.jx

@@ -19,7 +19,9 @@ var displayed = 0;
 
 server.addJSMethod("server_method", function (env, params) {
   cnt++;
-  server.sendCallBack(env, "ok");
+  for (var m = 0; m < 10000; m++) {
+    server.sendToAll("client_method");
+  }
 });
 
 server.start();

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JXM.io Hello World example.</title>
+    <!-- This is useful, if you want to test the backend on mobile devices -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1;maximum-scale=1.0; user-scalable=0;"/>
+
+    <script src="/helloworld/jx?ms=connect" type="text/javascript"></script>
+</head>
+<body style="font-family: Tahoma, Geneva, sans-serif; font-size: 7pt;">
+
+<div id="msg_mode">sss</div>
+
+<div id="msg"/>
+
+<script type="text/javascript">
+
+    var started = Date.now();
+    var sent = false;
+
+    window.addText = function (s) {
+        document.getElementById('msg').innerHTML += s + "<br>";
+    };
+
+    addText("script ready");
+
+    document.onjxready = function () {
+
+        addText("document ready");
+        var jxcore = window.jxm || window.jxcore;
+
+        var debug = function () {
+            if (jxcore.getCurrentConnectionMode)
+                document.getElementById('msg_mode').innerHTML = "mode = " + jxcore.getCurrentConnectionMode() + ", id = " + jxcore.GetClientId();
+
+        };
+
+        jxcore.Start(function (status) {
+
+            addText("jxmready");
+
+            if (!sent) {
+
+                addText("OSIEM");
+                jxcore.getCurrentConnectionMode = function () {
+                    var extra = ". UA = " + navigator.userAgent;
+                    var props = ["ffVersion", "ieVersion", "Chunked", "CMode", "isIE", "isChrome", "isSafari", "isOpera", "isAndroid", "SocketDisabled", "ListenHost", "ListenUrl", "ListenProtocol", "SocketURL", "hasWebsocket", "AndroidVersion"];
+
+                    for (var a = 0, len = props.length; a < len; a++) {
+                        extra += ", " + props[a] + ": " + jxcore[props[a]] + "<br>";
+                    }
+
+                    var _this = jxcore.currentConnectionMode;
+                    var ssl = "";
+                    if (jxcore.SocketURL) {
+                        ssl = (jxcore.SocketURL.slice(0, 3) == "wss") ? " - SSL" : " - NO SSL";
+                    }
+                    if (_this.socket && _this.ajax) {
+                        return "Connection mode: " + _this.ajax + ". Failed from socket: " + _this.socket + ssl + extra;
+                    }
+                    if (_this.ajax) {
+                        return "Connection mode: " + _this.ajax + extra;
+                    }
+                    if (_this.socket) {
+                        return "Connection mode: " + _this.socket + ssl + extra;
+                    }
+                    return "Unknown connection mode" + extra;
+                };
+
+
+                window.clientMethod = function (obj) {
+                    addText('Server received: ' + obj + " after " + ( Date.now() - started ) + " ms");
+                };
+
+                setInterval(debug, 1000);
+
+                for (var m = 0; m < 2500; m++) {
+//                    try {
+                        jxcore.Call('serverMethod', null);
+//                    } catch (ex) {
+//                        addText(ex);
+//                    }
+                }
+                addText('all sent!');
+                sent = true;
+            }
+
+        });
+
+        jxcore.OnClose = function (reconnecting) {
+            addText('<font color="red">' + "Disconnected " + (reconnecting ? "" : "NOT ") + "Reconnecting." + '</font>');
+        };
+
+        jxcore.OnError = function (err) {
+            addText("Err: " + err);
+        }
+    };
+</script>
+</body>
+</html>
