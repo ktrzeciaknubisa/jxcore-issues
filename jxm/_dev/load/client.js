@@ -17,6 +17,8 @@ var counters = {
   call_sent : 0
 };
 
+
+var clients = [];
 var clients_count = 10;
 var message_count = 500;
 // each client should receive messages from each other client
@@ -25,6 +27,12 @@ var expected_count = clients_count * clients_count * message_count;
 
 
 process.on('exit', function () {
+
+    console.log('exitting', clients.length);
+    for(var o in clients) {
+        console.log("dump", id, clients[o].iddd)
+        console.log(clients[o]._obj.RequestList)
+    }
   //console.trace('exit');
   assert.strictEqual(counters.connected, clients_count, "Not all of the clients was able to connect.");
   assert.strictEqual(counters.group_sent, message_count * clients_count, "Not all of the clients was able to send in group.");
@@ -51,6 +59,7 @@ for (var id = 0; id < clients_count; id++) {
 
   var client = server.createClient(customMethods, common.appName, common.appKey, common.ipAddress, common.httpServerPort, false);
   client.iddd = id;
+  clients.push(client);
 
   client.on("connect", function (client) {
     counters.connected++;
@@ -76,7 +85,6 @@ for (var id = 0; id < clients_count; id++) {
   });
 
   client.Connect();
-
 }
 
 
@@ -88,4 +96,3 @@ setInterval(function() {
     process.exit();
   }
 }, 1000);
-
