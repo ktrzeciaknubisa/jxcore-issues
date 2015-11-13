@@ -9,36 +9,34 @@ call cordova create hello com.example.hello HelloWorld
 cd hello
 
 @rem get small downloader tool
-jx install git+https://github.com/ktrzeciaknubisa/get-file
+jx install download-cli
 
 @rem get plugin
-jx node_modules/get-file/cli.js jxcore/jxcore-cordova-release 0.0.5/io.jxcore.node.jx
+jx node_modules/download-cli/cli.js http://jxcordova.cloudapp.net/0.0.8/io.jxcore.node.jx
 
 @rem downloader tool not needed any more
 rm -rf ./node_modules
 
 @rem unpack plugin
-@rem c:\jxcore\jxcore_64v8\Release\jx.exe io.jxcore.node.jx
-
-goto:eof
+jx io.jxcore.node.jx
 
 @rem replace original sample if given
 IF [%1] NEQ [] (
-    IF EXIST "io.jxcore.node\sample\%~1\www" (
-		goto:SAMPLE_EXISTS
-    ) else (
-		goto:SAMPLE_DOES_NOT_EXIST
-    )
+  IF EXIST "io.jxcore.node\sample\%~1\www" (
+    goto:SAMPLE_EXISTS
+  ) else (
+    goto:SAMPLE_DOES_NOT_EXIST
+  )
 )
 goto:FINISH
 
 :SAMPLE_DOES_NOT_EXIST
-echo Incorrect sample folder 'jxcore-cordova\sample\%~1\www'.
+echo Incorrect sample folder 'io.jxcore.node\sample\%~1\www'.
 set /p answer= Continue with default sample? [y/n]
 IF /I %answer%== y (
-	goto:FINISH
+  goto:FINISH
 ) else (
-	goto:EXIT_NOW
+  goto:EXIT_NOW
 )
 goto:EXIT_NOW
 
@@ -53,11 +51,11 @@ goto:EXIT_NOW
 
 xcopy /I /Q /Y /R /E "io.jxcore.node\sample\%~1\www\*.*" "www\"
 IF %ERRORLEVEL% == 0 (
-	echo Copied 'io.jxcore.node\sample\%~1\www' sample successfully.
-	goto:FINISH
+  echo Copied 'io.jxcore.node\sample\%~1\www' sample successfully.
+  goto:FINISH
 ) else (
-	echo Could not copy 'io.jxcore.node\sample\%~1\www'
-	goto:EXIT_NOW
+  echo Could not copy 'io.jxcore.node\sample\%~1\www'
+  goto:EXIT_NOW
 )
 
 :FINISH

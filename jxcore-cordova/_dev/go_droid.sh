@@ -10,7 +10,8 @@ cd hello1
 
 
 #git clone https://github.com/obastemur/jxcore-cordova
-cp -rf ~/Documents/GitHub/jxcore-cordova ./
+#cp -rf ~/Documents/GitHub/jxcore-cordova ./
+cp -rf ~/Documents/GitHub/jxcore-cordova-release/tmp/io.jxcore.node ./
 
 cp -rf ../apps/include_jx/www/* ./www/
 #cp -rf ../apps/colorpicker/www/* ./www/
@@ -23,16 +24,15 @@ cp -rf ../apps/include_jx/www/* ./www/
 
 #cordova plugin add https://github.com/jxcore/jxcore-cordova.git
 
-#rm -rf jxcore-cordova/io.jxcore.node/bin
-#rm -f jxcore-cordova/io.jxcore.node/src/android/jxcore-binaries/*
-#cp -f /Users/nubisa_krzs/Documents/GitHub/jxcore/_android_sm/android/bin/* jxcore-cordova/src/android/jxcore-binaries/
-
-#cd jxcore-cordova/src/android/jni
+#rm -rf io.jxcore.node/bin
+#rm -rf io.jxcore.node/src/android/libs/*
+#cp -f /Users/nubisa_krzs/Documents/GitHub/jxcore/_android_sm/android/bin/* io.jxcore.node/bin/
+#cd io.jxcore.node/src/android/jni
 #~/android-ndk-r10d/ndk-build
 #cd ../../../../
 
 #cordova plugin add jxcore-cordova/io.jxcore.node/  # old
-cordova plugin add jxcore-cordova
+cordova plugin add io.jxcore.node
 rm -rf ./jxcore-cordova
 cordova platforms add android
 #cordova platforms add ios

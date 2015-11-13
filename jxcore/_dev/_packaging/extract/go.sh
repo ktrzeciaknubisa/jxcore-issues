@@ -10,8 +10,8 @@ BIN=jxv8
 
 #jxsm package test.js --extract-what "*.txt" --extract-pre-actions "mkdir -p testfolder, JX_BINARY -jxv" --extract-app-root --extract-verbose
 #jx package test.js --extract-pre-actions "mkdir -p testfolder, JX_BINARY -jxv" --extract-verbose
-$BIN package test.js --extract-what "./src" --extract-verbose --show-progress percent --extract-app-root
-#jxsm package test.js -add "assets" -slim "src,*.txt,assets/assets1,ping.*"
+#$BIN package test.js --extract-what "./src" --extract-verbose --show-progress percent --extract-app-root
+jxsm package test.js -add "assets" -slim "src,*.txt,assets/assets1,ping.*" --extract
 
 #jxsm compile test.jxp
 

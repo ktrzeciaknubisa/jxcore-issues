@@ -1,11 +1,11 @@
 #!/bin/bash
 
 START_TIME=$SECONDS
-cd jxcore-cordova
-#jxsm package index.js -slim tmpbuf -add "./index.js,./package.json,*.sh,LICENCE,*.md,*.png" $1 --show-progress percent --extract
+cd io.jxcore.node
+#jxsm package index.js -slim tmpbuf -add "./index.js,./package.json,*.sh,LICENCE,*.md,*.png,*.bat" $1 --show-progress percent --extract
 #jxsm package index.js -slim tmpbuf -add "./index.js,./package.json,*.sh,LICENCE,*.md,*.png" $1 --show-progress percent --extract1 --extract-app-root1 -native
 #jxsm package index.js -slim tmpbuf -add "./index.js" $1 --show-progress percent  -native
-jxsm package index.js -slim tmpbuf $1 --show-progress percent -extract1
+jxsm package index.js -slim "tmpbuf" $1 --show-progress percent -extract1
 
 rm -rf ../index
 
