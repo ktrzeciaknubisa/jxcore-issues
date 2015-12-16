@@ -1,0 +1,595 @@
+[
+    {
+        "http_parser": "1.0",
+        "node": "0.10.38",
+        "jxcore": "Beta-0.3.0.0",
+        "v8": "3.14.5.9",
+        "sm": "34",
+        "ares": "1.9.0-DEV",
+        "uv": "0.10.36",
+        "zlib": "1.2.3",
+        "sqlite": "3.8.4.3",
+        "modules": "11",
+        "openssl": "1.0.1m",
+        "source": {
+            "zip": "https://github.com/jxcore/jxcore/archive/v0.3.0.zip",
+            "tar": "https://github.com/jxcore/jxcore/archive/v0.3.0.tar.gz"
+        },
+        "dist": {
+            "Android": {
+                "file": "jx_androidARMv8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0300/jx_androidARMv8.zip",
+                "engine": "v8",
+                "arch": "ARM",
+                "sha256": "38b7c97705c737b5f851e65509ea95b0a67e2154f035f9fc6e1a3ffb60c3375b",
+                "sha1": "b7d815e48305683b84b407ea9ef77b2d78092dfa"
+            },
+            "Debian": {
+                "file": "jx_debMIPSv8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0300/jx_debMIPSv8.zip",
+                "engine": "v8",
+                "arch": "MIPS",
+                "sha256": "f8fc94df341601f8e02f13a8a06bfc322c1fe11fa02e79a13d735d805ec39a18",
+                "sha1": "fddca1f8ec9c8f513a233f5133e019981e7389f9"
+            },
+            "OSX INTEL": {
+                "file": "jx_osx64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0300/jx_osx64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "ab9f44ad9dae9742a74fbdbba7140af8cb9b4159f579881c2f37eeb7039f0323",
+                "sha1": "c7ef00747cbbdb4e5d14a2e866719b16264c45ac"
+            },
+            "RH/Centos/Fedora": {
+                "file": "jx_rh64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0300/jx_rh64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "66b2a58a4ca1cf3ec0b1161e64df430899ecc7dcfb7ebd4430ae741df1959b58",
+                "sha1": "2d89a87c96e2aed19c713a7ff09fd1aea6e33f06"
+            },
+            "Suse": {
+                "file": "jx_suse64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0300/jx_suse64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "ce7a7ca9db3b51500fdfa6b940e575f8d93f41f43774679c23c6436c922a6e9c",
+                "sha1": "9062dd50c55a5e043c94bdd6445b662587a89e46"
+            },
+            "Ubuntu/Mint": {
+                "file": "jx_ub64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0300/jx_ub64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "02ddb8b7fd41714927ef292c1362ca36d14afa9f04d2cc79d31e1925fc2ad6c2",
+                "sha1": "f93c26717a9b411e0260a29910c9aab965b67465"
+            },
+            "Windows": {
+                "file": "jx_winsetup.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0300/jx_winsetup.zip",
+                "sha256": "e51c053d9580a6ea6ec61e79cefa46e511d9701309e7a3e94af99e7482bc2aff",
+                "sha1": "9b496fd20ddbb4616188a4139bc8acb757aa4f5b"
+            }
+        }
+    },
+    {
+        "http_parser": "1.0",
+        "node": "0.10.38",
+        "jxcore": "Beta-0.3.0.2",
+        "v8": "3.14.5.9",
+        "sm": "34",
+        "ares": "1.9.0-DEV",
+        "uv": "0.10.36",
+        "zlib": "1.2.3",
+        "sqlite": "3.8.4.3",
+        "modules": "11",
+        "openssl": "1.0.1m",
+        "source": {
+            "zip": "https://github.com/jxcore/jxcore/archive/v0.3.0.2.zip",
+            "tar": "https://github.com/jxcore/jxcore/archive/v0.3.0.2.tar.gz"
+        },
+        "dist": {
+            "Android": {
+                "file": "jx_androidARMv8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0302/jx_androidARMv8.zip",
+                "engine": "v8",
+                "arch": "ARM",
+                "sha256": "cd361bbea5323ccb56d0d3d143d055f7bb2354d3e80c40455f2fcdc01c1f39c8",
+                "sha1": "7a681e21088aa64eaeb40c11ae2b9a6f9ced680f"
+            },
+            "FreeBSD": {
+                "file": "jx_bsd1064v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0302/jx_bsd1064v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "194accf65cead5c854b04ce9cdd3f630eeec2b12ebec8d1ebaa1222eed3c8d72",
+                "sha1": "741894441703accbe9d6a597377673243386d89e"
+            },
+            "Debian": {
+                "file": "jx_debMIPSv8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0302/jx_debMIPSv8.zip",
+                "engine": "v8",
+                "arch": "MIPS",
+                "sha256": "f4fde5e59f201eb74dff13dd5175a39353996163f05f9cd186ca65bdb2ae04cd",
+                "sha1": "d201d655415c3cc47833ad42dbe66c831d9521e3"
+            },
+            "OSX INTEL": {
+                "file": "jx_osx64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0302/jx_osx64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "9d8c3e6db5c9dd3759b4fad6fb8fb95fb64a1f4f53ddd460b30cbafa9c433db8",
+                "sha1": "ade7683c30cc6470710bb6bad172a10edd674fce"
+            },
+            "RH/Centos/Fedora": {
+                "file": "jx_rh64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0302/jx_rh64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "5e13095cf6b52b699b055a7696ba1ccfed83aa1255b962d98afe0b0ccd18a8ee",
+                "sha1": "fc54c5692d3341428919fe68f3178f5c06bfa36f"
+            },
+            "Suse": {
+                "file": "jx_suse64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0302/jx_suse64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "12098decaf41c25f40d42309b8e453b6c790ae6960ef9f25acafeea4063d9ecb",
+                "sha1": "f520b603f882859088f57d2b2567accd56d1376e"
+            },
+            "Ubuntu/Mint": {
+                "file": "jx_ub64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0302/jx_ub64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "c87fb4a92ae193009e646d851c89178291374a0e41f83a75bdb4ed48e129474f",
+                "sha1": "1dc903b2526260309a5c5af5e9a55d5d2ac4a4a2"
+            },
+            "Windows": {
+                "file": "jx_winsetup.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0302/jx_winsetup.zip",
+                "sha256": "ff57c30f5268d88caf186ec57d06248395edef6e4eda7ae98f16c4d2ee3857df",
+                "sha1": "1583c212de75e00470de0c939e220bd4f00835e3"
+            }
+        }
+    },
+    {
+        "http_parser": "1.0",
+        "node": "0.10.38",
+        "jxcore": "Beta-0.3.0.3",
+        "v8": "3.14.5.9",
+        "sm": "34",
+        "embedded": {
+            "sqlite": "3.8.4.3"
+        },
+        "ares": "1.9.0-DEV",
+        "uv": "0.10.36",
+        "zlib": "1.2.3",
+        "modules": "11",
+        "openssl": "1.0.1m",
+        "source": {
+            "zip": "https://github.com/jxcore/jxcore/archive/v0.3.0.3.zip",
+            "tar": "https://github.com/jxcore/jxcore/archive/v0.3.0.3.tar.gz"
+        },
+        "dist": {
+            "Android": {
+                "file": "jx_androidARMv8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0303/jx_androidARMv8.zip",
+                "engine": "v8",
+                "arch": "ARM",
+                "sha256": "4790f111b34886a6e1c9e7623096ff048ad8c0a1f5f450abd18931b351f95a02",
+                "sha1": "e60b5538ebdd686a9c8a7f433cebce9469ea95e7"
+            },
+            "FreeBSD": {
+                "file": "jx_bsd1064v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0303/jx_bsd1064v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "90af42fc8dde2cd786c5f6b45ff64af7450e3f636d1462cd749b53a4cc60ab7d",
+                "sha1": "55e9f6dcbbd60f1a0382016949cadfc4b2c8c4f1"
+            },
+            "Debian": {
+                "file": "jx_debMIPSv8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0303/jx_debMIPSv8.zip",
+                "engine": "v8",
+                "arch": "MIPS",
+                "sha256": "9a5686cf1834bae32be843e4801b81bfe7ec4a13f7b021c8f2d1bc1846eeba91",
+                "sha1": "202a7ff8acec27f5e2df47d4a93c704206e63c5e"
+            },
+            "OSX INTEL": {
+                "file": "jx_osx64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0303/jx_osx64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "122ffe5086e72e2adf447b6c9852c2ead54a430dcf75603edf079f5b4b974faf",
+                "sha1": "6d5987ae5c90517c7894a33bf54f98bd0702887c"
+            },
+            "RH/Centos/Fedora": {
+                "file": "jx_rh64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0303/jx_rh64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "2b6fea23159be6dec039f9acc4672041b02333245d7944b74325ca36530d187b",
+                "sha1": "5b1b57c0a3822ccf3c6f5bad023717c59f3ed3ac"
+            },
+            "Suse": {
+                "file": "jx_suse64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0303/jx_suse64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "80f3ab32b63ff4c6b6a8f86eed11865bf8414bbd6e0ab94ca8679aa16db38b16",
+                "sha1": "299d4b86584f007a78fe8fe6dad4c01a603179a9"
+            },
+            "Ubuntu/Mint": {
+                "file": "jx_ub64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0303/jx_ub64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "257d484f2e563984b6104a3fdb4cf99e7b01bb77a289a0ade045f1e998ec584c",
+                "sha1": "4c7479a5ebcd838aecc1d2917d74cf8a8873e5ba"
+            },
+            "Windows": {
+                "file": "jx_winsetup.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0303/jx_winsetup.zip",
+                "sha256": "755a2a03fe963349abc63e5046c821ded74d4ef4fbf00682846916fdf1901e49",
+                "sha1": "16c51f4677eacc8259ff4fc0d4d6ac49684c4235"
+            }
+        }
+    },
+    {
+        "http_parser": "1.0",
+        "node": "0.10.40",
+        "jxcore": "Beta-0.3.0.4",
+        "v8": "3.14.5.9",
+        "sm": "34",
+        "embedded": {
+            "sqlite": "3.8.4.3"
+        },
+        "ares": "1.9.0-DEV",
+        "uv": "0.10.36",
+        "zlib": "1.2.3",
+        "modules": "11",
+        "openssl": "1.0.1p",
+        "source": {
+            "zip": "https://github.com/jxcore/jxcore/archive/v0.3.0.4.zip",
+            "tar": "https://github.com/jxcore/jxcore/archive/v0.3.0.4.tar.gz"
+        },
+        "dist": {
+            "Android": {
+                "file": "jx_androidFATv8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0304/jx_androidFATv8.zip",
+                "engine": "v8",
+                "sha256": "683fd721bc3c926aa81c51d3265a23b08181fa72aa7022b253b41740dfe38f97",
+                "sha1": "6ff6429c381db6716fe547130ae4197611db8684"
+            },
+            "FreeBSD": {
+                "file": "jx_bsd1064v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0304/jx_bsd1064v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "68ca3b43c7e755ec319320b93792fe527097f69f11de1d4966af83d0110e0b96",
+                "sha1": "7537051343c179d3f1da1eb976bee9fd5595cd23"
+            },
+            "Debian": {
+                "file": "jx_debMIPSv8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0304/jx_debMIPSv8.zip",
+                "engine": "v8",
+                "arch": "MIPS",
+                "sha256": "0a1239b34a68fb6e125959a0934b3cfc4104014c871f2bbba53acdac37d03964",
+                "sha1": "fb9d2936eb88a2c591c5e2c2a4098348f2d84c9d"
+            },
+            "OSX INTEL": {
+                "file": "jx_osx64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0304/jx_osx64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "b94c8577f1c3916a17644f5380237c04bf13a926977ebd2afe65f144295261e5",
+                "sha1": "9b04a9d30c823fec3eafe2d2a6897e62e44d59a9"
+            },
+            "iOS": {
+                "file": "jx_iosFATsm.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0304/jx_iosFATsm.zip",
+                "engine": "sm",
+                "sha256": "aaec30f59db17e01075d5557d6737c251cd13f8943d0a7e405fd75a0d9452040",
+                "sha1": "88c915e14bd11651bbea3766ae3eec873b02a55a"
+            },
+            "RH/Centos/Fedora": {
+                "file": "jx_rh64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0304/jx_rh64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "2657b161e02e7e993d91c26b2f389adf886801293b9f478033d6d0ba05e5896d",
+                "sha1": "552d503aff9542d915bdd22029c2bf46994c3bd2"
+            },
+            "Suse": {
+                "file": "jx_suse64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0304/jx_suse64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "0f368cb1ee679482fd333d6f7b41faa7b6995c2c8bf4766ae0c9c52d010b63c1",
+                "sha1": "76823a345a1e6c80ba95c5cc9aa2cff235e7a479"
+            },
+            "Ubuntu/Mint": {
+                "file": "jx_ub64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0304/jx_ub64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "8a268aa4a6128d214abdfec88c5a636c8ccdffa90f42a038dfb75f87493bb81e",
+                "sha1": "f702b13436c23e1da96497d4c6b6b9d13ef90446"
+            },
+            "Windows": {
+                "file": "jx_winsetup.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0304/jx_winsetup.zip",
+                "sha256": "606b4db72787e4658ec963e80100c5d5ca6ec8c87cfc694ad37d5197d28f412a",
+                "sha1": "58d42dfafc32d42a5609df1fe35c00d531c1f58e"
+            }
+        }
+    },
+    {
+        "http_parser": "1.0",
+        "node": "0.10.40",
+        "jxcore": "Beta-0.3.0.5",
+        "v8": "3.14.5.9",
+        "sm": "34",
+        "embedded": {
+            "sqlite": "3.8.4.3"
+        },
+        "ares": "1.9.0-DEV",
+        "uv": "0.10.36",
+        "zlib": "1.2.3",
+        "modules": "11",
+        "openssl": "1.0.1p",
+        "source": {
+            "zip": "https://github.com/jxcore/jxcore/archive/v0.3.0.5.zip",
+            "tar": "https://github.com/jxcore/jxcore/archive/v0.3.0.5.tar.gz"
+        },
+        "dist": {
+            "Android": {
+                "file": "jx_androidFATv8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0305/jx_androidFATv8.zip",
+                "engine": "v8",
+                "sha256": "39c1283ee3a6de392f3ca3bb80d132e2063084c1f3e5b456b97ac2c178629925",
+                "sha1": "5f15ffe34acd9af816ce71c13d4176b03f24bd7f"
+            },
+            "FreeBSD": {
+                "file": "jx_bsd1064v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0305/jx_bsd1064v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "b6acd152291a7c95e8603bf795181d8978b638eee279e09296f6a5b8ce6386dd",
+                "sha1": "e882453f550c7ef61fe7139495f38cafde7f90bd"
+            },
+            "Debian": {
+                "file": "jx_debMIPSv8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0305/jx_debMIPSv8.zip",
+                "engine": "v8",
+                "arch": "MIPS",
+                "sha256": "22b93299635e43143a1d39f75ed8d5af9292ab52040da964d5ff9e465c67146f",
+                "sha1": "f399995d171876a7482aec16cbb24ace6973ab5d"
+            },
+            "OSX INTEL": {
+                "file": "jx_osx64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0305/jx_osx64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "83094ec594cdaae1e94f4dcd5d81018c056902ae2134cd727e7b448899b9ae92",
+                "sha1": "bc9c2ee58b3172d5d23f2e7dbd65e72af81d82e2"
+            },
+            "iOS": {
+                "file": "jx_iosFATsm.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0305/jx_iosFATsm.zip",
+                "engine": "sm",
+                "sha256": "904bc8dd35c65c6897f926253c9afa173e43ecf8164f92a9fd4cec8bf38307a6",
+                "sha1": "c00b1b5f3f713f75e98e4be7167cfda49e0e50b0"
+            },
+            "RH/Centos/Fedora": {
+                "file": "jx_rh64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0305/jx_rh64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "fb3d04e5e283f299acce328d498c19e90647228dc57b576262615846c59652fd",
+                "sha1": "e58154bad13cfaa94e037da19aa8b05815a842e0"
+            },
+            "Suse": {
+                "file": "jx_suse64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0305/jx_suse64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "4afad1d2c114a43da9cd2b0a6331d6f9fa29070ed2c1c6665ab5e52af52ce97f",
+                "sha1": "7ef3104574db0fa51afb87853542ad3ef0d42c81"
+            },
+            "Ubuntu/Mint": {
+                "file": "jx_ub64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0305/jx_ub64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "44ffa659f01c3ea4d886a4a4bab17afaff87c5f6f447fe1ebedaa63ec4fd4990",
+                "sha1": "fdc23a1c1fdb2b1d6a6046a51a5f10439191f587"
+            },
+            "Windows": {
+                "file": "jx_winsetup.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0305/jx_winsetup.zip",
+                "sha256": "089215f68113b617eb50a723f6937de6bd9fad1ab7929d9706d03e95fdf6bb1b",
+                "sha1": "3dfc5a30b8989ab9bcbd5d8d3de4ff6d1a641d82"
+            }
+        }
+    },
+    {
+        "http_parser": "1.0",
+        "node": "0.10.40",
+        "jxcore": "Beta-0.3.0.6",
+        "v8": "3.14.5.9",
+        "sm": "34",
+        "embedded": {
+            "sqlite": "3.8.4.3"
+        },
+        "ares": "1.9.0-DEV",
+        "uv": "0.10.36",
+        "zlib": "1.2.3",
+        "modules": "11",
+        "openssl": "1.0.1p",
+        "source": {
+            "zip": "https://github.com/jxcore/jxcore/archive/v0.3.0.6.zip",
+            "tar": "https://github.com/jxcore/jxcore/archive/v0.3.0.6.tar.gz"
+        },
+        "dist": {
+            "Android": {
+                "file": "jx_androidFATv8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0306/jx_androidFATv8.zip",
+                "engine": "v8",
+                "sha256": "a2f61ace5b127cac0c0f665175645af66fae2beb05b710a5a788b4b5d34f0853",
+                "sha1": "5ae15e7c4dcca3a2f66206bec12e9a6a375ff75c"
+            },
+            "FreeBSD": {
+                "file": "jx_bsd1064v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0306/jx_bsd1064v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "aaba8e2841f8a0057671b2690d2d839bb7dd974aa49b16641a2d6875692372ae",
+                "sha1": "ffed66776f1745fd1326139fd54a45c317322e28"
+            },
+            "Debian": {
+                "file": "jx_debMIPSv8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0306/jx_debMIPSv8.zip",
+                "engine": "v8",
+                "arch": "MIPS",
+                "sha256": "400c5344b18d65204e29dfcfd0b5bf71db091056e11b530230663b1f2d666e7f",
+                "sha1": "765ae6733be3a37c6569471cab615ac96c28cc1a"
+            },
+            "OSX INTEL": {
+                "file": "jx_osx64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0306/jx_osx64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "be1decabfa4334327e2c559004e562dc51c310448231402d8c88fb27efa24576",
+                "sha1": "f4bde414e9f872541214a1e725ba560d7a019974"
+            },
+            "iOS": {
+                "file": "jx_iosFATsm.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0306/jx_iosFATsm.zip",
+                "engine": "sm",
+                "sha256": "07ad45e23615c7a3c23e526d8e7b37fcda78c232405539b686a59cb9ab02cde8",
+                "sha1": "eb5a5871fab2c5431b9c5349f291f48ad8625541"
+            },
+            "RH/Centos/Fedora": {
+                "file": "jx_rh64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0306/jx_rh64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "d4b3ead759b61919a90d22d13c57f20160720788d000ad995f09a6efa4609c18",
+                "sha1": "bdae7f34303b3bc0f9903ede03a6145fd5d66c60"
+            },
+            "Suse": {
+                "file": "jx_suse64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0306/jx_suse64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "a3c1fffb47bb74f0bb14221e7e391365721deb53f85d0102d745416fea650b69",
+                "sha1": "285a17576fd644d088e6977e1d6d5d7d66d1893d"
+            },
+            "Ubuntu/Mint": {
+                "file": "jx_ub64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0306/jx_ub64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "675766946cc2baf8727f96cbd57223ce0f6add0fb9342445bd6a8ebcf25a3112",
+                "sha1": "a4daad6338a4e31a20c7e0618430714b3b36e727"
+            },
+            "Windows": {
+                "file": "jx_winsetup.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0306/jx_winsetup.zip",
+                "sha256": "8259dd6adde861ec55e8bd643b039e888cb70e6a872804f83944ac590d64dfa3",
+                "sha1": "6a7d2c018ba9a8f205392551f1e3fd911f74347e"
+            }
+        }
+    },
+    {
+        "http_parser": "1.0",
+        "node": "0.10.40",
+        "jxcore": "0.3.0.7",
+        "v8": "3.14.5.9",
+        "sm": "34",
+        "embedded": {
+            "sqlite": "3.8.4.3"
+        },
+        "ares": "1.9.0-DEV",
+        "uv": "0.10.36",
+        "zlib": "1.2.3",
+        "modules": "11",
+        "openssl": "1.0.1p",
+        "source": {
+            "zip": "https://github.com/jxcore/jxcore/archive/v0.3.0.7.zip",
+            "tar": "https://github.com/jxcore/jxcore/archive/v0.3.0.7.tar.gz"
+        },
+        "dist": {
+            "Android": {
+                "file": "jx_androidFATv8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0307/jx_androidFATv8.zip",
+                "engine": "v8",
+                "sha256": "1085609469deb31d9219db88781e29c04820fb590011d2a1f012b63a07827c60",
+                "sha1": "31c8fae1f32da731c63bd52a5114b95bfc78c345"
+            },
+            "FreeBSD": {
+                "file": "jx_bsd1064v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0307/jx_bsd1064v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "68b2a3ba84ae5c11cecb5516105a45e9e6dba97e8b9330216e3f450377280422",
+                "sha1": "d91ab861be2d9b998abc58d0915d53c3b37c7279"
+            },
+            "Debian": {
+                "file": "jx_debMIPSv8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0307/jx_debMIPSv8.zip",
+                "engine": "v8",
+                "arch": "MIPS",
+                "sha256": "a60bebda247c784b3d3558862cf0f9c1de13291ea536f5e1f5a12d30304901ef",
+                "sha1": "2671a134a17f634a000088c0bc875853053f25d7"
+            },
+            "OSX INTEL": {
+                "file": "jx_osx64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0307/jx_osx64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "e1429ac931225c1efa7a5f3b184b0b7a8d28871a64248beb0d9b9de688d23e24",
+                "sha1": "36335cd0b1113a2d01c413fe24f2801c9a1d583d"
+            },
+            "iOS": {
+                "file": "jx_iosFATsm.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0307/jx_iosFATsm.zip",
+                "engine": "sm",
+                "sha256": "cef367cac1eed788041e010ea6d5bb1cc9131241ccbaa09266649bb462b075e5",
+                "sha1": "68aef136570a1cd7993074ccabf60284f0fca55b"
+            },
+            "RH/Centos/Fedora": {
+                "file": "jx_rh64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0307/jx_rh64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "929d1266a5979f30eff590c276f0e18cefbd0771f4dd47eaa7294ebee5b0335c",
+                "sha1": "b2eb91be086b97242c12bef345d8abc2d0c8cea0"
+            },
+            "Suse": {
+                "file": "jx_suse64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0307/jx_suse64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "139eab46f51910392519576b06c9a51aeba7cf4a74547e79b857c979bfce9394",
+                "sha1": "d8b9016a2c988da95a902d12e0277f78c74557b7"
+            },
+            "Ubuntu/Mint": {
+                "file": "jx_ub64v8.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0307/jx_ub64v8.zip",
+                "engine": "v8",
+                "arch": "x64",
+                "sha256": "60368d54f71d6a66bbeebabb8cabcdd81c20bf1a6daa7bdca0d98062e1087330",
+                "sha1": "182b61f45846f61caf074c8fe8241a30fcb069d0"
+            },
+            "Windows": {
+                "file": "jx_winsetup.zip",
+                "url": "https://jxcore.s3.amazonaws.com/0307/jx_winsetup.zip",
+                "sha256": "190d505ef09cb056fafbc304b2b66300b4972df4f1f7bfab63ee056fecb8a4b7",
+                "sha1": "36afca7d6a7e2088711602af0a948a0470da475e"
+            }
+        }
+    }
+]
