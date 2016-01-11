@@ -2374,8 +2374,8 @@
                 "platform": "OSX INTEL",
                 "engine": "sm",
                 "arch": "x64",
-                "sha256": "b902a3943588de0688355ffb1ee78f98eac44eca8000d78af8e799ba3b998e92",
-                "sha1": "e66365d8d6f21b74aa88fe9d4e26adcb6ba11b86"
+                "sha256": "572a0a5f78a719614971208797267b71a239542d038b8a9cad8e5f7ac6b90628",
+                "sha1": "ac5d9335033306fd2d7765f3411e593d78302727"
             },
             {
                 "file": "jx_osx64v8.zip",
@@ -2383,8 +2383,8 @@
                 "platform": "OSX INTEL",
                 "engine": "v8",
                 "arch": "x64",
-                "sha256": "2a01100ec6f08d4c89c0a1a7e9f569afd7a3511f17d4e1ac392daddaeb8b58a4",
-                "sha1": "92258b0201d2d6d72902fb6cc8e2f40db7b43e0a"
+                "sha256": "4961cc3d890b331e3b780e85ba6b60188b975ab4d5bbce64f7d9008b0c8d8b4b",
+                "sha1": "b596bd53a34f909e91fe559bf68d1c24b59ec91d"
             },
             {
                 "file": "jx_iosFATsm.zip",
