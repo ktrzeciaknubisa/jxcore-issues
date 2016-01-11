@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 #BIN=c:/jxcore/jxcore_32v8/Release/jx.exe
-#BIN=c:/jxcore/jxcore_64v8/Release/jx.exe
-BIN=jxv8
+BIN=c:/jxcore/jxcore_64v8/Release/jx.exe
+#BIN=jxv8
 
 $BIN package index.js test -add -native -sign
 

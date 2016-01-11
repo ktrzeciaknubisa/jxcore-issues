@@ -11,6 +11,11 @@ c:\jxcore\jxcore_64v8\Release\jx.exe package test.js test -add -native
 
 
 test.exe
+
+c:\jxcore\jxcore_64v8\Release\jx.ex C:\jxcore\jxcore_64v8\samples\jx_packaging\dren.js test.exe test2.exe
+
+test2.exe
+
 @rem c:\jxcore\jxcore_64v8\Release\jx.exe test.jx
 echo %ERRORLEVEL%
 
