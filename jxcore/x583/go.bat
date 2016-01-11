@@ -1,9 +1,11 @@
 cls
 
-cp  c:/jxcore/jxcore_64v8/Release/jx.exe ./jxx.exe
+@rem
+cp  c:/jxcore/jxcore_64sm/Release/jx.exe ./jxx.exe
+@rem cp  c:/jxcore/jxcore_32sm/Release/jx.exe ./jxx.exe
 @rem delcert jxx.exe
 @rem signtool sign /a jxx.exe
-jxx.exe package index.js test -add -native -sign -signx 1 -nover
+jxx.exe package index.js test -add -native -sign
 
 test.exe
 

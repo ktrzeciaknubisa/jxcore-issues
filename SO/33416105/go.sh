@@ -4,14 +4,8 @@ clear
 BINV8=c:/jxcore/jxcore_64v8/Release/jx.exe
 BINSM=c:/jxcore/jxcore_64sm/Release/jx.exe
 
-BINV8=jxv8
-BINSM=jxsm
-BINCH=jxv8ch
-
 $BINV8 package index.js test -add index.js -native
 $BINSM package index.js testsm -add index.js -native
-mv test test.exe
-mv testsm testsm.exe
 
 echo "# jxcore v8"
 $BINV8 index.js
@@ -21,16 +15,12 @@ echo "# jxcore sm"
 $BINSM index.js
 echo
 
-echo "# jxcore chakra"
-$BINSM index.js
-echo
-
 echo "# jxcore package v8"
-./test.exe
+test.exe
 echo
 
 echo "# jxcore package sm"
-./testsm.exe
+testsm.exe
 echo
 
 echo "# node v0.10.38"

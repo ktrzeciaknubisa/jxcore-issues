@@ -1,11 +1,15 @@
 #!/usr/bin/env bash
 
-jx package app.js --extract-what "*.node" --extract-app-root --extract-verbose --extract-message "Extracting" --show-progress percent
+#BIN=C:\\jxcore\\jxcore_64v8\\Release\\jx.exe
 
-rm -rf ../out
-mkdir -p ../out
-cp app.jx ../out
+BIN=jx
 
-cd ../out
+$BIN package app.js --extract-what "*.node" --extract-app-root --extract-verbose --extract-message "Extracting" --show-progress percent
 
-jx app.jx
+#rm -rf ../out
+#mkdir -p ../out
+#cp app.jx ../out
+#
+#cd ../out
+
+$BIN app.jx

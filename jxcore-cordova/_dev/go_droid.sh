@@ -2,8 +2,7 @@
 
 rm -rf hello1
 
-cordova create hello1 com.example.hello HelloWorld
-cd hello1
+c
 
 #cordova create shoppingList com.example.hello ShoppingList
 #cd shoppingList
