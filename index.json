@@ -2374,8 +2374,8 @@
                 "platform": "OSX INTEL",
                 "engine": "sm",
                 "arch": "x64",
-                "sha256": "572a0a5f78a719614971208797267b71a239542d038b8a9cad8e5f7ac6b90628",
-                "sha1": "ac5d9335033306fd2d7765f3411e593d78302727"
+                "sha256": "a3f21624178c13050da3e7f968bc7ae7e9ca0707a9938d791c126996d6be4eb7",
+                "sha1": "b10cdf67cbc53f3b7e180d04f57efda21db11598"
             },
             {
                 "file": "jx_osx64v8.zip",
