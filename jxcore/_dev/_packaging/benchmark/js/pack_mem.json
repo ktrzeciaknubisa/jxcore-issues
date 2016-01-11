@@ -1,0 +1,76 @@
+{
+  "groups": [
+    {
+      "name": "JXcore - creating a package",
+      "global": {
+        "define": {
+          "dir_out": "../temp/",
+          "pack": "{$bin} package index.js testApp -slim '*.jx,*.jxp' --show-progress percent",
+          "dir_cordova": "/Users/nubisa_krzs/Documents/GitHub/jxcore-cordova-release/tmp/io.jxcore.node",
+          "dir_ghost": "/Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/jxcore-issues/jxcore/_dev/_packaging/benchmark/node_modules/ghost",
+          "dir_jxcore": "/Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/jxcore-binary-packaging"
+        },
+        "pre": {
+          "cmds": [
+            "rm -rf {$dir_out}",
+            "mkdir -p {$dir_out}",
+            "cp -r {$dir_in}/* {$dir_out}",
+            "touch {$dir_out}/index.js"
+          ]
+        },
+        "actual": {
+          "cwd": "{$dir_out}",
+          "cmds": "{$pack}"
+        },
+        "options": {
+          "iteration": 1,
+          "memoryUsage": true
+        }
+      },
+      "tests": [
+        {
+          "name": "New ('jxcore-cordova')",
+          "define": {
+            "dir_in": "{$dir_cordova}",
+            "bin": "jxsm"
+          }
+        },
+        {
+          "name": "Old ('jxcore-cordova')",
+          "define": {
+            "dir_in": "{$dir_cordova}",
+            "bin": "../jx"
+          }
+        },
+        {
+          "name": "New ('ghost')",
+          "define": {
+            "dir_in": "{$dir_ghost}",
+            "bin": "jxsm"
+          }
+        },
+        {
+          "name": "Old ('ghost')",
+          "define": {
+            "dir_in": "{$dir_ghost}",
+            "bin": "../jx"
+          }
+        },
+        {
+          "name": "New ('jxcore')",
+          "define": {
+            "dir_in": "{$dir_jxcore}",
+            "bin": "jxsm"
+          }
+        },
+        {
+          "name": "Old ('jxcore')",
+          "define": {
+            "dir_in": "{$dir_jxcore}",
+            "bin": "../jx"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+run 1
+run 2
+restarting thread 1 due to error Error: Cannot find module '/[...]/out/test.js'
+run 3
+restarting thread 1 due to error Error: Cannot find module '/[...]/out/test.js'
+run 4
+restarting thread 1 due to error Error: Cannot find module '/[...]/out/test.js'
+run 5
+restarting thread 1 due to error Error: Cannot find module '/[...]/out/test.js'
+run 6
+run 7
+restarting thread 1 due to error Error: Cannot find module '/[...]/out/test.js'
+run 8
+run 9
+run 10

@@ -1,0 +1,71 @@
+{
+  "groups": [
+    {
+      "name": "JXcore - executing a package",
+      "global": {
+        "define": {
+          "dir_out": "../out/"
+        },
+        "pre": {
+          "cmds": [
+            "rm -rf {$dir_out}",
+            "mkdir -p {$dir_out}",
+            "cp {$package} {$dir_out}/"
+          ]
+        },
+        "actual": {
+          "cwd": "{$dir_out}",
+          "cmds": "{$bin} {$package}"
+        },
+        "options": {
+          "iteration": 1,
+          "memoryUsage": true
+        }
+      },
+      "tests": [
+        {
+          "name": "New ('jxcore-cordova')",
+          "define": {
+            "package": "~/Documents/_packed/jxsm_cordova.jx",
+            "bin": "jxsm"
+          }
+        },
+        {
+          "name": "Old ('jxcore-cordova')",
+          "define": {
+            "package": "~/Documents/_packed/jxsm_old_cordova.jx",
+            "bin": "../jx"
+          }
+        },
+        {
+          "name": "New ('ghost')",
+          "define": {
+            "package": "~/Documents/_packed/jxsm_ghost.jx",
+            "bin": "jxsm"
+          }
+        },
+        {
+          "name": "Old ('ghost')",
+          "define": {
+            "package": "~/Documents/_packed/jxsm_old_ghost.jx",
+            "bin": "../jx"
+          }
+        },
+        {
+          "name": "New ('jxcore')",
+          "define": {
+            "package": "~/Documents/_packed/jxsm_jxcore.jx",
+            "bin": "jxsm"
+          }
+        },
+        {
+          "name": "Old ('jxcore')",
+          "define": {
+            "package": "~/Documents/_packed/jxsm_old_jxcore.jx",
+            "bin": "../jx"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -37,8 +37,10 @@ rm -rf ./jxcore-cordova
 cordova platforms add android
 #cordova platforms add ios
 
-cordova plugins add org.apache.cordova.console
+# obsolete
+#cordova plugins add org.apache.cordova.console
 
+cordova plugin add cordova-plugin-console
 
 #export ANDROID_HOME=~/android-sdks/
 #

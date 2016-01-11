@@ -1,0 +1,56 @@
+{
+  "groups": [
+    {
+      "name": "JXcore - creating a package",
+      "global": {
+        "define": {
+          "dir_in": "/Users/nubisa_krzs/Documents/GitHub/jxcore-cordova-release/tmp/io.jxcore.node",
+          "dir_out": "../temp/",
+          "pack": "{$bin} package index.js testApp -slim '*.jx,*.jxp' --show-progress percent"
+        },
+        "pre": {
+          "cmds": [
+            "rm -rf {$dir_out}",
+            "mkdir -p {$dir_out}",
+            "cp -r {$dir_in}/* {$dir_out}",
+            "touch {$dir_out}/index.js"
+          ]
+        },
+        "actual": {
+          "cwd": "{$dir_out}",
+          "cmds": "{$pack}"
+        },
+        "options": {
+          "iteration": 1
+        }
+      },
+      "tests": [
+        {
+          "name": "New SM (packaging)",
+          "define": {
+            "bin": "jxsm"
+          },
+          "stop": false
+        },
+        {
+          "name": "New V8 (packaging)",
+          "define": {
+            "bin": "jxv8"
+          }
+        },
+        {
+          "name": "Old SM (packaging)",
+          "define": {
+            "bin": "jx"
+          }
+        },
+        {
+          "name": "Old V8 (packaging)",
+          "define": {
+            "bin": "../jx"
+          }
+        }
+      ]
+    }
+  ]
+}
