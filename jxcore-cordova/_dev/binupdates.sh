@@ -8,6 +8,7 @@ cordova plugin remove io.jxcore.node
 
 rm -rf io.jxcore.node
 cp -r ~/Documents/GitHub/jxcore-cordova-release/tmp/io.jxcore.node ./
+#cp -r ~/Documents/GitHub/ktrzeciaknubisa/jxcore-cordova/* ./io.jxcore.node/
 
 # ios
 rm -rf ./io.jxcore.node/bin
