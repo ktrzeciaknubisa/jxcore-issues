@@ -17,7 +17,7 @@ if (fs.existsSync(file_test_out) && !p.force)
   out = require(file_test_out);
 
 if (p.force)
-  jxcore.utils.cmdSync('cd ' + exports.repoRoot +  ' && rm -rf node_modules');
+  jxcore.utils.cmdSync('cd ' + exports.repoRoot +  ' && rm -rf node_modules test_out.json');
 
 var runNext = function() {
   setTimeout(next, 1);
@@ -29,7 +29,7 @@ var testRequire = function(moduleName) {
   try {
     jxcore.utils.console.info('Testing require(' + moduleName + ')...');
     require(moduleName);
-    jxcore.utils.console.error('OK');
+    jxcore.utils.console.info('OK');
     return true;
   } catch (ex) {
     jxcore.utils.console.error('Error:', ex);
@@ -61,7 +61,7 @@ var next = function() {
 
   jxcore.utils.console.info('Starting', m);
   // '--loglevel verbose'
-  cp.spawn(execPath, [ 'install', m, '--autoremove', 'test'], {
+  cp.spawn(execPath, [ 'install', m, '--autoremove', 'test', '--loglevel', 'error'], {
     stdio: 'inherit'
   }).on('close', function(code) {
     if (!code) {
