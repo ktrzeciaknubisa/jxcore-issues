@@ -47,6 +47,8 @@ var next = function() {
   if (!m)
     return runNext();
 
+  m = m.trim();
+
   if (!m || m.slice(0,1) == '#')
     return runNext();
 
@@ -59,7 +61,7 @@ var next = function() {
 
   jxcore.utils.console.info('Starting', m);
   // '--loglevel verbose'
-  cp.spawn(execPath, [ 'install', m], {
+  cp.spawn(execPath, [ 'install', m, '--autoremove', 'test'], {
     stdio: 'inherit'
   }).on('close', function(code) {
     if (!code) {
