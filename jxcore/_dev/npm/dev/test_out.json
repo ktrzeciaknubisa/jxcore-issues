@@ -1,4 +1,19 @@
 {
     "jxm": true,
-    "semver": true
+    "semver": true,
+    "leveldown": true,
+    "leveldown-mobile": true,
+    "dnode": true,
+    "mongodb": true,
+    "babel-core": true,
+    "ghost": true,
+    "aws-sdk": true,
+    "express": true,
+    "node-sass": true,
+    "grunt-cli": true,
+    "dtrace-provider": true,
+    "node-inspector": true,
+    "v8-debug": true,
+    "lwip": true,
+    "hummus": true
 }
