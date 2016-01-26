@@ -26,6 +26,9 @@ var runNext = function() {
 
 var testRequire = function(moduleName) {
 
+  if (moduleName.indexOf('-cli') !== -1)
+    return true;
+
   try {
     jxcore.utils.console.info('Testing require(' + moduleName + ')...');
     require(moduleName);

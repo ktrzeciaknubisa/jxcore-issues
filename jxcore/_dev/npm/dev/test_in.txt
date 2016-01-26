@@ -1,6 +1,6 @@
 jxm
 semver
-leveldown
+#leveldown
 leveldown-mobile
 dnode
 mongodb
@@ -10,7 +10,7 @@ ghost
 aws-sdk
 express
 sqlite3
-node-sass
+#snode-sass
 grunt-cli
 
 dtrace-provider
