@@ -3,7 +3,7 @@
 # uses previous ~/.jx npm, but removes other links
 
 rm -rf ~/.jx/npm
-cp -r /Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/npm-diff/npm ~/.jx/
+cp -r ./backup/npm ~/.jx/
 
 #sudo mv /usr/local/bin/jx /usr/local/bin/jx_npm
 sudo rm -rf /usr/local/bin/node

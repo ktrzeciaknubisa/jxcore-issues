@@ -9,14 +9,20 @@ DIR=$PWD
 
 
 cd /Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/npm-diff
-rm -rf npm.zip npmjx$VER.tar.gz
+rm -rf npm.zip npmjx$VER.tar.gz npmjx.jx
 
+jxv8 package npm/cli.js -name npmjx --extract --extract-app-root
 zip -r -9 npm.zip npm
-tar -zcvf npmjx$VER.tar.gz npm
+env GZIP=-9 tar -zcvf npmjx$VER.tar.gz npm
 
-echo mv npm.zip $DIR/
+ls -al
+
 mv npm.zip $DIR/
 mv npmjx$VER.tar.gz $DIR/
+mv npmjx.jx $DIR/
+mv npmjx.jxp $DIR/
 cd $DIR
 
-scp npm.zip root@nodejx.com:/var/www/vhosts/nubisacloud.com/nodejx/npm.zip
+
+
+#scp npm.zip root@nodejx.com:/var/www/vhosts/nubisacloud.com/nodejx/npm.zip

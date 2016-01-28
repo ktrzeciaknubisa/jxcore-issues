@@ -60,6 +60,8 @@ var next = function() {
     return runNext();
   }
 
+  jxcore.utils.cmdSync('cd ' + exports.repoRoot +  ' && rm -rf node_modules');
+
   //jxcore.utils.cmdSync(execPath + ' npm')
 
   jxcore.utils.console.info('Starting', m);
