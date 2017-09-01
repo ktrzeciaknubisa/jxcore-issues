@@ -1,0 +1,13 @@
+{
+  "apps" : [
+    {
+      "name" : "my_app",
+      "script" : "/Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/jxcore-issues/jxcore/x784/index",
+      "args" : [],
+      "watch" : true,
+      "merge_logs" : true,
+      "cwd" : "/Users/nubisa_krzs/Documents/GitHub/ktrzeciaknubisa/jxcore-issues/jxcore/x784/",
+      "max_memory_restart" : "200M"
+    }
+  ]
+}

@@ -1,1 +1,0 @@
-exports.value = "a1.js";

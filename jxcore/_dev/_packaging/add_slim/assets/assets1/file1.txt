@@ -1,1 +1,0 @@
-this is contents of /assets/assets1/file1.txt

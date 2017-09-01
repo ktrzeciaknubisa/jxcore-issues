@@ -1,8 +1,0 @@
-<!(node -e "require(nan)\")
-<!(node -e \"require(nan)\")
- "preinstall": "npm install semver && node -e \"require('./core/server/utils/startup-ch
-node -e
- node -e
-'<!(node -p -e "require(\'./too
-"preinstall": "node -e 'process.exit(0)'",
-"prepublish": "node ./tools/prepublish.js",
