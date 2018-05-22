@@ -1,0 +1,3884 @@
+<!-- https://www.cbinsights.com/research-unicorn-companies -->
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta name="iy453p9485yheisruhs5" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <title>The Complete List of Unicorn Companies</title>
+
+    <meta name="description" content="An ongoing list of unicorn companies in the US and abroad valued at $1B or more.  " />
+    <meta name="keywords" content="unicorn companies, billion dollar startups, unicorn startups" />
+
+    <link rel="canonical" href="https://www.cbinsights.com/research-unicorn-companies" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="The Complete List of Unicorn Companies" />
+    <meta property="og:description" content="An ongoing list of unicorn companies in the US and abroad valued at $1B or more.  " />
+    <meta property="og:site_name" content="The Complete List of Unicorn Companies" />
+    <meta property="og:url" content="http://instapage.cbinsights.com/research-unicorn-companies" />
+
+
+    <!-- F_INSTAPAGE[dynamic_text_replacement] -->
+    <!-- font injector -->
+    <link type="text/css" rel="stylesheet" media="screen, print" href="//v.fastcdn.co/f/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic" /><!-- end -->
+    <style type="text/css" media="screen">
+        .page-element .btn,
+        .page-element .contents,
+        .page-element.widget-form form,
+        .page-element.widget-form form input,
+        .page-element.widget-form form textarea,
+        .page-element.widget-form form select,
+        .page-element.widget-form form label
+        {
+            font-family: Roboto;
+            font-weight: 400;
+        }
+
+        .page-element.widget-headline .contents h1,
+        .page-element.widget-headline .contents h2,
+        .page-element.widget-headline .contents h3,
+        .page-element.widget-headline .contents h4,
+        .page-element.widget-headline .contents h5,
+        .page-element.widget-headline .contents h6
+        {
+            font-family: Roboto;
+            font-weight: 500;
+        }
+
+        [id^=___plusone] { width:51px !important; }
+
+        div.social.lines [id^=___plusone] { width:62px !important; }
+        div.social.lines span[class^=IN-widget] { min-width:70px !important; }
+        div.social.buttons [id^=___plusone] { width:36px !important; }
+        div.social.buttons div[class^=fb-like] { width:58px !important; }
+        div.social.tiles [id^=___plusone] { height:63px !important; margin-top: 2px !important; }
+        div.social.tiles .fb-like iframe { margin-top: 1px !important; }
+
+        .widget-testimonial.style-1 .contents div.testimonial-text
+        {
+            margin-top: 0;
+        }
+
+        @media screen and (max-width: 768px)
+        {
+            .notification > .notification-inner
+            {
+                width: auto;
+                position: fixed;
+                top: 40%;
+                left: 1em !important;
+                right: 1em !important;
+                font-size: 24px;
+            }
+        }
+
+
+        /* Safari only fix */
+        @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+        {
+            .widget-form .select-outer select
+            {
+                padding-left: 10px;
+            }
+
+            .widget-form.mobile-form .select-outer select
+            {
+                padding-left: 10px;
+            }
+        }}
+
+
+    </style>
+
+
+
+    <link rel="stylesheet" type="text/css" href="//v.fastcdn.co/a/7ebba9456736089cc348fc536948a7d30c8c6041/031a761e2b05d2bed213fd1f07412755.css" media="screen"  />
+
+    <script type="text/javascript" src="//v.fastcdn.co/a/7ebba9456736089cc348fc536948a7d30c8c6041/a5cb880a745154a6a1a45f3465215dfd.js"></script>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" id="mobile-viewport">
+
+    <script type="text/javascript" class="instapage-noscrap">var ijQuery = jQuery.noConflict(true);</script>
+    <script type="text/javascript" class="instapage-noscrap">
+        var $ = ijQuery;
+        var jQuery = ijQuery;
+        window.__page_id = 333259;
+        window.__version = 1015;
+        window.__variant = 'A';
+        window.__variant_custom_name = '' || 'A';
+        window.__is_tablet = false;
+        window.__page_domain = '//instapage.cbinsights.com';
+        window.__instapage_services = '//app.instapage.com';
+        window.__instapage_proxy_services = 'PROXY_SERVICES';
+        window.__preview = false;
+        window.__facebook = false;
+        window.__page_type = 2;
+        window.__mobile_version = 2;
+        window.__variant_hash = "59a845bac23d7fba83c5bdfba79eb319b7a2bcf6";
+        window.__predator_throttle = 10;
+        window.__predator_blacklist = [];
+
+        window.__instapage_submission_endpoint = '//d.fastcdn.co/submissions';
+
+        var page_version = 1015;
+
+        var _Translate = new Translate();
+
+        if( ijQuery === 'undefined' )
+        {
+            var ijQuery = jQuery;
+        }
+
+        window.__recaptchaError = function()
+        {
+            console.error( 'ReCaptcha invalid site key' );
+            window.__reCaptchaCorrupted = true;
+        };
+
+        window.__removeReCaptchaClasses = function()
+        {
+            var challengeContainer = document.querySelector( 'iframe[src*="recaptcha"]' );
+            var htmlDocument = document.querySelector( 'html' );
+            htmlDocument.classList.remove( 'hasRecaptcha' );
+            if( challengeContainer && challengeContainer.parentNode ) {
+                challengeContainer.parentNode.classList.remove( 'recaptchaContainer' );
+                challengeContainer.parentNode.parentNode.classList.remove( 'recaptchaWrapper' );
+            }
+        }
+
+        window.__changeReCaptchaChallengePosition = function()
+        {
+            var challengeContainer = document.querySelector( 'iframe[src*="recaptcha"]' );
+
+            if ( challengeContainer && challengeContainer.parentNode )
+            {
+                try
+                {
+                    var isSafari = navigator.vendor && navigator.vendor.indexOf( 'Apple' ) > -1 &&
+                        navigator.userAgent && !navigator.userAgent.match( 'CriOS' );
+
+                    var isiOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+
+                    var interval = setInterval(function() {
+                        var isContainerVisible = challengeContainer.parentNode.parentNode.style.visibility = 'visible';
+
+                        if (isContainerVisible) {
+                            if(isSafari && isiOS) {
+                                var htmlDocument = document.querySelector('html');
+                                htmlDocument.classList.add('hasRecaptcha');
+                                challengeContainer.parentNode.classList.add('recaptchaContainer');
+                                challengeContainer.parentNode.parentNode.classList.add('recaptchaWrapper');
+                            }
+                            clearInterval(interval);
+                        }
+                    }, 300);
+                    challengeContainer.parentNode.style.position = 'fixed';
+                    challengeContainer.parentNode.style.margin = '0 auto';
+                }
+                catch( e )
+                {
+                }
+            }
+        }
+
+        window.__reCaptchaTrigger = function( token )
+        {
+            _form_controller.onRecaptchaFormSubmit( token );
+            window.__removeReCaptchaClasses();
+        };
+
+        ijQuery(document).ready(function()
+        {
+            window._Mobile_helper = new MobileHelper();
+            window._Mobile_helper.initViewport( 960, true );
+
+            try
+            {
+                ijQuery('input, textarea').placeholder();
+            }
+            catch( e )
+            {
+            }
+        });
+
+        ijQuery( window ).load( function()
+        {
+            var notification_loader;
+
+            ijQuery( 'body' ).hide().show();
+
+            notification_loader = ijQuery( '.notification-loader' );
+            notification_loader.attr( 'src', notification_loader.attr( 'rel' ) );
+        });
+
+        _Translate.set( "Problem loading google map", "Problem loading google map" );
+
+        is_new_mobile_visible = function()
+        {
+            if( !window.matchMedia )
+            {
+                return false;
+            }
+            return window.matchMedia('screen and (max-width: 620px), screen and (max-width: 999px) and (-webkit-min-device-pixel-ratio: 1.5)').matches;
+        }
+    </script>
+
+
+    <link
+            rel="shortcut icon"
+            href="//dfsm9194vna0o.cloudfront.net/436357-0-cbismalllogoheader.png"
+            type="image/ico"
+    />
+
+
+    <style type="text/css">
+        html
+        {
+            height: 100%;
+        };
+    </style>
+    <script type="text/javascript" >
+
+        setTimeout(function()
+        {
+            "use strict";
+            try
+            {
+                var body = document.body;
+                var html = document.documentElement;
+                var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+                html.style.setProperty( 'height', height + 'px' );
+            }
+            catch( e )
+            {
+            }
+        }, 1 );
+    </script>
+
+    <style type="text/css">
+        body
+        {
+            background-color: #ffffff;
+
+            background-position: top left;
+
+            background-repeat: repeat;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+
+        }
+
+
+        .page .page-block .block-inner { background-color: transparent; }
+    </style>
+
+    <style type="text/css">
+
+
+        #element-1291
+        {
+            height: 34px;
+            width: 366px;
+            left: 49px;
+            top: 123px;
+            z-index: 3;
+        }
+
+        #element-1291 p, #element-1291 ul, #element-1291 ol, #element-1291 h1
+        {
+            font-size: 17px;
+            color: rgb(255, 255, 255);
+            line-height: 34px;
+            text-align: left;
+        }
+
+        #element-16
+        {
+            height: 20px;
+            width: 370px;
+            left: 591px;
+            top: 22px;
+            z-index: 4;
+        }
+
+        #element-16 p, #element-16 ul, #element-16 ol, #element-16 h1
+        {
+            font-size: 14px;
+            color: rgb(0, 0, 0);
+            line-height: 20px;
+            text-align: right;
+        }
+
+        #element-32
+        {
+            height: 490px;
+            width: 924px;
+            left: 19px;
+            top: 222px;
+            z-index: 5;
+        }
+
+        #element-1
+        {
+            height: 43px;
+            width: 215px;
+            left: 38px;
+            top: 13px;
+            z-index: 6;
+        }
+
+        #element-1 img
+        {
+            width: 211px;
+            height: 40px;
+        }
+
+        #element-701
+        {
+            height: 102px;
+            width: 575px;
+            left: 38px;
+            top: 92px;
+            z-index: 7;
+        }
+
+        #element-701 p, #element-701 ul, #element-701 ol, #element-701 h1
+        {
+            font-size: 24px;
+            color: rgb(0, 0, 0);
+            line-height: 34px;
+            text-align: left;
+        }
+
+        #element-18
+        {
+            height: 59px;
+            width: 470px;
+            left: 38px;
+            top: 288px;
+            z-index: 8;
+        }
+
+        #element-1292
+        {
+            height: 70px;
+            width: 635px;
+            left: 38px;
+            top: 26px;
+            z-index: 9;
+        }
+
+        #element-1292 p, #element-1292 ul, #element-1292 ol, #element-1292 h1
+        {
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+            line-height: 70px;
+            text-align: left;
+        }
+
+        #element-1293
+        {
+            height: 170px;
+            width: 601px;
+            left: 38px;
+            top: 96px;
+            z-index: 10;
+        }
+
+        #element-1293 p, #element-1293 ul, #element-1293 ol, #element-1293 h1
+        {
+            font-size: 24px;
+            color: rgb(0, 0, 0);
+            line-height: 34px;
+            text-align: left;
+        }
+
+        #element-1294
+        {
+            height: 296px;
+            width: 270px;
+            left: 605px;
+            top: -1px;
+            z-index: 11;
+        }
+
+        #element-1294 img
+        {
+            width: 268px;
+            height: 296px;
+        }
+
+        #element-1295
+        {
+            height: 50px;
+            width: 370px;
+            left: 38px;
+            top: 16px;
+            z-index: 12;
+        }
+
+        #element-1295 p, #element-1295 ul, #element-1295 ol, #element-1295 h1
+        {
+            font-size: 36px;
+            color: rgb(255, 102, 51);
+            line-height: 50px;
+            text-align: left;
+        }
+
+        #element-1297
+        {
+            height: 31px;
+            width: 94px;
+            left: 721px;
+            top: 22px;
+            z-index: 13;
+        }
+
+        #element-1297 p, #element-1297 ul, #element-1297 ol, #element-1297 h1
+        {
+            font-size: 22px;
+            color: rgb(0, 0, 0);
+            line-height: 31px;
+            text-align: left;
+        }
+
+        #element-1298
+        {
+            height: 31px;
+            width: 80px;
+            left: 843px;
+            top: 22px;
+            z-index: 14;
+        }
+
+        #element-1298 p, #element-1298 ul, #element-1298 ol, #element-1298 h1
+        {
+            font-size: 22px;
+            color: rgb(0, 0, 0);
+            line-height: 31px;
+            text-align: left;
+        }
+
+        #element-1299
+        {
+            height: 31px;
+            width: 70px;
+            left: 630px;
+            top: 22px;
+            z-index: 15;
+        }
+
+        #element-1299 p, #element-1299 ul, #element-1299 ol, #element-1299 h1
+        {
+            font-size: 22px;
+            color: rgb(0, 0, 0);
+            line-height: 31px;
+            text-align: left;
+        }
+
+
+        #page-block-m5ywl8e5c23xr { height: 73px; }
+        #page-block-m5ywl8e5c23xr .border-holder
+        {
+            background-image: none;
+
+            background-color: rgba(0,0,0,0);
+
+            background-repeat: repeat;						background-position: top left;
+
+            background-size:cover;
+            -webkit-background-size:cover;
+            -moz-background-size:cover;
+            -o-background-size:cover;
+
+
+            width: auto;
+            border-width: 0;
+            border-top-width: 0px;
+            border-bottom-width: 0px;
+
+
+            height: 73px;
+
+        }
+
+        @media only screen and (max-width: 770px) {
+            .border-holder {
+                background-attachment: scroll !important;
+            }
+        }
+
+        #page-block-m5ywl8e5c23xr .color-overlay
+        {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            margin: 0 auto;
+            background-color: rgba(0,0,0,0);
+            opacity: 0.5;
+        }
+
+        #page-block-m5ywl8e5c23xr .block-inner
+        {
+            margin-top: 0px;
+            height: calc(100% + 0px);
+        }
+
+
+        #page-block-20h8hausjmsiqkt9 { height: 400px; }
+        #page-block-20h8hausjmsiqkt9 .border-holder
+        {
+            background-image: none;
+
+            background-color: #003366;
+
+            background-repeat: no-repeat;						background-position: left bottom;
+
+            background-size:auto auto;
+            -webkit-background-size:auto auto;
+            -moz-background-size:auto auto;
+            -o-background-size:auto auto;
+
+
+            width: auto;
+            border-width: 0;
+            border-top-width: 0px;
+            border-bottom-width: 0px;
+
+
+            height: 400px;
+
+        }
+
+        @media only screen and (max-width: 770px) {
+            .border-holder {
+                background-attachment: scroll !important;
+            }
+        }
+
+        #page-block-20h8hausjmsiqkt9 .color-overlay
+        {
+            display: none;
+        }
+
+        #page-block-20h8hausjmsiqkt9 .block-inner
+        {
+            margin-top: 0px;
+            height: calc(100% + 0px);
+        }
+
+
+        #page-block-itl8a5r5j7adobt9 { height: 14674px; }
+        #page-block-itl8a5r5j7adobt9 .border-holder
+        {
+            background-image: none;
+
+            background-color: transparent;
+
+            background-repeat: repeat;						background-position: top left;
+
+            background-size:cover;
+            -webkit-background-size:cover;
+            -moz-background-size:cover;
+            -o-background-size:cover;
+
+            border-color: #dddddd;		border-style: solid;
+            width: auto;
+            border-width: 0;
+            border-top-width: 1px;
+            border-bottom-width: 1px;
+
+
+            height: 14674px;
+
+        }
+
+        @media only screen and (max-width: 770px) {
+            .border-holder {
+                background-attachment: scroll !important;
+            }
+        }
+
+        #page-block-itl8a5r5j7adobt9 .color-overlay
+        {
+            display: none;
+        }
+
+        #page-block-itl8a5r5j7adobt9 .block-inner
+        {
+            margin-top: -1px;
+            height: calc(100% + 2px);
+        }
+
+
+        #page-block-q6nkvc1zwsbawcdi { height: 54px; }
+        #page-block-q6nkvc1zwsbawcdi .border-holder
+        {
+            background-image: none;
+
+            background-color: #003366;
+
+            background-repeat: repeat;						background-position: top left;
+
+            background-size:cover;
+            -webkit-background-size:cover;
+            -moz-background-size:cover;
+            -o-background-size:cover;
+
+
+            width: auto;
+            border-width: 0;
+            border-top-width: 0px;
+            border-bottom-width: 0px;
+
+
+            height: 54px;
+
+        }
+
+        @media only screen and (max-width: 770px) {
+            .border-holder {
+                background-attachment: scroll !important;
+            }
+        }
+
+        #page-block-q6nkvc1zwsbawcdi .color-overlay
+        {
+            display: none;
+        }
+
+        #page-block-q6nkvc1zwsbawcdi .block-inner
+        {
+            margin-top: 0px;
+            height: calc(100% + 0px);
+        }
+
+
+        @media
+        screen and (max-width: 620px),
+        screen and (max-width: 999px) and (-webkit-min-device-pixel-ratio: 1.5) and ( max-device-width: 1280px ) and (max-device-height: 720px),
+        screen and (max-width: 999px) and (-webkit-min-device-pixel-ratio: 1.5) and ( max-device-width: 1000px )
+        {
+            body
+            {
+                min-width: 400px;
+                width: 100%;
+            }
+            .page.page2
+            {
+                width: 100%;
+            }
+            .page.page2 .block-inner
+            {
+                width: 400px;
+                margin: 0 auto;
+            }
+            .page.page2.new-mobile-preview .block-inner
+            {
+                width: auto;
+            }
+
+
+            .widget-form .field-checkbox .field-element label:before,
+            .widget-form .field-radio .field-element label:before
+            {
+                top: 16px;
+            }
+            .widget-form .field-checkbox .field-element label:after
+            {
+                top: 21px;
+            }
+
+            .widget-form .field-radio .field-element label:after
+            {
+                top: 16px;
+            }
+
+            .widget-form .select-outer
+            {
+                overflow: hidden;
+                -webkit-border-radius: 2px;
+                border-radius: 2px;
+            }
+
+            .widget-form .select-outer select
+            {
+                width: calc( 100% - 1px );
+                height: 56px;
+                border: 0;
+                margin-bottom: 8px;
+                margin-top: 8px;
+                -webkit-appearance: none;
+                line-height: 30px;
+                border-style: solid;
+                border-width: 1px;
+                background-image: url( '//v.fastcdn.co/a/1488288753_select-arrow-drop-down.png' );
+                background-position: right;
+                background-repeat: no-repeat;
+            }
+            .widget-form .form-input[type="text"],
+            .widget-form .form-input[type="password"],
+            .widget-form .form-input[type="email"],
+            .widget-form textarea.form-input
+            {
+                padding-top: 12px;
+                padding-bottom: 9px;
+                font-size: 20px;
+                line-height: 22px;
+                height: 56px;
+                -webkit-appearance: none;
+            }
+
+            .widget-form .label-outside,
+            .widget-form .outside-top,
+            .widget-form .field-element label
+            {
+                font-size: 20px;
+                line-height: 22px;
+                padding-top: 12px;
+                padding-bottom: 9px;
+            }
+
+            .widget-form select
+            {
+                font-size: 20px;
+                height: 56px;
+                padding-left: 9px;
+                width: calc( 100% + 2px );
+                -moz-padding-start: 5px;
+            }
+
+            .widget-form .input-holder.field-checkbox > label.outside-top,
+            .widget-form .input-holder.field-radio > label.outside-top,
+            .widget-form .field-container.edit.field-checkbox > label.label-outside,
+            .widget-form .field-container.edit.field-radio > label.label-outside
+            {
+                margin-top: 8px;
+                margin-bottom: 2px;
+            }
+
+            .widget-form .form-option-element label,
+            .widget-form .field-element label
+            {
+                font-size: 20px;
+                line-height: 22px;
+                padding-bottom: 0;
+                margin-bottom: 0px;
+            }
+
+            .new_mobile .widget-form textarea.form-input.shortnice
+            {
+                height: 56px;
+            }
+
+
+            #element-1
+            {
+                height: 42.09px;
+                width: 222px;
+                left: 24px;
+                top: 19px;
+                z-index: 6;
+            }
+
+            #element-1 img
+            {
+                width: 222px;
+                height: 42.09px;
+            }
+
+            #element-1299
+            {
+                height: 30px;
+                width: 70px;
+                left: 165px;
+                top: 89px;
+                z-index: 15;
+            }
+
+            #element-1299 p, #element-1299 ul, #element-1299 ol, #element-1299 h1
+            {
+                font-size: 22px;
+                color: rgb(0, 0, 0);
+                line-height: 31px;
+                text-align: left;
+            }
+
+            #element-1297
+            {
+                height: 30px;
+                width: 95px;
+                left: 152.5px;
+                top: 149px;
+                z-index: 13;
+            }
+
+            #element-1297 p, #element-1297 ul, #element-1297 ol, #element-1297 h1
+            {
+                font-size: 22px;
+                color: rgb(0, 0, 0);
+                line-height: 31px;
+                text-align: left;
+            }
+
+            #element-1298
+            {
+                height: 30px;
+                width: 80px;
+                left: 160px;
+                top: 209px;
+                z-index: 14;
+            }
+
+            #element-1298 p, #element-1298 ul, #element-1298 ol, #element-1298 h1
+            {
+                font-size: 22px;
+                color: rgb(0, 0, 0);
+                line-height: 31px;
+                text-align: left;
+            }
+
+            #element-1294
+            {
+                height: 78.42px;
+                width: 71px;
+                left: 286px;
+                top: -90px;
+                z-index: 11;
+            }
+
+            #element-1294 img
+            {
+                width: 71px;
+                height: 78.42px;
+            }
+
+            #element-1292
+            {
+                height: 42px;
+                width: 360px;
+                left: 22px;
+                top: 14px;
+                z-index: 9;
+            }
+
+            #element-1292 p, #element-1292 ul, #element-1292 ol, #element-1292 h1
+            {
+                font-size: 32px;
+                color: rgb(255, 255, 255);
+                line-height: 42px;
+                text-align: left !important;
+            }
+
+            #element-1293
+            {
+                height: 105px;
+                width: 360px;
+                left: 22px;
+                top: 72px;
+                z-index: 10;
+            }
+
+            #element-1293 p, #element-1293 ul, #element-1293 ol, #element-1293 h1
+            {
+                font-size: 18px;
+                color: rgb(0, 0, 0);
+                line-height: 21px;
+                text-align: left !important;
+            }
+
+            #element-1291
+            {
+                height: 21px;
+                width: 360px;
+                left: 24px;
+                top: 95px;
+                z-index: 3;
+            }
+
+            #element-1291 p, #element-1291 ul, #element-1291 ol, #element-1291 h1
+            {
+                font-size: 17px;
+                color: rgb(255, 255, 255);
+                line-height: 21px;
+                text-align: justify !important;
+            }
+
+            #element-18
+            {
+                height: 72px;
+                width: 356px;
+                left: 22px;
+                top: 192px;
+                z-index: 8;
+            }
+
+            #element-1295
+            {
+                height: 32px;
+                width: 360px;
+                left: 20px;
+                top: 19px;
+                z-index: 12;
+            }
+
+            #element-1295 p, #element-1295 ul, #element-1295 ol, #element-1295 h1
+            {
+                font-size: 25px;
+                color: rgb(255, 102, 51);
+                line-height: 32px;
+                text-align: left;
+            }
+
+            #element-701
+            {
+                height: 96px;
+                width: 362px;
+                left: 20px;
+                top: 51px;
+                z-index: 7;
+            }
+
+            #element-701 p, #element-701 ul, #element-701 ol, #element-701 h1
+            {
+                font-size: 20px;
+                color: rgb(0, 0, 0);
+                line-height: 24px;
+                text-align: center !important;
+            }
+
+            #element-32
+            {
+                height: 897px;
+                width: 370px;
+                left: 15px;
+                top: 167px;
+                z-index: 5;
+            }
+
+            #element-16
+            {
+                display: none;
+            }
+
+            #element-16 p, #element-16 ul, #element-16 ol, #element-16 h1
+            {
+                font-size: 14px;
+                color: rgb(0, 0, 0);
+                line-height: 18px;
+                text-align: right;
+            }
+
+
+            #page-block-m5ywl8e5c23xr { height: 301px; }
+            #page-block-m5ywl8e5c23xr .border-holder
+            {
+                background-image: none;
+
+                background-color: rgba(0,0,0,0);
+
+                background-repeat: repeat;						background-position: top left;
+
+                background-size:cover;
+                -webkit-background-size:cover;
+                -moz-background-size:cover;
+                -o-background-size:cover;
+
+
+                width: auto;
+                border-width: 0;
+                border-top-width: 0px;
+                border-bottom-width: 0px;
+
+
+                height: 301px;
+
+            }
+
+            @media only screen and (max-width: 770px) {
+                .border-holder {
+                    background-attachment: scroll !important;
+                }
+            }
+
+            #page-block-m5ywl8e5c23xr .color-overlay
+            {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                margin: 0 auto;
+                background-color: rgba(0,0,0,0);
+                opacity: 0.5;
+            }
+
+            #page-block-m5ywl8e5c23xr .block-inner
+            {
+                margin-top: 0px;
+                height: calc(100% + 0px);
+            }
+
+
+            #page-block-20h8hausjmsiqkt9 { height: 336px; }
+            #page-block-20h8hausjmsiqkt9 .border-holder
+            {
+                background-image: none;
+
+                background-color: #003366;
+
+                background-repeat: no-repeat;						background-position: left bottom;
+
+                background-size:auto auto;
+                -webkit-background-size:auto auto;
+                -moz-background-size:auto auto;
+                -o-background-size:auto auto;
+
+
+                width: auto;
+                border-width: 0;
+                border-top-width: 0px;
+                border-bottom-width: 0px;
+
+
+                height: 336px;
+
+            }
+
+            @media only screen and (max-width: 770px) {
+                .border-holder {
+                    background-attachment: scroll !important;
+                }
+            }
+
+            #page-block-20h8hausjmsiqkt9 .color-overlay
+            {
+                display: none;
+            }
+
+            #page-block-20h8hausjmsiqkt9 .block-inner
+            {
+                margin-top: 0px;
+                height: calc(100% + 0px);
+            }
+
+
+            #page-block-itl8a5r5j7adobt9 { height: 11523px; }
+            #page-block-itl8a5r5j7adobt9 .border-holder
+            {
+                background-image: none;
+
+                background-color: transparent;
+
+                background-repeat: repeat;						background-position: top left;
+
+                background-size:cover;
+                -webkit-background-size:cover;
+                -moz-background-size:cover;
+                -o-background-size:cover;
+
+                border-color: #dddddd;		border-style: solid;
+                width: auto;
+                border-width: 0;
+                border-top-width: 1px;
+                border-bottom-width: 1px;
+
+
+                height: 11523px;
+
+            }
+
+            @media only screen and (max-width: 770px) {
+                .border-holder {
+                    background-attachment: scroll !important;
+                }
+            }
+
+            #page-block-itl8a5r5j7adobt9 .color-overlay
+            {
+                display: none;
+            }
+
+            #page-block-itl8a5r5j7adobt9 .block-inner
+            {
+                margin-top: -1px;
+                height: calc(100% + 2px);
+            }
+
+
+            #page-block-q6nkvc1zwsbawcdi { height: 54px; }
+            #page-block-q6nkvc1zwsbawcdi .border-holder
+            {
+                background-image: none;
+
+                background-color: #003366;
+
+                background-repeat: repeat;						background-position: top left;
+
+                background-size:cover;
+                -webkit-background-size:cover;
+                -moz-background-size:cover;
+                -o-background-size:cover;
+
+
+                width: auto;
+                border-width: 0;
+                border-top-width: 0px;
+                border-bottom-width: 0px;
+
+
+                height: 54px;
+
+            }
+
+            @media only screen and (max-width: 770px) {
+                .border-holder {
+                    background-attachment: scroll !important;
+                }
+            }
+
+            #page-block-q6nkvc1zwsbawcdi .color-overlay
+            {
+                display: none;
+            }
+
+            #page-block-q6nkvc1zwsbawcdi .block-inner
+            {
+                margin-top: 0px;
+                height: calc(100% + 0px);
+            }
+
+        }
+
+        @media
+        screen and (min-width: 621px)  and (-webkit-max-device-pixel-ratio: 1.5),
+        screen and (min-width: 1000px) and (-webkit-max-device-pixel-ratio: 1.5)
+        {
+            .new_mobile .page.page2.mobile .block-inner
+            {
+                width: 960px;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sortable/0.6.0/css/sortable-theme-bootstrap.css">
+
+    <script data-tag="instapage-unicorns-tag" data-enforce-business-email="false" data-redirect-signup="false" type="text/javascript" src="/js/instapage.min.js"></script>
+
+
+    <script type='text/javascript'>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    </script>
+    <script type='text/javascript'>
+        ga( 'create', 'UA-2917383-11', 'auto', 'IPTracker' );
+        ga( 'IPTracker.send', 'pageview' );
+    </script>
+
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MS68MJS' );</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+
+<body class=" new_mobile">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MS68MJS"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+<div id="i-page" class="page page2 ">
+    <div class="notification">
+        <div class="notification-overlay"></div>
+        <div class="notification-inner">
+            <img rel="//v.fastcdn.co/a/img/loading_circle.svg" src="" class="loading notification-loader" alt="" />
+            <span class="message"></span>
+            <span class="close-button" onclick="jQuery(this).parent().parent().hide()">Close</span>
+        </div>
+    </div>
+
+    <div class="page-block" id="page-block-m5ywl8e5c23xr">
+        <div class="color-overlay"></div>
+        <div class="border-holder">
+            <div class="block-inner">
+                <div
+                        class="page-element widget-container page-element-type-headline widget-headline "
+                        id="element-1298"
+                >
+
+
+                    <div class="contents"><h1><p style=" "><font color="#a2a0a0"><a href="https://app.cbinsights.com/signup" rel="null" type="url" id="link-md3m2c8m6er" class="url-link" target="_blank">Sign Up</a></font></p></h1></div>
+                </div>
+
+                <div
+                        class="page-element widget-container page-element-type-image widget-image "
+                        id="element-1"
+                >
+
+
+                    <div class="contents">
+                        <a
+                                href="http://www.cbinsights.com"
+                                style="width: 100%; height: 100%;"
+                                target="_blank"		>
+                            <img
+                                    src="//v.fastcdn.co/t/11443291/8d957988/1526924301-5646763-215x43x223x49x1x1-CBI-Logo-Transparent.png"
+                                    style="margin-top: ;"
+                                    alt=""
+                            />
+
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                        class="page-element widget-container page-element-type-headline widget-headline "
+                        id="element-1297"
+                >
+
+
+                    <div class="contents"><h1><p style=" "><font color="#a2a0a0"><a href="https://www.cbinsights.com/research/" rel="null" type="url" id="link-mmbzfwnu3l" class="url-link" target="_blank">Research</a></font></p></h1></div>
+                </div>
+
+                <div
+                        class="page-element widget-container page-element-type-headline widget-headline "
+                        id="element-1299"
+                >
+
+
+                    <div class="contents"><h1><p style=" "><font color="#a2a0a0"><a href="https://www.cbinsights.com/about" rel="null" type="url" id="link-pm8a42wyb9k" class="url-link" target="_blank">About</a></font></p></h1></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="page-block" id="page-block-20h8hausjmsiqkt9">
+        <div class="color-overlay"></div>
+        <div class="border-holder">
+            <div class="block-inner">
+                <div
+                        class="page-element widget-container page-element-type-text widget-text "
+                        id="element-1293"
+                >
+
+                    <div class="contents"><p style=" "><span style="color: rgb(255, 255, 255);">Current Private Companies Valued At $1B+</span></p><p style=" "><span style="color: rgb(255, 255, 255);"><br></span></p><p style=" "><span style="color: rgb(255, 255, 255);"><br></span></p><p style=" "><font color="#ffffff">Total Number of Unicorn Companies: </font><font color="#ea5205">237</font></p><p style=" "><font color="#ffffff">Total Cumulative Valuation:</font><font color="#ff6633">&nbsp;~ $815B</font></p></div>
+                </div>
+
+                <div
+                        class="page-element widget-container page-element-type-form widget-form "
+                        id="element-18"
+                >
+
+                    <style type="text/css">
+                        #element-18 .submit-button
+                        {
+                            background-color: #ff6633;
+
+                            color: #ffffff;
+
+
+                        }
+
+                        #element-18 .submit-button:active
+                        {
+                        }
+
+                        #element-18 .field-checkbox .field-element input[type=checkbox]:checked + label:before
+                        {
+                            background-color: #ff6633;
+                            border-color: #ff6633;
+                        }
+
+                        #element-18 .field-radio .field-element label:after
+                        {
+                            border-color: #ff6633;
+                        }
+
+                        #element-18 .input-holder label
+                        {
+                            color: #000000;
+                        }
+
+                        #element-18 ::-webkit-input-placeholder
+                        { /* WebKit browsers */
+                            color: #000000	}
+
+                        #element-18 :-moz-placeholder
+                        { /* Mozilla Firefox 4 to 18 */
+                            color: #000000;
+                        }
+
+                        #element-18 ::-moz-placeholder
+                        { /* Mozilla Firefox 19+ */
+                            color: #000000;
+                        }
+
+                        #element-18 :-ms-input-placeholder
+                        { /* Internet Explorer 10+ */
+                            color: #000000;
+                        }
+
+                        #element-18 label.error
+                        {
+                            color: #C00;
+                        }
+
+                        #element-18 input[type="text"],
+                        #element-18 input[type="password"],
+                        #element-18 input[type="email"],
+                        #element-18 textarea
+                        {
+                            color: #000000;
+                            background-color: #ffffff;
+
+                            border-color: #555555;
+                        }
+
+                        #element-18 input::-webkit-input-placeholder
+                        {
+                            color: #000000;
+                        }
+
+                        #element-18 input:-moz-placeholder
+                        {
+                            color: #000000;
+                            opacity: 1;
+                        }
+
+                        #element-18 input::-moz-placeholder
+                        {
+                            color: #000000;
+                            opacity: 1;
+                        }
+
+                        #element-18 input:-ms-input-placeholder
+                        {
+                            color: #000000;
+                        }
+
+                        #element-18 select
+                        {
+                            color: #000000		}
+
+                        #element-18 select[label-position="inside"].pristine
+                        {
+                            color: #000000	}
+
+                        #element-18 select option
+                        {
+                            background-color: #ffffff;
+                        }
+
+                        #element-18 select
+                        {
+                            border-color: #555555;
+                            background-color: #ffffff;
+                        }
+
+                        #element-18 .dynamic-button:hover
+                        {
+                            background-color: #ff6633;
+                        }
+
+                        #element-18 .submit-holder
+                        {
+                            position: relative;
+                        }
+
+                        #element-18 .dynamic-button, #element-18 .image-button
+                        {
+                            position: absolute;
+                            margin: 0;
+
+                            top: 7px;
+                            left: 489px;
+                            width: 347px;
+                            height: 43px;
+                            box-sizing: content-box;
+                            line-height: 17px;
+                            font-size: 15px;
+                            font-weight: 700;
+                            font-family: Roboto;
+                            border-radius: 5px;					}
+
+                        @media
+                        screen and ( max-width: 620px ),
+                        screen and ( max-width: 999px ) and ( -webkit-min-device-pixel-ratio: 1.5 ) and ( max-device-width: 1280px ) and ( max-device-height: 720px ),
+                        screen and ( max-width: 999px ) and ( -webkit-min-device-pixel-ratio: 1.5 ) and ( max-device-width: 1000px )
+                        {
+                            body:not( .tablet ) #page-block-20h8hausjmsiqkt9 #element-18 .dynamic-button, body:not( .tablet ) #page-block-20h8hausjmsiqkt9 #element-18 .image-button
+                            {
+                                position: absolute;
+                                /* 272*/
+                                top: 80px;
+                                left: -0.5px;
+                                width: 354px;
+                                height: 45px;
+                                line-height: 18px;
+                                font-size: 15px;
+                            }
+                        }
+
+
+                    </style>
+
+                    <div class="widget-container widget-form">
+                        <div class="contents">
+                            <form method="post" action="https://d.fastcdn.co/submissions" class="email-form" data="instapage-form" data-wid="18">
+                                <input type="hidden" name="lpsSubmissionConfig" value="eyJhbGciOiJIUzI1NiJ9.eyJhcGkiOmZhbHNlLCJhc3luYyI6ZmFsc2UsImRvd25sb2FkRmlsZSI6ZmFsc2UsImZpZWxkcyI6W3sidHlwZSI6InRleHQiLCJkZWZhdWx0X3ZhbHVlIjoiRW50ZXIgeW91ciBidXNpbmVzcyBlbWFpbCIsIm5hbWUiOiJFbnRlciB5b3VyIGJ1c2luZXNzIGVtYWlsIiwidmFsdWUiOiJFbnRlciB5b3VyIGJ1c2luZXNzIGVtYWlsIiwicmVxdWlyZWQiOnRydWUsImhpZGVfbGFiZWwiOmZhbHNlLCJmaWVsZF9pZCI6MCwiZW1haWwiOnRydWV9XSwiZm9ybUlkIjoxOCwiaW50ZWdyYXRpb25zIjpbeyJ2ZXJzaW9uIjoxLCJ0b2tlbiI6eyJpZCI6IjMyMzE2MyIsImxhYmVsIjoiIn0sImZpZWxkbWFwIjpbeyJpbnN0YXBhZ2UiOiJFbnRlciB5b3VyIGJ1c2luZXNzIGVtYWlsIiwiaW5zdGFwYWdlVHlwZSI6IiIsImludGVncmF0aW9uIjoiRW1haWwiLCJpbnRlZ3JhdGlvblR5cGUiOiIifV0sInNlbmRNZXRob2QiOiJwb3N0LWpzb24iLCJhc3luYyI6ZmFsc2UsImludGVncmF0aW9uIjoid2ViaG9vayJ9XSwibXVsdGlzdGVwIjpmYWxzZSwicGFnZSI6eyJpZCI6MzMzMjU5LCJ2ZXJzaW9uIjoxMDE1LCJvd25lciI6MTAwOTI1LCJjdXN0b21lciI6MTE5MDA3LCJmb2xkZXIiOjY0NzM5M30sInJlZGlyZWN0IjpmYWxzZSwic2F2ZVN1Ym1pc3Npb24iOnRydWUsInRoYW5rWW91TWVzc2FnZSI6IiIsInZhcmlhdGlvbiI6eyJpZCI6MSwibGlua2VkVmFyaWF0aW9uSWQiOjIsIm5hbWUiOiJBIiwiY3VzdG9tTmFtZSI6IkEifSwicmVDYXB0Y2hhIjpmYWxzZX0._dNNcIkdE0Tg-nxHRVeUIlc_1uptidZF20a-Wa_Y8lw" />			<input type="hidden" name="variant" value="A" />
+
+
+
+                                <div class="input-holder field-text">
+
+
+                                    <div class="field-element ">
+                                        <input
+                                                id="ad2a00d160661ebfd8c5645dbbac135f-0"
+                                                type="email"
+                                                name="RW50ZXIgeW91ciBidXNpbmVzcyBlbWFpbA=="
+                                                value=""
+                                                placeholder="Enter your business email"
+                                                data-label-inside="Enter your business email"
+                                                class="shortnice form-input required  "
+                                        />
+                                    </div>
+                                </div>
+
+                                <input type="hidden" name="redirect" class="configuration" value="http://www.cbinsights.com/research-thank-you-report-download" />
+
+
+                                <input
+                                        type="hidden"
+                                        name="webhook-integration"
+                                        class="configuration"
+                                        value="eyJ2ZXJzaW9uIjoxLCJ0b2tlbiI6eyJpZCI6IjMyMzE2MyIsImxhYmVsIjoiIn0sImZpZWxkbWFwIjpbeyJpbnN0YXBhZ2UiOiJFbnRlciB5b3VyIGJ1c2luZXNzIGVtYWlsIiwiaW5zdGFwYWdlVHlwZSI6IiIsImludGVncmF0aW9uIjoiRW1haWwiLCJpbnRlZ3JhdGlvblR5cGUiOiIifV0sInNlbmRNZXRob2QiOiJwb3N0LWpzb24ifQ=="
+                                />
+
+                                <button
+                                        class="btn submit-button button_submit dynamic-button  corners  "
+                                >GET OUR FREE UNICORN RESEARCH</button>
+
+                                <input type="hidden" name="validation" value="Tzo4OiJzdGRDbGFzcyI6Mjp7czo2OiJmaWVsZHMiO2E6MTp7czoyNToiRW50ZXIgeW91ciBidXNpbmVzcyBlbWFpbCI7Tzo4OiJzdGRDbGFzcyI6MTp7czo4OiJyZXF1aXJlZCI7YjoxO319czo3OiJmb3JtX2lkIjtzOjMyOiJhZDJhMDBkMTYwNjYxZWJmZDhjNTY0NWRiYmFjMTM1ZiI7fQ==" />
+
+
+                            </form>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                </div>
+
+                <div
+                        class="page-element widget-container page-element-type-text widget-text "
+                        id="element-1291"
+                >
+
+                    <div class="contents"><p style="text-align: left;  "><font color="#ffffff">(including whisper valuations)</font></p></div>
+                </div>
+
+                <div
+                        class="page-element widget-container page-element-type-headline widget-headline "
+                        id="element-1292"
+                >
+
+
+                    <div class="contents"><h1><p style=" "><font color="#ffffff">The Global Unicorn Club</font></p></h1></div>
+                </div>
+
+                <div
+                        class="page-element widget-container page-element-type-image widget-image "
+                        id="element-1294"
+                >
+
+
+                    <div class="contents">
+                        <img
+                                src="//v.fastcdn.co/t/11443291/8d957988/1526924302-23265466-267x296x267x300x0x3-Unicorn.png"
+                                style="margin-top: ;"
+                                alt=""
+                        />
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="page-block" id="page-block-itl8a5r5j7adobt9">
+        <div class="color-overlay"></div>
+        <div class="border-holder">
+            <div class="block-inner">
+                <div
+                        class="page-element widget-container page-element-type-html widget-html "
+                        id="element-32"
+                >
+
+                    <div class="contents">
+                        <table class="sortable-theme-bootstrap" data-sortable>
+                            <thead>
+                            <tr>
+                                <th>Company</th>
+                                <th data-sorted="true" width="120">Valuation ($B)</th>
+                                <th>Date Joined</th>
+                                <th>Country</th>
+                                <th>Industry</th>
+                                <th data-sortable="false">Select Investors</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/uber">Uber</a></td>
+                                <td data-value="68">$68</td>
+                                <td>8/23/2013</td>
+                                <td>United States</td>
+                                <td>On-Demand</td>
+                                <td>Lowercase Capital,
+                                    Benchmark Capital, Google Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/didi-kuaidi">Didi Chuxing
+                                </a></td>
+                                <td data-value="56">$56</td>
+                                <td>12/31/2014</td>
+                                <td>China</td>
+                                <td>On-Demand</td>
+                                <td>Matrix Partners, Tiger
+                                    Global Management, Softbank Corp.,</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/xiaomi">Xiaomi</a></td>
+                                <td data-value="46">$46</td>
+                                <td>12/21/2011</td>
+                                <td>China</td>
+                                <td>Hardware</td>
+                                <td>Digital Sky Technologies,
+                                    QiMing Venture Partners, Qualcomm Ventures</td>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/china-internet-plus-holding">China Internet Plus Holding (Meituan Dianping)</a></td>
+                                <td data-value="30">$30</td>
+                                <td>12/22/2015</td>
+                                <td>China</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>DST Global, Trustbridge Partners, Capital Today</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/airbnb">Airbnb</a></td>
+                                <td data-value="29.3">$29.3</td>
+                                <td>7/26/2011</td>
+                                <td>United States</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>General Catalyst Partners,
+                                    Andreessen Horowitz, ENIAC Ventures</td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/space-exploration-technologies">SpaceX</a></td>
+                                <td data-value="21.5">$21.5</td>
+                                <td>12/1/2012</td>
+                                <td>United States</td>
+                                <td>Other Transportation</td>
+                                <td>Founders Fund, Draper
+                                    Fisher Jurvetson, Rothenberg Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/palantir-technologies">Palantir
+                                    Technologies</a></td>
+                                <td data-value="20">$20</td>
+                                <td>5/5/2011</td>
+                                <td>United States</td>
+                                <td>Big Data</td>
+                                <td>RRE Ventures, Founders
+                                    Fund, In-Q-Tel</td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/wework">WeWork</a></td>
+                                <td data-value="20">$20</td>
+                                <td>2/3/2014</td>
+                                <td>United States</td>
+                                <td>Facilities</td>
+                                <td>T. Rowe Price, Benchmark
+                                    Capital, SoftBank Group</td>
+                            </tr>
+                            <td><a href="https://www.cbinsights.com/company/bytedance">Toutiao (Bytedance)</a></td>
+                            <td data-value="20">$20</td>
+                            <td>4/7/2017</td>
+                            <td>China</td>
+                            <td>Digital Media/ AI</td>
+                            <td>Sequoia Capital China, SIG Asia Investments, Sina Weibo</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/shanghai-lujiazui-international-financial-asset-exchange-co">Lu.com</a></td>
+                                <td data-value="18.5">$18.5</td>
+                                <td>12/26/2014</td>
+                                <td>China</td>
+                                <td>Fintech</td>
+                                <td>Ping An Insurance CDH Investments, Bank of China</td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/pinduoduo">Pinduoduo</a></td>
+                                <td data-value="15">$15</td>
+                                <td>7/20/2016</td>
+                                <td>China</td>
+                                <td>eCommerce</td>
+                                <td>Tencent Holdings, Banyan Capital, Cathay Innovation</td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/pinterest">Pinterest</a></td>
+                                <td data-value="12.3">$12.3</td>
+                                <td>5/19/2012</td>
+                                <td>United States</td>
+                                <td>Social</td>
+                                <td>Andreessen Horowitz, Bessemer Venture Partners, Firstmark Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/flipkart">Flipkart</a></td>
+                                <td data-value="11.6">$11.6</td>
+                                <td>8/6/2012</td>
+                                <td>India</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>Accel Partners, SoftBank Group, Iconiq Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/lyft">Lyft</a></td>
+                                <td data-value="11.5">$11.5</td>
+                                <td>3/12/2015</td>
+                                <td>United States</td>
+                                <td>On-Demand</td>
+                                <td>Founders Fund, Mayfield
+                                    Fund, capitalG</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/infor">Infor</a></td>
+                                <td data-value="10">$10</td>
+                                <td>11/16/2016</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>Blackstone Group, Koch Industries</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/dji">DJI
+                                    Innovations</a></td>
+                                <td data-value="10">$10</td>
+                                <td>5/6/2015</td>
+                                <td>China</td>
+                                <td>Hardware</td>
+                                <td>Accel Partners, Sequoia
+                                    Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/stripe">Stripe</a></td>
+                                <td data-value="9.2">$9.2</td>
+                                <td>1/23/2014</td>
+                                <td>United States</td>
+                                <td>Fintech</td>
+                                <td>Khosla Ventures, Lowercase
+                                    Capital, capitalG</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/snapdeal">Snapdeal</a></td>
+                                <td data-value="7">$7</td>
+                                <td>5/21/2014</td>
+                                <td>India</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>SoftBankGroup,Blackrock, Alibaba Group</td>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/c-60888b06d6c531dd8a597627c4922973?term=d2c85b20-b630-519f-baeb-1e6b19048568">Global Switch</a></td>
+                                <td data-value="6.02">$6.02</td>
+                                <td>12/22/2016</td>
+                                <td>United Kingdom</td>
+                                <td>Computer Hardware & Services</td>
+                                <td>Aviation Industry Corporation of China, Essence Financial, Jiangsu Sha Steel Group</td>
+                            </tr>
+                            </tr>
+                            <td><a href="https://www.cbinsights.com/company/grabtaxi">GrabTaxi</a></td>
+                            <td data-value="6">$6</td>
+                            <td>12/4/2014</td>
+                            <td>Singapore</td>
+                            <td>On-Demand</td>
+                            <td>GGV Capital, Vertex Venture
+                                Holdings, Softbank Group</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/beijing-homelink-real-estate-brokerage-co">Lianjia</a></td>
+                                <td data-value="5.8">$5.8</td>
+                                <td>4/8/2016</td>
+                                <td>China</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>Tencent, Baidu, Huasheng Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/manbang">Manbang Group</a></td>
+                                <td data-value="6">$6</td>
+                                <td>4/24/2018</td>
+                                <td>China</td>
+                                <td>Supply chain & Logistics</td>
+                                <td>Softbank Group, CapitalG</td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/one97-communications">One97
+                                    Communications (operates Paytm)</a></td>
+                                <td data-value="5.7">$5.7</td>
+                                <td>5/12/2015</td>
+                                <td>India</td>
+                                <td>Fintech</td>
+                                <td>Intel Capital, Sapphire
+                                    Ventures, Alibaba Group</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/easyhome">EasyHome</a></td>
+                                <td data-value="5.7">$5.7</td>
+                                <td>2/12/2018</td>
+                                <td>China</td>
+                                <td>Retail</td>
+                                <td>Alibaba Group, Boyu Capital, Borui Capital</td>
+                            </tr>
+                            <tr>
+
+                                <td><a href="https://www.cbinsights.com/company/vice-media">Vice Media</a></td>
+                                <td data-value="5.7">$5.7</td>
+                                <td>8/17/2013</td>
+                                <td>United States</td>
+                                <td>Media</td>
+                                <td>Technology Crossover Ventures, A&E Television Networks</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/robinhood">Robinhood</a></td>
+                                <td data-value="5.6">$5.6</td>
+                                <td>4/26/2017</td>
+                                <td>United States</td>
+                                <td>Fintech</td>
+                                <td>Google Ventures, Andreessen Horowitz, DST Global</td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/intarcia-therapeutics">Intarcia
+                                    Therapeutics</a></td>
+                                <td data-value="5.5">$5.5</td>
+                                <td>4/1/2014</td>
+                                <td>United States</td>
+                                <td>Healthcare</td>
+                                <td>New Enterprise Associates,
+                                    New Leaf Venture Partners, Charter Venture Capital</td>
+                            </tr>
+
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/slack">Slack
+                                    Technologies</a></td>
+                                <td data-value="5.1">$5.1</td>
+                                <td>10/31/2014</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>Google Ventures, Institutional Venture Partners, Index Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/contextmedia">Outcome Health</a></td>
+                                <td data-value="5">$5</td>
+                                <td>5/31/2017</td>
+                                <td>United States</td>
+                                <td>Healthcare</td>
+                                <td>Goldman Sachs, capitalG, Pritzker Group Venture Capital</td>
+                            </tr>
+                            <td><a href="https://www.cbinsights.com/c-5580aac1183735720ad3410a4add1d74">United Imaging Healthcare</a></td>
+                            <td data-value="5">$5</td>
+                            <td>9/14/2017</td>
+                            <td>China</td>
+                            <td>Healthcare</td>
+                            <td>China Life Insurance, China Development Bank Capital, CITIC Securities International</td>
+                            </tr>
+
+                            <td><a href="https://www.cbinsights.com/company/coupang">Coupang</a></td>
+                            <td data-value="5">$5</td>
+                            <td>5/28/2014</td>
+                            <td>South Korea</td>
+                            <td>eCommerce/Marketplace</td>
+                            <td>Sequoia Capital, Founder
+                                Collective, Wellington Management</td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/nextev">NIO</a></td>
+                                <td data-value="5">$5</td>
+                                <td>3/15/2017</td>
+                                <td>China</td>
+                                <td>AutoTech/ AI</td>
+                                <td>Baidu Venture Capital, Capital Today, GIC</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/ubtech-robotics">UBTECH Robotics</a></td>
+                                <td data-value="5">$5</td>
+                                <td>7/26/2016</td>
+                                <td>China</td>
+                                <td>Robotics</td>
+                                <td>CDH Investments, Goldstone Investments, Qiming Venture Partners</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/magic-leap">Magic
+                                    Leap</a></td>
+                                <td data-value="4.98">$4.98</td>
+                                <td>10/21/2014</td>
+                                <td>United States</td>
+                                <td>VR/AR</td>
+                                <td>Obvious Ventures, Qualcomm
+                                    Ventures, Andreessen Horowitz</td>
+                            </tr>
+                            <td><a
+                                    href="https://www.cbinsights.com/company/meizu">Meizu Technology</a></td>
+                            <td data-value="4.58">$4.58</td>
+                            <td>7/23/2014</td>
+                            <td>China</td>
+                            <td>Hardware</td>
+                            <td>Telling Telecommunication Holding Co., Alibaba Group</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/fanatics">Fanatics</a></td>
+                                <td data-value="4.5">$4.5</td>
+                                <td>6/6/2012</td>
+                                <td>United States</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>SoftBank Group, Andreessen Horowitz, Temasek Holdings</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/sensetime">SenseTime</a></td>
+                                <td data-value="4.5">$4.5</td>
+                                <td>7/11/2017</td>
+                                <td>China</td>
+                                <td>Computer Vision/ AI</td>
+                                <td>Star VC, IDG Capital, Infore Capital, Alibaba Group</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/instacart">Instacart</a></td>
+                                <td data-value="4.35">$4.35</td>
+                                <td>12/30/2014</td>
+                                <td>United States</td>
+                                <td>On-Demand</td>
+                                <td>Khosla Ventures, Kleiner
+                                    Perkins Caufield & Byers, Collaborative Fund</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/yello-mobile">Yello
+                                    Mobile</a></td>
+                                <td data-value="4">$4</td>
+                                <td>11/11/2014</td>
+                                <td>South Korea</td>
+                                <td>Mobile Software & Services</td>
+                                <td>Formation 8</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/houzz">Houzz</a></td>
+                                <td data-value="4">$4</td>
+                                <td>9/30/2014</td>
+                                <td>United States</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>New Enterprise Associates,
+                                    Sequoia Capital, Comcast Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/social-finance">Social Finance</a></td>
+                                <td data-value="4">$4</td>
+                                <td>2/3/2015</td>
+                                <td>United States</td>
+                                <td>Fintech</td>
+                                <td>Baseline Ventures, DCM Ventures, Institutional Venture Partners</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/tanium">Tanium</a></td>
+                                <td data-value="3.75">$3.75</td>
+                                <td>3/31/2015</td>
+                                <td>United States</td>
+                                <td>Cybersecurity</td>
+                                <td>Andreessen Horowitz,
+                                    Nor-Cal Invest, TPG Growth</td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/ani-technologies">Olacabs</a></td>
+                                <td data-value="3.65">$3.65</td>
+                                <td>10/27/2014</td>
+                                <td>India</td>
+                                <td>On-demand</td>
+                                <td>Accel Partners, SoftBank Group, Sequoia Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/auto1-group">Auto1 Group</a></td>
+                                <td data-value="3.54">$3.54</td>
+                                <td>8/3/2015</td>
+                                <td>Germany</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>Digital Sky Technologies, Piton Capital, DN Capital, SoftBank Group</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/otto-bock">Otto Bock HealthCare</a></td>
+                                <td data-value="3.5">$3.5</td>
+                                <td>6/24/2017</td>
+                                <td>Germany</td>
+                                <td>Healthcare</td>
+                                <td>EQT Partners</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/credit-karma">Credit
+                                    Karma</a></td>
+                                <td data-value="3.5">$3.5</td>
+                                <td>9/29/2014</td>
+                                <td>United States</td>
+                                <td>Fintech</td>
+                                <td>Felicis Ventures, SV Angel,
+                                    Founders Fund</td>
+                            </tr>
+
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/the-hut-group">The Hut Group</a></td>
+                                <td data-value="3.25">$3.25</td>
+                                <td>08/13/2017</td>
+                                <td>United Kingdom</td>
+                                <td>eCommerce </td>
+                                <td>Kohlberg Kravis Roberts & Co., Old Mutual Global Investors, Artemis Investment Management</td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/oscar-health-insurance-co">Oscar
+                                    Health Insurance Co.</a></td>
+                                <td data-value="3.2">$3.2</td>
+                                <td>4/20/2015</td>
+                                <td>United States</td>
+                                <td>Healthcare</td>
+                                <td>BoxGroup, Formation8,
+                                    Khosla Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/kuaishou">Kuaishou</a></td>
+                                <td data-value="3">$3</td>
+                                <td>1/1/2015</td>
+                                <td>China</td>
+                                <td>Social</td>
+                                <td>Morningside Venture Capital, Sequoia Capital, Baidu</td>
+                            </tr>
+
+                            <td><a href="https://www.cbinsights.com/company/royole-corporation">Royole Corporation</a></td>
+                            <td data-value="3">$3</td>
+                            <td>11/4/2016</td>
+                            <td>China</td>
+                            <td>Hardware</td>
+                            <td>Warmsun Holding, IDG Capital Partners</td>
+                            </tr>
+
+                            <td><a href="https://www.cbinsights.com/company/maoyan-weiying">Maoyan-Weiying</a></td>
+                            <td data-value="3">$3</td>
+                            <td>11/10/2017</td>
+                            <td>China</td>
+                            <td>eCommerce/Marketplace</td>
+                            <td>Tencent Holdings, Enlight Media Group</td>
+                            </tr>
+                            <tr>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/vancl">VANCL</a></td>
+                                <td data-value="3">$3</td>
+                                <td>12/14/2010</td>
+                                <td>China</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>Ceyuan Ventures, QiMing
+                                    Venture Partners, Temasek Holdings</td>
+                            </tr>
+
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/moderna">Moderna</a></td>
+                                <td data-value="3">$3</td>
+                                <td>12/19/2014</td>
+                                <td>United States</td>
+                                <td>Healthcare</td>
+                                <td>Flagship Ventures, Invus
+                                    Group, Wellington Management</td>
+                            </tr>
+
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/contextlogic">ContextLogic (dba. Wish)</a></td>
+                                <td data-value="3">$3</td>
+                                <td>5/18/2015</td>
+                                <td>United States</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>Founders Fund, GGV Capital, Digital Sky Technologies</td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/bgl-group">BGL Group</a></td>
+                                <td data-value="3">$3</td>
+                                <td>11/24/2017</td>
+                                <td>United Kingdom</td>
+                                <td>Fintech</td>
+                                <td>CPP Investment Board</td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/circle">Circle</a></td>
+                                <td data-value="3">$3</td>
+                                <td>5/15/2018</td>
+                                <td>United States</td>
+                                <td>Fintech</td>
+                                <td>Y Combinator, Andreessen Horowitz, Matrix Partners</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/e-shang-redwood">e-shang Redwood</a></td>
+                                <td data-value="2.8">$2.8</td>
+                                <td>7/26/2017</td>
+                                <td>China</td>
+                                <td>Real Estate</td>
+                                <td>SK Group, GF Investments, China Minsheng Banking Corp.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/meicai">Meicai</a></td>
+                                <td data-value="2.8">$2.8</td>
+                                <td>1/11/2018</td>
+                                <td>China</td>
+                                <td>Food & Grocery</td>
+                                <td>Tiger Global Management, Blue Lake Capital, ZhenFund</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/bloom-energy">Bloom
+                                    Energy</a></td>
+                                <td data-value="2.7">$2.7</td>
+                                <td>3/6/2009</td>
+                                <td>United States</td>
+                                <td>Greentech</td>
+                                <td>Kleiner Perkins Caufield
+                                    & Byers, ATEL Ventures, DAG Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/unity-technologies">Unity Technologies</a></td>
+                                <td data-value="2.6">$2.6</td>
+                                <td>7/13/2016</td>
+                                <td>United States</td>
+                                <td>Gaming</td>
+                                <td>Sequoia Capital, iGlobe Partners, DFJ Growth</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/klarna">Klarna</a></td>
+                                <td data-value="2.5">$2.5</td>
+                                <td>12/12/2011</td>
+                                <td>Sweden</td>
+                                <td>Fintech</td>
+                                <td>Institutional Venture
+                                    Partners, Sequoia Capital, General Atlantic</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/c-17d38d747cfb7de1cdb26cb6a30c4033">VistaJet</a></td>
+                                <td data-value="2.5">$2.5</td>
+                                <td>8/23/2017</td>
+                                <td>Malta</td>
+                                <td>On-demand</td>
+                                <td>Rhone Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/qualtrics">Qualtrics</a></td>
+                                <td data-value="2.5">$2.5</td>
+                                <td>9/24/2014</td>
+                                <td>United States</td>
+                                <td>Big Data</td>
+                                <td>Accel Partners, Insight
+                                    Venture Partners, Sequoia Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/grail">GRAIL</a></td>
+                                <td data-value="2.46">$2.46</td>
+                                <td>3/1/2017</td>
+                                <td>United States</td>
+                                <td>Genomics</td>
+                                <td>Kleiner Perkins Caufield & Byers, Amazon, Merck & Co.</td>
+                            </tr>
+
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/yitu-technology">YITU Technology</a></td>
+                                <td data-value="2.37">$2.37</td>
+                                <td>3/8/2018</td>
+                                <td>China</td>
+                                <td>Computer Vision</td>
+                                <td>Sequoia Capital China, Banyan Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/adyen">Adyen</a></td>
+                                <td data-value="2.3">$2.3</td>
+                                <td>12/16/2014</td>
+                                <td>Netherlands</td>
+                                <td>Fintech</td>
+                                <td>Felicis Ventures, Index
+                                    Ventures, Temasek Holdings</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/uptake-technologies">Uptake</a></td>
+                                <td data-value="2.3">$2.3</td>
+                                <td>10/27/2015</td>
+                                <td>United States</td>
+                                <td>Big Data</td>
+                                <td>Revolution, New Enterprise Associates, Caterpillar</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/urban-compass">Compass</a></td>
+                                <td data-value="2.2">$2.2</td>
+                                <td>8/31/2016</td>
+                                <td>United States</td>
+                                <td>Real Estate</td>
+                                <td>Founders Fund, Thrive Capital, Wellington Management</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/nucom-grou">NuCom Group</a></td>
+                                <td data-value="2.2">$2.2</td>
+                                <td>2/22/2018</td>
+                                <td>Germany</td>
+                                <td>Management & Strategy Consulting</td>
+                                <td>General Atlantic</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/renew-power">ReNew Power Ventures</a></td>
+                                <td data-value="2">$2</td>
+                                <td>2/14/2017</td>
+                                <td>India</td>
+                                <td>Energy & Utilities</td>
+                                <td>Goldman Sachs, JERA, Asian Development Bank</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/traveloka-indonesia">Traveloka</a></td>
+                                <td data-value="2">$2</td>
+                                <td>7/28/2017</td>
+                                <td>Indonesia</td>
+                                <td>TravelTech</td>
+                                <td>Global Founders Capital, East Ventures, Expedia Inc.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/huimin">Huimin</a></td>
+                                <td data-value="2">$2</td>
+                                <td>9/5/2016</td>
+                                <td>China</td>
+                                <td>On-Demand</td>
+                                <td>Zheshang Venture Capital, GP Capital, Western Capital Management</td>
+                            </tr>
+
+                            <td><a href="https://www.cbinsights.com/company/zenefits">Zenefits</a></td>
+                            <td data-value="2">$2</td>
+                            <td>5/6/2015</td>
+                            <td>United States</td>
+                            <td>Fintech</td>
+                            <td>SV Angel,<span
+                            >  </span>Institutional Venture Partners, Venrock</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/greensky-trade-credit">Greensky</a></td>
+                                <td data-value="2">$2</td>
+                                <td>10/22/2015</td>
+                                <td>United States</td>
+                                <td>Fintech</td>
+                                <td>DST Global, QED Investors, TPG Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/avant-credit">Avant</a></td>
+                                <td data-value="2">$2</td>
+                                <td>9/30/2015</td>
+                                <td>United States</td>
+                                <td>Fintech</td>
+                                <td>RRE Ventures, Tiger Global, August Capital</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/github">Github</a></td>
+                                <td data-value="2">$2</td>
+                                <td>7/30/2015</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>Sequoia Capital, Thrive Capital, SV Angel</td>
+                            </tr>
+
+                            <td><a
+                                    href="https://www.cbinsights.com/company/domo-technologies">Domo Technologies</a></td>
+                            <td data-value="2">$2</td>
+                            <td>4/8/2015</td>
+                            <td>United States</td>
+                            <td>Big Data</td>
+                            <td>Institutional Venture
+                                Partners, Benchmark Capital, Founders Fund</td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/trendy-group-international">Trendy
+                                    Group International</a></td>
+                                <td data-value="2">$2</td>
+                                <td>2/13/2012</td>
+                                <td>China</td>
+                                <td>Clothing & Accessories</td>
+                                <td>L Capital Partners</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/weiying-technology">Weiying</a></td>
+                                <td data-value="2">$2</td>
+                                <td>11/17/2015</td>
+                                <td>China</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>Tencent, iDreamSky Technology, GGV Capital</td>
+                            </tr>
+                            </tr>
+                            <td><a href="https://www.cbinsights.com/company/deliveroo">Deliveroo</a></td>
+                            <td data-value="2">$2</td>
+                            <td>9/25/2017</td>
+                            <td>United Kingdom</td>
+                            <td>On-demand</td>
+                            <td>Accel Partners, General Catalyst, Index Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/affirm">Affirm</a></td>
+                                <td data-value="2">$2</td>
+                                <td>12/11/2017</td>
+                                <td>United States</td>
+                                <td>Fintech</td>
+                                <td>Andreessen Horowitz, Khosla Ventures, Singapore Wealth Fund</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/nubank">Nubank</a></td>
+                                <td data-value="2">$2</td>
+                                <td>3/1/2018</td>
+                                <td>Brazil</td>
+                                <td>Fintech</td>
+                                <td>Sequoia Capital, Redpoint e.ventures, Kaszek Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/c-20eee0016146cf4e98daf74159f9fd4b">Cambricon</a></td>
+                                <td data-value="2">$2</td>
+                                <td>8/18/2017</td>
+                                <td>China</td>
+                                <td>Chips & Semiconductors</td>
+                                <td>Alibaba Entrepreneurs Fund, CAS Investment Management Co., Lenovo Ventures Group</td>
+                            </tr>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/preferred-networks">Preferred Networks</a></td>
+                                <td data-value="2">$2</td>
+                                <td>5/17/2018</td>
+                                <td>Japan</td>
+                                <td>Internet Software & Services</td>
+                                <td>Toyota Motor Corporation, Mizuho Financial Group, FANUC</td>
+                            </tr>
+
+                            <td><a href="https://www.cbinsights.com/company/go-jek">Go-Jek</a></td>
+                            <td data-value="1.8">$1.8</td>
+                            <td>8/4/2016</td>
+                            <td>Indonesia</td>
+                            <td>On-Demand</td>
+                            <td>Formation Group, Sequoia Capital India, Warburg Pincus</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/quora">Quora</a></td>
+                                <td data-value="1.8">$1.8</td>
+                                <td>4/21/2017</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>Y Combinator, Matrix Partners, Benchmark</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/zocdoc">Zocdoc</a></td>
+                                <td data-value="1.8">$1.8</td>
+                                <td>8/20/2015</td>
+                                <td>United States</td>
+                                <td>Healthcare</td>
+                                <td>Founders Fund, Khosla Ventures, Goldman Sachs</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/sprinklr">Sprinklr</a></td>
+                                <td data-value="1.8">$1.8</td>
+                                <td>3/31/2015</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>Azure Capital Partners,
+                                    Battery Ventures, Intel Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/reddit">reddit</a></td>
+                                <td data-value="1.8">$1.8</td>
+                                <td>7/31/2017</td>
+                                <td>United States</td>
+                                <td>Social</td>
+                                <td>Y Combinator, Sequoia Capital, Coatue Management</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/lp-cosmetic">L&P Cosmetic</a></td>
+                                <td data-value="1.78">$1.78</td>
+                                <td>4/28/2017</td>
+                                <td>South Korea</td>
+                                <td>Beauty & grooming</td>
+                                <td>CDIB Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/apttus">Apttus</a></td>
+                                <td data-value="1.75">$1.75</td>
+                                <td>9/1/2015</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>Iconiq Capital, K1 Capital, Salesforce Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/squarespace">Squarespace</a></td>
+                                <td data-value="1.7">$1.7</td>
+                                <td>12/14/2017</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>General Atlantic, Index Ventures, Accel Partners</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/buzzfeed">Buzzfeed</a></td>
+                                <td data-value="1.7">$1.7</td>
+                                <td>8/18/2015</td>
+                                <td>United States</td>
+                                <td>Media</td>
+                                <td>SV Angel, RRE Ventures, New Enterprise Associates
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/revolut">Revolut</a></td>
+                                <td data-value="1.7">$1.7</td>
+                                <td>4/26/2018</td>
+                                <td>United States</td>
+                                <td>Fintech</td>
+                                <td>index Ventures, DST Global, Ribbit Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/carbon3d">Carbon3D</a></td>
+                                <td data-value="1.7">$1.7</td>
+                                <td>12/20/2017</td>
+                                <td>United States</td>
+                                <td>Hardware</td>
+                                <td>Google Ventures, Sequoia Capital, Wakefield Group</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/hammer-chisel">Discord</a></td>
+                                <td data-value="1.65">$1.65</td>
+                                <td>04/20/2018</td>
+                                <td>United States</td>
+                                <td>eSports</td>
+                                <td>Benchmark, Greylock Partners, Tencent Holdings</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/curevac">CureVac</a></td>
+                                <td data-value="1.65">$1.65</td>
+                                <td>03/05/2015</td>
+                                <td>Germany</td>
+                                <td>Healthcare</td>
+                                <td>Northview Ventures, dievini Hopp BioTech Holding & Co.m Baillie Gifford & Co.</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/afiniti">Afiniti</a></td>
+                                <td data-value="1.6">$1.6</td>
+                                <td>4/14/2017</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>GAM Holding</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/infinidat">Infinidat</a></td>
+                                <td data-value="1.6">$1.6</td>
+                                <td>4/29/2015</td>
+                                <td>Israel</td>
+                                <td>Hardware</td>
+                                <td>TPG Growth, Goldman Sachs</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/blablacar">BlaBlaCar</a></td>
+                                <td data-value="1.6">$1.6</td>
+                                <td>9/16/2015</td>
+                                <td>France</td>
+                                <td>On-Demand</td>
+                                <td>Accel Partners, Index Ventures, Insight Venture Partners</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://cbinsights.com/company/blablacar">LaKala</a></td>
+                                <td data-value="1.6">$1.6</td>
+                                <td>6/23/2015</td>
+                                <td>China</td>
+                                <td>Fintech</td>
+                                <td>China Continent Property & Casualty Insurance, China Renaissance Capital Investment, China Taiping Life Insurance</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/coinbase">Coinbase</a></td>
+                                <td data-value="1.6">$1.6</td>
+                                <td>8/10/2017</td>
+                                <td>United States</td>
+                                <td>Fintech</td>
+                                <td>Y Combinator, Union Square Ventures, DFJ Growth</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/caocao">CAOCAO</a></td>
+                                <td data-value="1.6">$1.6</td>
+                                <td>1/17/2018</td>
+                                <td>China</td>
+                                <td>On Demand</td>
+                                <td>People Electrical Appliance Group China, Zhongrong International Trust</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/transferwise">TransferWise</a></td>
+                                <td data-value="1.6">$1.6</td>
+                                <td>1/26/2015</td>
+                                <td>United Kingdom</td>
+                                <td>Fintech</td>
+                                <td>IA Ventures, Index
+                                    Ventures, SV Angel</td>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/quanergy-systems">Quanergy Systems</a></td>
+                                <td data-value="1.59">$1.59</td>
+                                <td>8/24/2016</td>
+                                <td>United States</td>
+                                <td>Auto Tech</td>
+                                <td>Delphi Automotive, Samsung Ventures, Motus Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/promasidor-holdings">Promasidor Holdings</a></td>
+                                <td data-value="1.58">$1.58</td>
+                                <td>11/8/2016</td>
+                                <td>South Africa</td>
+                                <td>Food and Beverage</td>
+                                <td>IFC, Ajinomoto</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/zoox">Zoox</a></td>
+                                <td data-value="1.55">$1.55</td>
+                                <td>5/27/2016</td>
+                                <td>United States</td>
+                                <td>Auto Tech</td>
+                                <td>AID Partners, Draper Fisher Jurvetson</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/oxford-nanopore-technologies">Oxford Nanopore Technologies</a></td>
+                                <td data-value="1.55">$1.55</td>
+                                <td>7/21/2015</td>
+                                <td>United Kingdom</td>
+                                <td>Healthcare</td>
+                                <td>Illumina, Invesco Perpetual, IP Group</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/douyutv">DouyuTV</a></td>
+                                <td data-value="1.51">$1.51</td>
+                                <td>11/20/2017</td>
+                                <td>China</td>
+                                <td>Internet Software & Services</td>
+                                <td>CMB International Capital, Nanshan Capital, Tencent Holdings</td>
+                            </tr>
+
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/vipkid">Vipkid</a></td>
+                                <td data-value="1.5">$1.5</td>
+                                <td>8/23/2017</td>
+                                <td>China</td>
+                                <td>Edtech</td>
+                                <td>Sequoia Capital China, Tencent Holdings, Sinovation Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/insidesalescom">Insidesales.com</a></td>
+                                <td data-value="1.5">$1.5</td>
+                                <td>4/28/2014</td>
+                                <td>United States</td>
+                                <td>Big Data</td>
+                                <td>Microsoft Ventures, US
+                                    Venture Partners, Kleiner Perkins Caufield & Byers</td>
+                            </tr>
+
+                            <td><a href="https://www.cbinsights.com/company/mu-sigma">Mu Sigma</a></td>
+                            <td data-value="1.5">$1.5</td>
+                            <td>2/7/2013</td>
+                            <td>United States</td>
+                            <td>Big Data</td>
+                            <td>Sequoia Capital, General Atlantic</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/stx-entertainment">STX Entertainment</a></td>
+                                <td data-value="1.5">$1.5</td>
+                                <td>8/10/2016</td>
+                                <td>United States</td>
+                                <td>Entertainment</td>
+                                <td>Tencent, TPG Growth, Hony Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/mu-sigma">GuaHao</a></td>
+                                <td data-value="1.5">$1.5</td>
+                                <td>9/22/2015</td>
+                                <td>China</td>
+                                <td>Healthcare</td>
+                                <td>Tencent, Morningside Group</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/farfetch">Farfetch</a></td>
+                                <td data-value="1.5">$1.5</td>
+                                <td>3/4/2015</td>
+                                <td>United Kingdom</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>Advent Venture Partners,
+                                    Index Ventures, e.ventures</td>
+                            </tr>
+
+                            <td><a
+                                    href="https://www.cbinsights.com/company/jetsmarter-inc">JetSmarter</a></td>
+                            <td data-value="1.5">$1.5</td>
+                            <td>12/12/2016</td>
+                            <td>United States</td>
+                            <td>TravelTech</td>
+                            <td>Jay-Z, Saudi Royal Family, Jet Edge</td>
+                            </tr>
+
+                            <tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/tujia">Tujia</a></td>
+                                <td data-value="1.5">$1.5</td>
+                                <td>6/17/2015</td>
+                                <td>China</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>GGV Capital, QiMing Venture Partnersl</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/ironsource">ironSource</a></td>
+                                <td data-value="1.5">$1.5</td>
+                                <td>8/11/2014</td>
+                                <td>Israel</td>
+                                <td>Mobile Software &
+                                    Services</td>
+                                <td>Access Industries, Clal
+                                    Industries and Investments</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/https://www.cbinsights.com/company/23andme">23andMe</a></td>
+                                <td data-value="1.5">$1.5</td>
+                                <td>7/3/2015</td>
+                                <td>United States</td>
+                                <td>Healthcare</td>
+                                <td>Google Ventures, New Enterprise Associates, MPM Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/snowflake-computing">Snowflake Computing</a></td>
+                                <td data-value="1.5">$1.5</td>
+                                <td>1/25/2018</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>Redpoint Ventures,Iconiq Capital, Madrona Venture Group</td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/tuandai-network-technology-service">Tuandaiwang</a></td>
+                                <td data-value="1.46">$1.46</td>
+                                <td>5/30/2017</td>
+                                <td>China</td>
+                                <td>Fintech</td>
+                                <td>Beihai Hongtai Investment, China Minsheng Investment, Yisheng Innovation</td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/coocaa">Coocaa</a></td>
+                                <td data-value="1.45">$1.45</td>
+                                <td>3/16/2018</td>
+                                <td>China</td>
+                                <td>Consumer Hardware</td>
+                                <td>Baidu, Tencent Holdings</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/koudai-gouwu">Koudai
+                                    Gouwu</a></td>
+                                <td data-value="1.4">$1.4</td>
+                                <td>10/23/2014</td>
+                                <td>China</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>New Enterprise Associates,
+                                    Tiger Global management, Tencent</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/avidxchange">AvidXchange</a></td>
+                                <td data-value="1.4">$1.4</td>
+                                <td>6/8/2017</td>
+                                <td>United States</td>
+                                <td>Fintech</td>
+                                <td>Temasek Holdings, Charlotte Angel Partners, TPG Growth</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/symbiota">Indigo Agriculture</a></td>
+                                <td data-value="1.4">$1.4</td>
+                                <td>9/26/2017</td>
+                                <td>United States</td>
+                                <td>Biotech</td>
+                                <td>Activant Capital Group, Alaska Permanent Fund, Baillie Gifford & Co.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/hike">Hike</a></td>
+                                <td data-value="1.4">$1.4</td>
+                                <td>8/16/2016</td>
+                                <td>India</td>
+                                <td>Social</td>
+                                <td>Foxconn, Tiger Global management, Tencent</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/c3-energy">C3 IoT</a></td>
+                                <td data-value="1.4">$1.4</td>
+                                <td>3/2/2017</td>
+                                <td>United States</td>
+                                <td>IoT</td>
+                                <td>Makena Capital Management, TPG Growth, Breyer Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/applovin">AppLovin</a></td>
+                                <td data-value="1.4">$1.4</td>
+                                <td>1/1/2017</td>
+                                <td>United States</td>
+                                <td>Adtech</td>
+                                <td>Orient Hontai Capital, Webb Investment Network</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/anaplan">Anaplan</a></td>
+                                <td data-value="1.4">$1.4</td>
+                                <td>1/14/2016</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>Shasta Ventures, Granite Ventures, DFJ Growth Fund</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/doordash">DoorDash</a></td>
+                                <td data-value="1.4">$1.4</td>
+                                <td>3/1/2018</td>
+                                <td>United States</td>
+                                <td>Food Delivery</td>
+                                <td>Softbank Group, Sequoia Capital, Khosla Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/draftkings">DraftKings</a></td>
+                                <td data-value="1.35">$1.35</td>
+                                <td>7/26/2015</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>Accomplice, GGV Capital, Redpoint Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/rubrik">Rubrik</a></td>
+                                <td data-value="1.3">$1.3</td>
+                                <td>4/28/2017</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>Greylock Partners, Lightspeed Venture Partners, Khosla Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/zeta-interactive">Zeta Interactive</a></td>
+                                <td data-value="1.3">$1.3</td>
+                                <td>7/15/2015</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>GSO Capital Partners, Franklin Square</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/urwork">URWork</a></td>
+                                <td data-value="1.3">$1.3</td>
+                                <td>1/18/2017</td>
+                                <td>China</td>
+                                <td>Real Estate</td>
+                                <td>Ant Financial Services Group, Dahong Group, Sequoia Capital China</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/peloton-interactive">Peloton Interactive</a></td>
+                                <td data-value="1.3">$1.3</td>
+                                <td>5/24/2017</td>
+                                <td>United States</td>
+                                <td>Fitness</td>
+                                <td>True Ventures, Tiger Global Management, L Catterton</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/docker">Docker</a></td>
+                                <td data-value="1.3">$1.3</td>
+                                <td>4/14/2015</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>Greylock Partners,
+                                    Lightspeed Venture Partners, Lowercase Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/intercom">Intercom</a></td>
+                                <td data-value="1.27">$1.27</td>
+                                <td>3/27/2018</td>
+                                <td>United States</td>
+                                <td>Sales Tech</td>
+                                <td>Social Capital, Bessemer Venture Partners</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/oaknorth-bank">ACORN OakNorth</a></td>
+                                <td data-value="1.2">$1.2</td>
+                                <td>10/12/2017</td>
+                                <td>United Kingdom</td>
+                                <td>Fintech</td>
+                                <td>Clermont Group, Coltrane Asset Management, Toscafund Asset Management</td>
+                            </tr>
+                            <tr>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/thumbtack">Thumbtack</a></td>
+                                <td data-value="1.2">$1.2</td>
+                                <td>9/29/2015</td>
+                                <td>United States</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>Tiger Global, Sequoia Capital, Google Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/auctioncom">Ten-X</a></td>
+                                <td data-value="1.2">$1.2</td>
+                                <td>3/5/2014</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>Stone Point Capital, Google Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/clover-health">Clover Health</a></td>
+                                <td data-value="1.2">$1.2</td>
+                                <td>5/10/2017</td>
+                                <td>United States</td>
+                                <td>Healthcare</td>
+                                <td>Google Ventures, Sequoia Capital, First Round Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/appnexus">Appnexus</a></td>
+                                <td data-value="1.2">$1.2</td>
+                                <td>8/18/2014</td>
+                                <td>United States</td>
+                                <td>Adtech</td>
+                                <td>Khosla Ventures, Technology
+                                    Crossover Ventures, Tribeca Venture Partners</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/warby-parker">Warby
+                                    Parker</a></td>
+                                <td data-value="1.2">$1.2</td>
+                                <td>4/30/2015</td>
+                                <td>United States</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>BoxGroup, Felicis Ventures,
+                                    First Round Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/human-longevity">Human Longevity</a></td>
+                                <td data-value="1.2">$1.2</td>
+                                <td>4/5/2016</td>
+                                <td>United States</td>
+                                <td>Healthcare</td>
+                                <td>Celgene, GE Ventures, Draper Fisher Jurvetson</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/ideal-technologies">OfferUp</a></td>
+                                <td data-value="1.2">$1.2</td>
+                                <td>9/8/2016</td>
+                                <td>United States</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>Andreessen Horowitz, GGV Capital, T. Rowe Price</td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/careem-networks">Careem Networks</a></td>
+                                <td data-value="1.2">$1.2</td>
+                                <td>12/18/2016</td>
+                                <td>United Arab Emirates</td>
+                                <td>On Demand</td>
+                                <td>STC Ventures, Al Tayyar Travel Group, Wamda Capital</td>
+                            </tr>
+
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/duo-security">HeartFlow</a></td>
+                                <td data-value="1.19">$1.19</td>
+                                <td>12/4/2017</td>
+                                <td>United States</td>
+                                <td>Digital Health</td>
+                                <td>BlueCross BlueShield Venture Partners, US Venture Partners</td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/duo-security">Duo Security</a></td>
+                                <td data-value="1.17">$1.17</td>
+                                <td>10/18/2017</td>
+                                <td>United States</td>
+                                <td>Cybsersecurity</td>
+                                <td>Meritech Capital, Lead Edge Capital, Benchmark</td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/automattic">Automattic</a></td>
+                                <td data-value="1.16">$1.16</td>
+                                <td>5/27/2013</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>Insight Venture Partners,
+                                    Lowercase Capital, Polaris Partners</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/public_pages/public_comp_profile.php?id=netease-cloud-music">NetEase Cloud Music</a></td>
+                                <td data-value="1.16">$1.16</td>
+                                <td>4/11/2017</td>
+                                <td>China</td>
+                                <td>Internet Software & Services</td>
+                                <td> China International Capital Corporation, Hunan TV & Broadcast Intermediary, Shanghai Media Group</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/lifemiles">LIfeMiles</a></td>
+                                <td data-value="1.15">$1.15</td>
+                                <td>7/13/2015</td>
+                                <td>Colombia</td>
+                                <td>Business Products & Services</td>
+                                <td>Advent International</td>
+                            </tr>
+                            </tr>
+                            <td><a href="https://www.cbinsights.com/company/brewdog">BrewDog</a></td>
+                            <td data-value="1.15">$1.15</td>
+                            <td>4/10/2017</td>
+                            <td>United Kingdom</td>
+                            <td>Food & Beverages</td>
+                            <td>TSG Consumer Partners, Crowdcube</td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/global-fashion-group">Global Fashion Group</a></td>
+                                <td data-value="1.1">$1.1</td>
+                                <td>4/8/2015</td>
+                                <td>Luxembourg</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>Access Industries, Rocket Internet, Tengelmann Ventures</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/shopcluescom">Shopclues</a></td>
+                                <td data-value="1.1">$1.1</td>
+                                <td>1/12/2016</td>
+                                <td>India</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>Nexus Venture Partners, GIC Special Investments, Tiger Global Management</td>
+                            </tr>
+                            <tr>
+
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/proteus-digital-health">Proteus
+                                    Digital Health</a></td>
+                                <td data-value="1.1">$1.1</td>
+                                <td>6/2/2014</td>
+                                <td>United States</td>
+                                <td>Healthcare</td>
+                                <td>Novartis,
+                                    Essex Woodlands, The Carlyle Group</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/actifio">Actifio</a></td>
+                                <td data-value="1.1">$1.1</td>
+                                <td>3/24/2014</td>
+                                <td>United States</td>
+                                <td>Big Data</td>
+                                <td>Greylock Partners, North
+                                    Bridge Venture Partners, Technology Crossover Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/tangome">TangoMe</a></td>
+                                <td data-value="1.1">$1.1</td>
+                                <td>3/20/2014</td>
+                                <td>United States</td>
+                                <td>Social</td>
+                                <td>Draper Fisher Jurtson,
+                                    Qualcomm Ventures, Alibaba Group</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/nextdoor">Nextdoor</a></td>
+                                <td data-value="1.5">$1.5</td>
+                                <td>3/4/2015</td>
+                                <td>United States</td>
+                                <td>Social</td>
+                                <td>Benchmark Capital, DAG
+                                    Ventures, Insight Venture Partners</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/ovh">OVH</a></td>
+                                <td data-value="1.1">$1.1</td>
+                                <td>7/3/2015</td>
+                                <td>France</td>
+                                <td>Big Data</td>
+                                <td>Kohlberg Kravis Roberts & Co.,TowerBrook Capital Partners</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/uipath">UiPath</a></td>
+                                <td data-value="1.1">$1.1</td>
+                                <td>3/2/2018</td>
+                                <td>United States</td>
+                                <td>Digital Health / AI</td>
+                                <td>Accel Partners, capitalG, Earlybrid Venture Capital, Kleiner Perkins Caufield & Byers</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/tempus">Tempus Labs</a></td>
+                                <td data-value="1.1">$1.1</td>
+                                <td>3/21/2018</td>
+                                <td>United States</td>
+                                <td>Robotic Process Automation</td>
+                                <td>New Enterprise Associates, T. Rowe Associates, Lightbank</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/radius-payments-solutions">Radius Payments Solutions</a></td>
+                                <td data-value="1.07">$1.07</td>
+                                <td>11/27/2017</td>
+                                <td>United Kingdom</td>
+                                <td>Internet Software & Services</td>
+                                <td>Inflexion Private Equity</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/jiuxiancom">Jiuxian</a></td>
+                                <td data-value="1.05">$1.05</td>
+                                <td>7/30/2015</td>
+                                <td>China</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>Sequoia Capital China, Rich Land Capital, Merrysunny Wealth</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/africa-internet-group">Jumia</a></td>
+                                <td data-value="1.04">$1.04</td>
+                                <td>2/8/2016</td>
+                                <td>Nigeria</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>AXA</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/appdirect">AppDirect</a></td>
+                                <td data-value="1.04">$1.04</td>
+                                <td>10/7/2015</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>Mithril, iNovia Capital, Foundry Group</td>
+                            </tr>
+                            </tr>
+                            <td><a
+                                    href="https://www.cbinsights.com/company/kendra-scott">Kendra Scott Jewelry</a></td>
+                            <td data-value="1">$1</td>
+                            <td>12/21/2016</td>
+                            <td>United States</td>
+                            <td>Clothing & Accessories</td>
+                            <td>Berkshire Partners, Norwest Venture Partners</td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/avaloq">Avaloq Group</a></td>
+                                <td data-value="1.01">$1.01</td>
+                                <td>3/22/2017</td>
+                                <td>Switzerland</td>
+                                <td>Fintech</td>
+                                <td>Warbug Pincus</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/ofo">Ofo</a></td>
+                                <td data-value="1">$1</td>
+                                <td>3/1/2017</td>
+                                <td>China</td>
+                                <td>On Demand</td>
+                                <td>GSR Ventures, Matrix Partners China, Didi Chuxing</td>
+                            </tr>
+
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/katerra">Katerra</a></td>
+                                <td data-value="1">$1</td>
+                                <td>4/13/2017</td>
+                                <td>United States</td>
+                                <td>Construction Tech</td>
+                                <td>Foxconn Technology Company, Khosla Ventures, Moore Capital Management</td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/yuantikucom">Yuanfudao</a></td>
+                                <td data-value="1">$1</td>
+                                <td>5/31/2017</td>
+                                <td>China</td>
+                                <td>Edtech</td>
+                                <td>Tencent Holdings, Warbug Pincus, IDG Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/opendoor">OpenDoor Labs</a></td>
+                                <td data-value="1">$1</td>
+                                <td>11/30/2016</td>
+                                <td>United States</td>
+                                <td>Real Estate</td>
+                                <td>Norwest Venture Partners, New Enterprise Associates, Khosla Ventures</td>
+                            </tr>
+
+                            <tr>
+                                <td><a
+                                        href="https://www.cbinsights.com/company/liepin">Liepin</a></td>
+                                <td data-value="1">$1</td>
+                                <td>6/28/2016</td>
+                                <td>China</td>
+                                <td>HR & Workforce Management</td>
+                                <td>China Mobile, Matrix Partners China, Warbug Pincus</td>
+                            </tr>
+                            <tr>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/xuanyixia">Yixia</a></td>
+                                <td data-value="1">$1</td>
+                                <td>11/24/2015</td>
+                                <td>China</td>
+                                <td>Social</td>
+                                <td>Sequoia Capital China, Sina Weibo, Kleiner Perkins Caufield & Byers, Redpoint Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/medallia">Medallia</a></td>
+                                <td data-value="1">$1</td>
+                                <td>7/21/2015</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>Sequoia Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/apus-group">Apus Group</a></td>
+                                <td data-value="1">$1</td>
+                                <td>1/16/2015</td>
+                                <td>China</td>
+                                <td>Mobile Software & Services</td>
+                                <td>Redpoint Ventures, QiMing Venture Partners, Chengwei Capital</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/cloudflare">CloudFlare</a></td>
+                                <td data-value="1">$1</td>
+                                <td>12/1/2012</td>
+                                <td>United States</td>
+                                <td>Cybersecurity</td>
+                                <td>New Enterprise Associates,
+                                    Pelion Venture Partners, Union Square Ventures</td>
+                            </tr>
+                            <tr>
+
+                            </tr>
+                            <td><a href="https://www.cbinsights.com/company/procore-technologies">Procore Technologies</a></td>
+                            <td data-value="1">$1</td>
+                            <td>12/8/2016</td>
+                            <td>United States</td>
+                            <td>Construction Tech</td>
+                            <td>Bessemer Venture Partners, O'Connor Ventures, Iconiq Capital</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/lookout">Lookout</a></td>
+                                <td data-value="1">$1</td>
+                                <td>8/13/2014</td>
+                                <td>United States</td>
+                                <td>Cybersecurity</td>
+                                <td>Accel Partners, Greylock
+                                    Partners, Lowercase Capital</td>
+                            </tr>
+
+                            <td><a
+                                    href="https://www.cbinsights.com/company/funding-circle">Funding Circle</a></td>
+                            <td data-value="1">$1</td>
+                            <td>4/23/2015</td>
+                            <td>United Kingdom</td>
+                            <td>Fintech</td>
+                            <td>Accel Partners, Index
+                                Ventures, Ribbit Capital</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href=https://www.cbinsights.com/company/51fanlicom>Fanli</a></td>
+                                <td data-value="1">$1</td>
+                                <td>4/20/2015</td>
+                                <td>China</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>QiMing Venture Partners,
+                                    Steam boat Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/zomato-media">Zomato
+                                    Media</a></td>
+                                <td data-value="1">$1</td>
+                                <td>4/10/2015</td>
+                                <td>India</td>
+                                <td>Social</td>
+                                <td>Sequoia Capital, VY Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/justfab">TechStyle Fashion Group</a></td>
+                                <td data-value="1">$1</td>
+                                <td>8/29/2014</td>
+                                <td>United States</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>Matrix Partners, Passport
+                                    Capital, Rho Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/mogujie">Mogujie</a></td>
+                                <td data-value="1">$1</td>
+                                <td>6/6/2014</td>
+                                <td>China</td>
+                                <td>Social</td>
+                                <td>IDG Capital Partners,
+                                    QiMing Venture Partners, Banyan Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/desktop-metal">Desktop Metal</a></td>
+                                <td data-value="1">$1</td>
+                                <td>7/17/2017</td>
+                                <td>United States</td>
+                                <td>3D Printing</td>
+                                <td>Australian Future Fund, GE Ventures, Data Collective</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/illumio">Illumio</a></td>
+                                <td data-value="1">$1</td>
+                                <td>4/14/2014</td>
+                                <td>United States</td>
+                                <td>Cybersecurity</td>
+                                <td>Data Collective, Formation
+                                    8, General Catalyst Partners</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/beibei">BeiBei</a></td>
+                                <td data-value="1">$1</td>
+                                <td>1/22/2015</td>
+                                <td>China</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>Banyan Capital, New Horizon
+                                    Capital, IDG Capital Partners</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/panshi">Panshi</a></td>
+                                <td data-value="1">$1</td>
+                                <td>5/5/2015</td>
+                                <td>China</td>
+                                <td>Adtech</td>
+                                <td>WI Harper Group, Fang Fund Partners, NewMarging Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/inmobi">InMobi</a></td>
+                                <td data-value="1">$1</td>
+                                <td>12/2/2014</td>
+                                <td>India</td>
+                                <td>Adtech</td>
+                                <td>Kleiner Perkins Caufield
+                                    & Byers, Softbank Corp., Sherpalo Ventures</td>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/crowdstrike">CrowdStrike</a></td>
+                                <td data-value="1">$1</td>
+                                <td>5/17/2017</td>
+                                <td>United States</td>
+                                <td>Cybersecurity</td>
+                                <td>Warbug Pincus, capitalG, Accel Partners</td>
+                            <tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/avast-software">AVAST Software</a></td>
+                                <td data-value="1">$1</td>
+                                <td>2/5/2014</td>
+                                <td>Czech Republic</td>
+                                <td>Cybersecurity</td>
+                                <td>Summit Partners, CVC Capital Partners</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/marklogic">MarkLogic</a></td>
+                                <td data-value="1">$1</td>
+                                <td>5/12/2015</td>
+                                <td>United States</td>
+                                <td>Big Data</td>
+                                <td>Sequoia Capital, Tenaya Capital, Northgate Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/fanduel">Fanduel</a></td>
+                                <td data-value="1">$1</td>
+                                <td>7/14/2015</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>Pentech Ventures, Bullpen Capital, KKR</td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/zhaogang">Zhaogang</a></td>
+                                <td data-value="1">$1</td>
+                                <td>6/29/2017</td>
+                                <td>China</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>K2 Ventures, Matrix Partners China, IDG Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/vox-media">Vox Media</a></td>
+                                <td data-value="1">$1</td>
+                                <td>8/12/2015</td>
+                                <td>United States</td>
+                                <td>Media</td>
+                                <td>Accel Partners, Comcast Ventures, General Atlantic</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/kik-interactive">Kik Interactive</a></td>
+                                <td data-value="1">$1</td>
+                                <td>8/18/2015</td>
+                                <td>Canada</td>
+                                <td>Social</td>
+                                <td>Union Square Ventures, RRE Ventures, Spark Capital</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/letgo">letgo</a></td>
+                                <td data-value="1">$1</td>
+                                <td>9/28/2017</td>
+                                <td>Netherlands</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>Accel Partners, FJ Labs, Insight Venture Partners</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/kabbage">Kabbage</a></td>
+                                <td data-value="1">$1</td>
+                                <td>10/14/2015</td>
+                                <td>United States</td>
+                                <td>Fintech</td>
+                                <td>BlueRun Ventures, SV Angel, Mohr Davidow Ventures</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/tutorgroup">iTutorGroup</a></td>
+                                <td data-value="1">$1</td>
+                                <td>11/18/2015</td>
+                                <td>China</td>
+                                <td>Ed Tech</td>
+                                <td>QiMing Venture Partners, Temasek Holdings, Silverlink Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/zenpayroll">Gusto</a></td>
+                                <td data-value="1">$1</td>
+                                <td>12/18/2015</td>
+                                <td>United States</td>
+                                <td>Fintech</td>
+                                <td>General Catalyst Partners, Google Ventures, Kleiner Perkins Caufield & Byers</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/c-a0e9caf35cf9b5d9707bf4059b72bff3">Dt Dream</a></td>
+                                <td data-value="1">$1</td>
+                                <td>6/8/2017</td>
+                                <td>China</td>
+                                <td>Internet Software & Services</td>
+                                <td>Alibaba Group, China Everbright Investment Management, Yinxinggu Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/dada">Dada</a></td>
+                                <td data-value="1">$1</td>
+                                <td>12/31/2015</td>
+                                <td>China</td>
+                                <td>eCommerce</td>
+                                <td>Sequoia Capital China, DST, Greenwoods Asset Management</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/cellc">Cell C</a></td>
+                                <td data-value="1">$1</td>
+                                <td>8/8/2017</td>
+                                <td>South Africa</td>
+                                <td>Telecommunications</td>
+                                <td>Blue Label Telecoms, Net1 UEPS Technologies</td>
+                            </tr>
+
+                            <td><a href="https://www.cbinsights.com/company/mindmaze">MindMaze</a></td>
+                            <td data-value="1">$1</td>
+                            <td>2/17/2016</td>
+                            <td>Switzerland</td>
+                            <td>VR/AR</td>
+                            <td>Hinduja Group</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/mercari">Mercari</a></td>
+                                <td data-value="1">$1</td>
+                                <td>3/2/2016</td>
+                                <td>Japan</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>East Ventures, Global Brain Corporation, ITOCHU Technology Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/miyabaobei">Mia.com</a></td>
+                                <td data-value="1">$1</td>
+                                <td>9/8/2015</td>
+                                <td>China</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>Sequoia Capital China, ZhenFund, K2 Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/xiaohongshu">Xiaohongshu</a></td>
+                                <td data-value="1">$1</td>
+                                <td>3/31/2016</td>
+                                <td>China</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>GGV Capital, ZhenFund, Tencent</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/icarbonx">iCarbonX</a></td>
+                                <td data-value="1">$1</td>
+                                <td>4/12/2016</td>
+                                <td>China</td>
+                                <td>Healthcare</td>
+                                <td>Tencent, Vcanbio</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/symphony-communication-services-holdings">Symphony Communication Services Holdings</a></td>
+                                <td data-value="1">$1</td>
+                                <td>5/16/2017</td>
+                                <td>United States</td>
+                                <td>Fintech</td>
+                                <td>BNP Paribas, Goldman Sachs, Google</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/age-of-learning">Age of Learning</a></td>
+                                <td data-value="1">$1</td>
+                                <td>5/3/2016</td>
+                                <td>United States</td>
+                                <td>Edtech</td>
+                                <td>Iconiq Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/sms-assist">Quikr</a></td>
+                                <td data-value="1">$1</td>
+                                <td>4/7/2015</td>
+                                <td>India</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>Brand Capital, Tiger Global Management, Kinnevik</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/sms-assist">SMS Assist</a></td>
+                                <td data-value="1">$1</td>
+                                <td>6/13/2016</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>Goldman Sachs, Insights Venture Partners, Pritzker Group Venture Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/stratified-medical">benevolent.ai </a></td>
+                                <td data-value="1">$1</td>
+                                <td>6/2/2015</td>
+                                <td>United Kingdom</td>
+                                <td>Healthcare</td>
+                                <td>Woodford Investment Management</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/mofang-gongyu">Mofang Gongyu</a></td>
+                                <td data-value="1">$1</td>
+                                <td>4/13/2016</td>
+                                <td>China</td>
+                                <td>Facilities</td>
+                                <td>Warburg Pincus, Aviation Industry Corporation of China</td>
+                            </tr>
+
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/adaptive-biotechnologies">Adaptive Biotechnologies</a></td>
+                                <td data-value="1">$1</td>
+                                <td>1/8/2015</td>
+                                <td>United States</td>
+                                <td>Healthcare</td>
+                                <td>Illumina, Celgene, Casdin Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/hujiang">HuJiang</a></td>
+                                <td data-value="1">$1</td>
+                                <td>10/29/2015</td>
+                                <td>China</td>
+                                <td>Edtech</td>
+                                <td>China Minsheng Investment, Baidu, Wanxin Media</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/guazi">Guazi</a></td>
+                                <td data-value="1">$1</td>
+                                <td>3/12/2016</td>
+                                <td>China</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>Sequoia Capital China, GX Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/rubicon-global-holdings">Rubicon Global</a></td>
+                                <td data-value="1">$1</td>
+                                <td>8/25/2017</td>
+                                <td>United States</td>
+                                <td>Cleantech</td>
+                                <td>Goldman Sachs, Leonardo DiCaprio, Promecap </td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/zhihu-inc">Zhihu</a></td>
+                                <td data-value="1">$1</td>
+                                <td>1/12/2017</td>
+                                <td>China</td>
+                                <td>Internet Software & Services</td>
+                                <td>Tencent Holdings, Sinovation Ventures, Qiming Venture Partners </td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/enniu-internet-technology">51Xinyongka</a></td>
+                                <td data-value="1">$1</td>
+                                <td>9/21/2016</td>
+                                <td>China</td>
+                                <td>Fintech</td>
+                                <td>GGV Capital, JD.com, Meridian Capital China</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/c-4893151c88687087d1cafce56eefc4af">YH Global</a></td>
+                                <td data-value="1">$1</td>
+                                <td>9/21/2017</td>
+                                <td>China</td>
+                                <td>Supplychain/ logistics</td>
+                                <td>Co-Energy Finance, Grandland</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/eventbrite">Eventbrite</a></td>
+                                <td data-value="1">$1</td>
+                                <td>3/13/2014</td>
+                                <td>United States</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>Sequoia Capital, Tiger Global Management, SV Angel</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/cylance">Cylance</a></td>
+                                <td data-value="1">$1</td>
+                                <td>6/8/2016</td>
+                                <td>United States</td>
+                                <td>Cybersecurity</td>
+                                <td>Khosla Ventures, Fairhaven Capital, In-Q-Tel</td>
+                            </tr>
+                            <tr>
+
+                            <tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/rocket-lab">Rocket Lab</a></td>
+                                <td data-value="1">$1</td>
+                                <td>3/21/2017</td>
+                                <td>United States</td>
+                                <td>SpaceTech</td>
+                                <td>Lockheed Martin, Khosla Ventures, Bessemer Venture Partners</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/improbable">Improbable</a></td>
+                                <td data-value="1">$1</td>
+                                <td>5/12/2017</td>
+                                <td>United Kingdom</td>
+                                <td>AR/VR</td>
+                                <td>Andreessen Horowitz, SoftBank Group, Temasek Holdings</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/zoom-video-communications">Zoom Communications</a></td>
+                                <td data-value="1">$1</td>
+                                <td>1/17/2017</td>
+                                <td>United States</td>
+                                <td>Internet Software & Services</td>
+                                <td>Sequoia Capital, Qualcomm Ventures, Emergence Capital Partners</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/tongdun-technology">Tongdun Technology</a></td>
+                                <td data-value="1">$1</td>
+                                <td>10/10/2017</td>
+                                <td>China</td>
+                                <td>Cybersecurity</td>
+                                <td>Advantech Capital, Temasek Holdings Ltd., Tiantu Capital Co.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/supreme">Supreme</a></td>
+                                <td data-value="1">$1</td>
+                                <td>10/9/2017</td>
+                                <td>United States</td>
+                                <td>Clothing & Accessories</td>
+                                <td>The Carlyle Group</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/particle">Particle</a></td>
+                                <td data-value="1">$1</td>
+                                <td>10/17/2017</td>
+                                <td>United States</td>
+                                <td>Digital Media</td>
+                                <td>Phoenix New Media</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/megvii">Face++ (Megvii)</a></td>
+                                <td data-value="1">$1</td>
+                                <td>10/31/2017</td>
+                                <td>China</td>
+                                <td>AI / Facial Recognition</td>
+                                <td>Ant Financial Services Group, Russia-China Investment Fund, Foxconn Technology Company</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/xiaozhu"> XiaoZhu </a></td>
+                                <td data-value="1">$1</td>
+                                <td>11/1/2017</td>
+                                <td>China</td>
+                                <td>eCommerce/Marketplace</td>
+                                <td>Morningside Ventures, Capital Today, JOY Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/ginkgo-bioworks"> Ginkgo BioWorks</a></td>
+                                <td data-value="1">$1</td>
+                                <td>12/14/2017</td>
+                                <td>United States</td>
+                                <td>Biotechnology</td>
+                                <td>Y Combinator, Data Collective, MassVentures</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/canva">Canva</a></td>
+                                <td data-value="1">$1</td>
+                                <td>01/08/2018</td>
+                                <td>Australia</td>
+                                <td>Collaboration & Project Management</td>
+                                <td>Sequoia Capital China, Blackbird Ventures, Matrix Partners</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/medmen">MedMen</a></td>
+                                <td data-value="1">$1</td>
+                                <td>02/06/2018</td>
+                                <td>United States</td>
+                                <td>Cannabis</td>
+                                <td>Captor Capital, N Squared Management</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/orcam-technologies">OrCam Technologies</a></td>
+                                <td data-value="1">$1</td>
+                                <td>02/21/2018</td>
+                                <td>Israel</td>
+                                <td>Consumer Electronics</td>
+                                <td>Intel Capital, Aviv Venture Capital</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/17zuoye">17zuoye </a></td>
+                                <td data-value="1">$1</td>
+                                <td>03/7/2018</td>
+                                <td>China</td>
+                                <td>EdTech</td>
+                                <td>DST Global, Temasek Holdings</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/dxy">Ding Xiang Yuan </a></td>
+                                <td data-value="1">$1</td>
+                                <td>04/10/2018</td>
+                                <td>China</td>
+                                <td>Digital Health</td>
+                                <td>Tencent Holdings, DCM Ventures</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.cbinsights.com/company/soundhound">Soundhound</a></td>
+                                <td data-value="1">$1</td>
+                                <td>05/03/2018</td>
+                                <td>United States</td>
+                                <td>Music</td>
+                                <td>Tencent Holdings, Walden Venture Capital, Global Catalyst Partnera</td>
+                            </tr>
+                            </tbody>
+                        </table></div>
+                </div>
+
+                <div
+                        class="page-element widget-container page-element-type-headline widget-headline "
+                        id="element-701"
+                >
+
+
+                    <div class="contents"><h2><p style="text-align: left;  "><font color="#2f373b"><a href="https://www.cbinsights.com/research-future-unicorn-companies" rel="null" type="url" id="link-4fcuw07xz77" class="url-link">See the companies predicted to become unicorns.</a></font></p><p style="text-align: left;  "><br></p><p style="text-align: left;  "><font color="#2f373b"><a href="https://www.cbinsights.com/research-unicorn-exits" rel="null" type="url" id="link-g0t92azptc" class="url-link" target="_blank">See all the billion-dollar VC-backed exits since 2009.</a></font><a href="https://www.cbinsights.com/research-unicorn-exits" rel="null" type="url" id="link-6lwaoms4wq" class="url-link" target="_blank"><br></a></p></h2></div>
+                </div>
+
+                <div
+                        class="page-element widget-container page-element-type-headline widget-headline "
+                        id="element-1295"
+                >
+
+
+                    <div class="contents"><h1><p style=" "><font color="#ff6633">Want More?</font></p></h1></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="page-block" id="page-block-q6nkvc1zwsbawcdi">
+        <div class="color-overlay"></div>
+        <div class="border-holder">
+            <div class="block-inner">
+                <div
+                        class="page-element widget-container page-element-type-text widget-text "
+                        id="element-16"
+                >
+
+                    <div class="contents"><p style="text-align: right;  "><font color="#ffffff">©2017 CB Insights, All Rights Reserved</font></p></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- No ReCaptcha enabled -->
+<div id="fb-root"></div>
+
+<!-- visitor pixel --><script type="text/javascript" class="instapage-noscrap">
+    window.__conversions_settings = {"forms":true,"links":false,"external":false};
+
+    function iCopyKeenEvent( name, properties )
+    {
+        var params_copy = window.__keen_io_called_parameters.slice();
+        var data = {};
+        properties = properties || {};
+
+        for( i in params_copy[ 2 ] )
+        {
+            if( params_copy[ 2 ].hasOwnProperty( i ) )
+            {
+                data[ i ] = params_copy[ 2 ][ i ];
+            }
+        }
+
+        for( i in properties )
+        {
+            if( properties.hasOwnProperty( i ) )
+            {
+                data[ i ] = properties[ i ];
+            }
+        }
+
+        if( name === 'conversion' && window.__unique )
+        {
+            if( window.__unique.isVisited() )
+            {
+                data[ 'responsive_mode' ] = window.__unique.isResponsiveMode() ? 'mobile' : null;
+            }
+        }
+
+
+        params_copy.splice( 1, 2, name, data );
+        return params_copy;
+    }
+
+    function removeKeenEventParameter( name )
+    {
+        if( window.__keen_io_called_parameters ) {
+            var parameters = window.__keen_io_called_parameters[2] ? window.__keen_io_called_parameters[2] : {};
+
+            if( parameters[name] )
+            {
+                delete parameters[name];
+                window.__keen_io_called_parameters[2] = parameters;
+            }
+        }
+    }
+
+    function iEncodePixelUrl( id, event, data, key )
+    {
+        var endpoint = "anthill.instapage.com" + '/projects/' + id + '/events/' + event;
+        var base64 = base64_encode( JSON.stringify( data ) );
+        var base64_url_safe = base64.replace(/\+/g, '-').replace(/\//g, '_');
+        var query = 'api_key=' + key + '&data=' + base64_url_safe + '&t=' + Date.now();
+        var image_url = '//' + endpoint + '?' + query;
+
+        return image_url;
+    }
+
+    function iCreateTrackingPixel( src )
+    {
+        return ijQuery( '<img>')
+            .attr( {
+                src: src,
+                width: 1,
+                height: 1,
+                alt: '',
+                title: '',
+                style: 'display: table-cell; height: 0; position: absolute; left: -9999999px; top: -999999px;'
+            } )
+    }
+
+    ijQuery( document ).on( 'ready', function()
+    {
+        var cookie_name = 'instapage-visit-333259';
+        var parameters = {"owner_id":100925,"customer_id":119007,"user_id":100925,"page_id":333259,"published_version":1015,"quantity":1,"static_page":false,"variation_name":"A","variation_id":1,"linked_variation_id":2,"initial_responsive_mode":null,"visitor_ip":"104.197.187.53","useragent":""};
+        var id = '333259';
+        var track_returning_visitors = true;
+
+        var project_id = '56c2f3d796773d0a7e96a536';
+        var event = 'visit';
+        var key = '4527a50c0bc18db67405b5fa338c0aa485f759738e0b510892103fc7b70b3cd585f3d9939c13cd19161f6fd6d766b7e816389f4207c2e092c69231881d1ec364806bb6460b6a249d4b5b7ac576a270731995b8c52c5e31c187b081df419a8656ec5a4adfb991a6f458cfe3bcbd9cda32ae47cd2ed5bba3196e7f31859139213a4365938e7c68c26b5718555af039b122';
+
+        parameters.javascript = true;
+        parameters.variation = parameters.variation_name;
+        parameters.generation_time = '5';
+        parameters.responsive_mode = null;
+
+        if( window.__mobile_version === 2 && window.innerWidth < 600 && window.__variant.indexOf( '-mobile' ) < 0 )
+        {
+            window.__variant += '-mobile';
+            parameters.responsive_mode = 'mobile';
+        }
+        else if( window.__variant.indexOf( '-mobile' ) > 0 )
+        {
+            parameters.responsive_mode = 'mobile';
+        }
+
+        window.__unique = new InstapageUniqueVisit( cookie_name, {
+            variant: parameters.variation_name,
+            responsive_mode: parameters.responsive_mode,
+            reset: {}		} );
+
+        parameters.visited = window.__unique.isVisited();
+        parameters.useragent = window.navigator && window.navigator.userAgent || parameters.useragent;
+
+        parameters.campaign_id = window.__unique.getCampaignId();
+        parameters.ad_id = window.__unique.getAdId();
+        parameters.campaign_source = window.__unique.getCampaignSource();
+
+        parameters.ref = window.__unique.getRef();
+
+        window.__keen_io_called_parameters = [ project_id, event, parameters, key ];
+        if( !parameters.visited || track_returning_visitors )
+        {
+            iCreateTrackingPixel( iEncodePixelUrl( project_id, event, parameters, key ) )
+                .appendTo( ijQuery( 'body' ) );
+
+            window.__unique.setResponsiveMode( parameters.responsive_mode );
+            window.__unique.setVisited();
+            window.__unique.save();
+
+            //Remove ad_id parameter for multiple submit protection
+            removeKeenEventParameter( 'ad_id' );
+        }
+
+        if( window.__conversions_settings.external && typeof $.cookie( 'instapage.conversion' + id ) === 'undefined' )
+        {
+            var parameter_pixel = iCopyKeenEvent( "conversion", {
+                conversion_type: "external",
+                visited: window.__unique.isConverted()
+            } );
+            var external_image = iEncodePixelUrl.apply( iEncodePixelUrl, parameter_pixel );
+
+            var data = {
+                page_id: id,
+                variation: parameters.variation_name,
+                external_image: external_image,
+                timestamp_created: Date.now(),
+                timestamp_sent: null
+            };
+
+            $.cookie( 'instapage.conversion' + id, JSON.stringify( data ), {
+                expires: 7,
+                path: '/'
+            } );
+        }
+    } );
+
+</script>
+<noscript class="instapage-noscrap">
+    <img href="//anthill.instapage.com/projects/56c2f3d796773d0a7e96a536/events/visit?api_key=4527a50c0bc18db67405b5fa338c0aa485f759738e0b510892103fc7b70b3cd585f3d9939c13cd19161f6fd6d766b7e816389f4207c2e092c69231881d1ec364806bb6460b6a249d4b5b7ac576a270731995b8c52c5e31c187b081df419a8656ec5a4adfb991a6f458cfe3bcbd9cda32ae47cd2ed5bba3196e7f31859139213a4365938e7c68c26b5718555af039b122&data=eyJvd25lcl9pZCI6MTAwOTI1LCJjdXN0b21lcl9pZCI6MTE5MDA3LCJ1c2VyX2lkIjoxMDA5MjUsInBhZ2VfaWQiOjMzMzI1OSwicHVibGlzaGVkX3ZlcnNpb24iOjEwMTUsInF1YW50aXR5IjoxLCJzdGF0aWNfcGFnZSI6ZmFsc2UsInZhcmlhdGlvbl9uYW1lIjoiQSIsInZhcmlhdGlvbl9pZCI6MSwibGlua2VkX3ZhcmlhdGlvbl9pZCI6MiwiaW5pdGlhbF9yZXNwb25zaXZlX21vZGUiOm51bGwsInZpc2l0b3JfaXAiOiIxMDQuMTk3LjE4Ny41MyIsInVzZXJhZ2VudCI6IiIsImdlbmVyYXRpb25fdGltZSI6NDN9" >
+</noscript>
+<!-- end -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sortable/0.6.0/js/sortable.min.js"></script>
+
+
+<iframe class="instapage-noscrap" src="//d3mwhxgzltpnyp.cloudfront.net/local-storage/index.html" name="instapage-local-storage" height="0px" width="0px" style="display: block;"></iframe>
+
+
+
+
+
+<script>
+    function getWidgetsHorizontalBoundries()
+    {
+        var $body;
+        var page_width;
+        var edges = { left: 0, right: 0 };
+
+        $body = ijQuery( 'html, body' );
+        page_width = ijQuery( '.block-inner' ).first().width();
+
+        ijQuery( '.page-element:visible' ).each( function( index, elem )
+        {
+            var $elem = ijQuery( elem );
+            var left = $elem.position().left;
+            var width = $elem.width();
+            var right = left + width;
+            if ( left < 0 && edges.left > left )
+            {
+                edges.left = left;
+            }
+
+            if ( right > page_width && edges.right < right )
+            {
+                edges.right = right;
+            }
+        } );
+
+        max = Math.max( Math.abs( edges.left ), edges.right - page_width );
+        return page_width + max * 2;
+    }
+    window.__workspaceWidth = getWidgetsHorizontalBoundries();
+</script>
+
+<script>
+    ijQuery( document ).ready( function()
+    {
+        var $window = ijQuery( window );
+        var last_window_width;
+
+        function setupScroll()
+        {
+            var window_width = $window.width();
+            var $body;
+            var page_width;
+            var edges = { left: 0, right: 0 };
+            var max;
+            var width;
+            var scroll_left = 0;
+
+            if ( last_window_width !== window_width )
+            {
+                $body = ijQuery( 'html, body' );
+
+                if ( window.__workspaceWidth > window_width && window_width > 400 )
+                {
+                    scroll_left = Math.round( ( window.__workspaceWidth - window_width ) / 2 );
+                    $body.css( 'min-width', window.__workspaceWidth + 'px' );
+                    $( 'html' ).css( 'overflow-x', 'visible' );
+                    $body.scrollLeft( scroll_left );
+                }
+                else
+                {
+                    $body.css( 'min-width', '' );
+                    $body.scrollLeft( 0 );
+                    $( 'html' ).css( 'overflow-x', 'hidden' );
+                }
+
+                last_window_width = window_width;
+            }
+        }
+
+        setupScroll();
+
+        $window
+            .off( 'resize.horizontalScrollHandler' )
+            .on( 'resize.horizontalScrollHandler', setupScroll );
+    } );
+</script>
+</body>
+</html>
